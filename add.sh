@@ -1,3 +1,4 @@
+set -x
 echo "Adding $1"
 
 cblrepo add $1 \
