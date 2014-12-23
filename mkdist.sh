@@ -1,2 +1,2 @@
-pacman -Su
+sudo pacman -Sy
 pacman -Sl | grep "^has" >distpkg 
