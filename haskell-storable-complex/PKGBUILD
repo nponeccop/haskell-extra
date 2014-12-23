@@ -1,38 +1,21 @@
 # custom variables
-_hkgname=diagrams-contrib
+_hkgname=storable-complex
 _licensefile=LICENSE
 
 # PKGBUILD options/directives
-pkgname=haskell-diagrams-contrib
-pkgver=1.1.2.4
-pkgrel=2
-pkgdesc="Collection of user contributions to diagrams EDSL"
-url="http://projects.haskell.org/diagrams/"
+pkgname=haskell-storable-complex
+pkgver=0.2.1
+pkgrel=1
+pkgdesc="Storable instance for Complex"
+url="http://hackage.haskell.org/package/${_hkgname}"
 license=("BSD3")
 arch=('i686' 'x86_64')
 makedepends=()
-depends=("ghc=7.8.3-1"
-         "haskell-monadrandom=0.3.0.1-1"
-         "haskell-arithmoi=0.4.1.1-1"
-         "haskell-circle-packing=0.1.0.3-1"
-         "haskell-colour=2.3.3-56"
-         "haskell-data-default=0.5.3-58"
-         "haskell-data-default-class=0.0.1-56"
-         "haskell-diagrams-core=1.2.0.4-1"
-         "haskell-diagrams-lib=1.2.0.7-2"
-         "haskell-force-layout=0.3.0.8-1"
-         "haskell-lens=4.6.0.1-3"
-         "haskell-mtl=2.1.3.1-4"
-         "haskell-parsec=3.1.7-1"
-         "haskell-semigroups=0.16.0.1-1"
-         "haskell-split=0.2.2-56"
-         "haskell-text=1.1.1.3-2"
-         "haskell-vector-space=0.8.7-1"
-         "haskell-vector-space-points=0.2-1")
+depends=("ghc=7.8.3-1")
 options=('strip' 'staticlibs')
 source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
 install="${pkgname}.install"
-sha256sums=("3c28ab3701004e68e6aa073edb651cfd2ca096f5f92a8d2131a64a5ebcbe0547")
+sha256sums=("5f5d9e1c71de41379e0b9249f4ddc7c5fb6756333ebb1127e790977aa2b6dd36")
 
 # PKGBUILD functions
 

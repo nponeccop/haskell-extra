@@ -1,21 +1,22 @@
 # custom variables
-_hkgname=storablevector
+_hkgname=binary-shared
 _licensefile=LICENSE
 
 # PKGBUILD options/directives
-pkgname=haskell-storablevector
-pkgver=0.1.0
+pkgname=haskell-binary-shared
+pkgver=0.8.3
 pkgrel=1
-pkgdesc="Fast, packed, strict storable arrays with a list interface like ByteString"
-url="http://darcs.haskell.org/storablevector"
-license=("BSD3")
+pkgdesc="Sharing for the binary package"
+url="http://www.leksah.org"
+license=("GPL")
 arch=('i686' 'x86_64')
 makedepends=()
-depends=("ghc=7.8.3-1")
+depends=("ghc=7.8.3-1"
+         "haskell-mtl=2.1.3.1-4")
 options=('strip' 'staticlibs')
 source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
 install="${pkgname}.install"
-sha256sums=("0931992977fef14c6b8dce46b28d2206f01d019b79ba9a6226e81a97c044184f")
+sha256sums=("830116505018fc43de09867bea9039b0bfa29e77564efa8c3f3b708933c098b2")
 
 # PKGBUILD functions
 

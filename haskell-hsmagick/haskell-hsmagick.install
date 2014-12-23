@@ -1,5 +1,5 @@
 # custom variables
-pkgname=haskell-storablevector
+pkgname=haskell-hsmagick
 HS_DIR=usr/share/haskell/${pkgname}
 
 # functions
