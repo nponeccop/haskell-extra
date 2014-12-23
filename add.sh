@@ -1,7 +1,7 @@
 echo "Adding $1"
 
 cblrepo add $1 \
-	| awk '$1 != "Failed" && $1 != "" {print "haskell-" $1}' \
+	| awk '$1 != "Failed" && $1 != "" {print "haskell-" tolower($1)}' \
 	| xargs --no-run-if-empty pacman -Q 2>xx >yy
 echo Distribution packages:
 cat yy
