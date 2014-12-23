@@ -18,4 +18,5 @@ cat xx \
 	| perl -pe 's/(.*)-(.*)/-g $1,$2/o' \
 	| xargs --no-run-if-empty cblrepo add 
 echo adding
-cblrepo add $1
+cblrepo add $1 | tee zz
+cat zz | awk '/^ / {print $1}' | xargs -l --no-run-if-empty bash auto.sh
