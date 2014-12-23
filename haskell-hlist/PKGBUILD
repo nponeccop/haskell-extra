@@ -1,23 +1,23 @@
 # custom variables
-_hkgname=digestive-functors
+_hkgname=HList
 _licensefile=LICENSE
 
 # PKGBUILD options/directives
-pkgname=haskell-digestive-functors
-pkgver=0.7.1.3
+pkgname=haskell-hlist
+pkgver=0.3.4.1
 pkgrel=1
-pkgdesc="A practical formlet library"
-url="http://github.com/jaspervdj/digestive-functors"
-license=("BSD3")
+pkgdesc="Heterogeneous lists"
+url="http://hackage.haskell.org/package/${_hkgname}"
+license=("MIT")
 arch=('i686' 'x86_64')
 makedepends=()
 depends=("ghc=7.8.3-1"
          "haskell-mtl=2.1.3.1-4"
-         "haskell-text=1.1.1.3-2")
+         "haskell-tagged=0.7.3-1")
 options=('strip' 'staticlibs')
 source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
 install="${pkgname}.install"
-sha256sums=("74cfc734a11cc0f4ac897b06c45b63665733f1e82fdb5822dbd4ebf95ba10f79")
+sha256sums=("02663166beb2f285f56cdb53af25c629e868b19307d3f397b5e08a8d4d221c0a")
 
 # PKGBUILD functions
 

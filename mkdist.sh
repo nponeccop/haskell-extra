@@ -1,2 +1,5 @@
+cabal update
+cblrepo sync
+cblrepo updates
 sudo pacman -Sy
-pacman -Sl | grep "^has" >distpkg 
+pacman -Sl haskell-{core,happstack} | grep "^has" >distpkg 
