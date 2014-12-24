@@ -3,7 +3,7 @@ haskell-core c2hs 0.20.1-1
 haskell-core cabal-install 1.18.0.5-10 [installed]
 haskell-core cblrepo 0.13-9 [installed]
 haskell-core ghc 7.8.3-1 [installed]
-haskell-core gtk2hs-buildtools 0.13.0.3-4
+haskell-core gtk2hs-buildtools 0.13.0.3-4 [installed]
 haskell-core happy 1.19.4-1 [installed]
 haskell-core haskell-abstract-deque 0.3-7
 haskell-core haskell-abstract-par 0.3.3-56
@@ -31,7 +31,7 @@ haskell-core haskell-blaze-markup 0.6.1.1-2 [installed]
 haskell-core haskell-byteable 0.1.1-56 [installed]
 haskell-core haskell-byteorder 1.0.4-1
 haskell-core haskell-cabal-file-th 0.2.3-6
-haskell-core haskell-cairo 0.13.0.5-1
+haskell-core haskell-cairo 0.13.0.5-1 [installed]
 haskell-core haskell-case-insensitive 1.2.0.3-1 [installed]
 haskell-core haskell-cassava 0.4.2.0-7
 haskell-core haskell-cereal 0.4.1.0-1 [installed]
@@ -89,7 +89,7 @@ haskell-core haskell-erf 2.0.0.0-56
 haskell-core haskell-exceptions 0.6.1-2 [installed]
 haskell-core haskell-executable-path 0.0.3-2 [installed]
 haskell-core haskell-extensible-exceptions 0.1.1.4-56 [installed]
-haskell-core haskell-extra 1.0-1
+haskell-core haskell-extra 1.0-1 [installed]
 haskell-core haskell-fast-logger 2.2.3-1 [installed]
 haskell-core haskell-fgl 5.5.0.1-2 [installed]
 haskell-core haskell-filemanip 0.3.6.2-58
@@ -98,32 +98,32 @@ haskell-core haskell-free 4.10.0.1-4 [installed]
 haskell-core haskell-ghc-mod 5.2.1.1-6
 haskell-core haskell-ghc-paths 0.1.0.9-56 [installed]
 haskell-core haskell-ghc-syb-utils 0.2.2-1
-haskell-core haskell-gio 0.13.0.3-1
-haskell-core haskell-glib 0.13.0.6-1
+haskell-core haskell-gio 0.13.0.3-1 [installed]
+haskell-core haskell-glib 0.13.0.6-1 [installed]
 haskell-core haskell-glob 0.7.5-3
 haskell-core haskell-gluraw 1.4.0.1-2
 haskell-core haskell-glut 2.5.1.1-3
 haskell-core haskell-graphviz 2999.17.0.1-4 [installed]
 haskell-core haskell-gtk 0.13.3-2
 haskell-core haskell-gtk-traymanager 0.1.5-7
-haskell-core haskell-haddock-library 1.1.1-1
+haskell-core haskell-haddock-library 1.1.1-1 [installed]
 haskell-core haskell-hakyll 4.6.2.0-1
 haskell-core haskell-hashable 1.2.3.0-2 [installed]
 haskell-core haskell-hashtables 1.2.0.1-2
 haskell-core haskell-haskeline 0.7.1.3-1
-haskell-core haskell-haskell-lexer 1.0-4
+haskell-core haskell-haskell-lexer 1.0-4 [installed]
 haskell-core haskell-haskell-src-exts 1.16.0.1-1 [installed]
 haskell-core haskell-hasktags 0.69.0-7
 haskell-core haskell-hastache 0.6.0-12
 haskell-core haskell-hexpat 0.20.7-1 [installed]
 haskell-core haskell-highlighting-kate 0.5.11.1-1
 haskell-core haskell-hinotify 0.3.7-2
-haskell-core haskell-hlint 1.9.13-3
+haskell-core haskell-hlint 1.9.13-3 [installed]
 haskell-core haskell-hoogle 4.2.36-12
 haskell-core haskell-hostname 1.0-56
 haskell-core haskell-hourglass 0.2.6-1 [installed]
 haskell-core haskell-hs-bibutils 5.0-57
-haskell-core haskell-hscolour 1.20.3-56
+haskell-core haskell-hscolour 1.20.3-56 [installed]
 haskell-core haskell-hslogger 1.2.6-1 [installed]
 haskell-core haskell-hslua 0.3.13-1
 haskell-core haskell-hspec 2.1.2-3
@@ -131,7 +131,7 @@ haskell-core haskell-hspec-core 2.1.2-3
 haskell-core haskell-hspec-expectations 0.6.1-1
 haskell-core haskell-hstringtemplate 0.7.3-21
 haskell-core haskell-html 1.0.1.2-56 [installed]
-haskell-core haskell-http 4000.2.19-1
+haskell-core haskell-http 4000.2.19-1 [installed]
 haskell-core haskell-http-attoparsec 0.1.1-76
 haskell-core haskell-http-client 0.4.6.1-1 [installed]
 haskell-core haskell-http-client-tls 0.2.2-25 [installed]
@@ -139,10 +139,10 @@ haskell-core haskell-http-conduit 2.1.5-6 [installed]
 haskell-core haskell-http-date 0.0.4-72
 haskell-core haskell-http-types 0.8.5-8 [installed]
 haskell-core haskell-hunit 1.2.5.2-56 [installed]
-haskell-core haskell-hxt 9.3.1.10-1
-haskell-core haskell-hxt-charproperties 9.2.0.0-1
-haskell-core haskell-hxt-regex-xmlschema 9.2.0-1
-haskell-core haskell-hxt-unicode 9.0.2.2-4
+haskell-core haskell-hxt 9.3.1.10-1 [installed]
+haskell-core haskell-hxt-charproperties 9.2.0.0-1 [installed]
+haskell-core haskell-hxt-regex-xmlschema 9.2.0-1 [installed]
+haskell-core haskell-hxt-unicode 9.0.2.2-4 [installed]
 haskell-core haskell-ieee754 0.7.4-1
 haskell-core haskell-ifelse 0.85-57
 haskell-core haskell-interlude 0.1.2-56
@@ -189,7 +189,7 @@ haskell-core haskell-optparse-applicative 0.11.0.1-2 [installed]
 haskell-core haskell-pandoc 1.13.1-21
 haskell-core haskell-pandoc-citeproc 0.6-13
 haskell-core haskell-pandoc-types 1.12.4.1-14
-haskell-core haskell-pango 0.13.0.4-1
+haskell-core haskell-pango 0.13.0.4-1 [installed]
 haskell-core haskell-parallel 3.2.0.5-1 [installed]
 haskell-core haskell-parallel-io 0.3.3-57
 haskell-core haskell-parsec 3.1.7-1 [installed]
@@ -201,7 +201,7 @@ haskell-core haskell-persistent-template 2.1.0.1-1
 haskell-core haskell-pointed 4.1.1-3 [installed]
 haskell-core haskell-polyparse 1.9-62 [installed]
 haskell-core haskell-prelude-extras 0.4-2 [installed]
-haskell-core haskell-pretty-show 1.6.8-2
+haskell-core haskell-pretty-show 1.6.8-2 [installed]
 haskell-core haskell-primitive 0.5.4.0-1 [installed]
 haskell-core haskell-profunctors 4.3.2-5 [installed]
 haskell-core haskell-publicsuffixlist 0.1-7 [installed]
@@ -214,7 +214,7 @@ haskell-core haskell-regex-compat 0.95.1-57 [installed]
 haskell-core haskell-regex-pcre 0.94.4-57
 haskell-core haskell-regex-pcre-builtin 0.94.4.8.8.35-2
 haskell-core haskell-regex-posix 0.95.2-57 [installed]
-haskell-core haskell-regex-tdfa 1.2.0-63
+haskell-core haskell-regex-tdfa 1.2.0-63 [installed]
 haskell-core haskell-regex-tdfa-rc 1.1.8.3-3
 haskell-core haskell-resource-pool 0.2.3.2-1 [installed]
 haskell-core haskell-resourcet 1.1.3.3-1 [installed]
@@ -238,8 +238,8 @@ haskell-core haskell-statistics 0.13.2.1-16
 haskell-core haskell-stm 2.4.4-1 [installed]
 haskell-core haskell-stm-chans 3.0.0.2-5 [installed]
 haskell-core haskell-streaming-commons 0.1.8-1 [installed]
-haskell-core haskell-strict 0.3.2-56
-haskell-core haskell-stringsearch 0.3.6.5-1
+haskell-core haskell-strict 0.3.2-56 [installed]
+haskell-core haskell-stringsearch 0.3.6.5-1 [installed]
 haskell-core haskell-stylish-haskell 0.5.11.0-14
 haskell-core haskell-syb 0.4.2-2 [installed]
 haskell-core haskell-system-argv0 0.1.1-65
@@ -248,7 +248,7 @@ haskell-core haskell-system-filepath 0.4.13-1 [installed]
 haskell-core haskell-taffybar 0.4.4-4
 haskell-core haskell-tagged 0.7.3-1 [installed]
 haskell-core haskell-tagsoup 0.13.3-1 [installed]
-haskell-core haskell-tar 0.4.0.1-56
+haskell-core haskell-tar 0.4.0.1-56 [installed]
 haskell-core haskell-tasty 0.10.1-2
 haskell-core haskell-tasty-hunit 0.9.0.1-3
 haskell-core haskell-tasty-quickcheck 0.8.3.2-3
@@ -272,7 +272,7 @@ haskell-core haskell-transformers-base 0.4.3-2 [installed]
 haskell-core haskell-transformers-compat 0.3.3.4-1 [installed]
 haskell-core haskell-unbounded-delays 0.1.0.8-1
 haskell-core haskell-uniplate 1.6.12-69 [installed]
-haskell-core haskell-unix-compat 0.4.1.3-2
+haskell-core haskell-unix-compat 0.4.1.3-2 [installed]
 haskell-core haskell-unix-time 0.3.4-1
 haskell-core haskell-unixutils 1.52-70
 haskell-core haskell-unixutils-shadow 1.0.0-56
@@ -306,7 +306,7 @@ haskell-core haskell-xml-types 0.3.4-62 [installed]
 haskell-core haskell-xmlgen 0.6.2.1-65
 haskell-core haskell-xmonad 0.11-61
 haskell-core haskell-xmonad-contrib 0.11.3-6
-haskell-core haskell-yaml 0.8.10.1-5
+haskell-core haskell-yaml 0.8.10.1-5 [installed]
 haskell-core haskell-zip-archive 0.2.3.5-2
 haskell-core haskell-zlib 0.5.4.2-1 [installed]
 haskell-core hasktags 0.68.7-61

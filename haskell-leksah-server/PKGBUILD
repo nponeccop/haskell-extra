@@ -39,7 +39,7 @@ sha256sums=("1b7c15d02c4fd4a86712b636b7812f070cb3e34755ffe8737e2139a7cb65825b"
 prepare() {
     cd "${srcdir}/${_hkgname}-${pkgver}"
     
-    patch leksah-server.cabal "${srcdir}/cabal.patch" 
+#    patch leksah-server.cabal "${srcdir}/cabal.patch" 
     # no source patch
 }
 
