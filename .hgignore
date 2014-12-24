@@ -2,3 +2,5 @@ syntax: glob
 haskell-*/*.tar.*
 haskell-*/src
 haskell-*/pkg
+core/
+git/
