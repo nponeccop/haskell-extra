@@ -1,25 +1,26 @@
 # custom variables
-_hkgname=vcsgui
+_hkgname=ltk
 _licensefile=LICENSE
 
 # PKGBUILD options/directives
-pkgname=haskell-vcsgui
-pkgver=0.1.1.0
+pkgname=haskell-ltk
+pkgver=0.14.3.0
 pkgrel=1
-pkgdesc="GUI library for source code management systems"
-url="https://github.com/forste/haskellVCSGUI"
+pkgdesc="Leksah tool kit"
+url="http://www.leksah.org"
 license=("GPL")
 arch=('i686' 'x86_64')
 makedepends=()
 depends=("ghc=7.8.3-1"
+         "haskell-glib=0.13.0.6-1"
          "haskell-gtk3=0.13.3-1"
          "haskell-mtl=2.1.3.1-4"
-         "haskell-text=1.1.1.3-2"
-         "haskell-vcswrapper=0.1.1-1")
+         "haskell-parsec=3.1.7-1"
+         "haskell-text=1.1.1.3-2")
 options=('strip' 'staticlibs')
 source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
 install="${pkgname}.install"
-sha256sums=("d363a83726e212d424126d80f5560153b54b54242e3c556adad5dfca6c7853ea")
+sha256sums=("4993b85a01ae63c23eb65f016bf2f7b1268c3c9f70e34b3b63dba3f46ea91d38")
 
 # PKGBUILD functions
 

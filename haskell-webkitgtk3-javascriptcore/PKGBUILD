@@ -1,25 +1,24 @@
 # custom variables
-_hkgname=vcsgui
+_hkgname=webkitgtk3-javascriptcore
 _licensefile=LICENSE
 
 # PKGBUILD options/directives
-pkgname=haskell-vcsgui
-pkgver=0.1.1.0
+pkgname=haskell-webkitgtk3-javascriptcore
+pkgver=0.13.0.2
 pkgrel=1
-pkgdesc="GUI library for source code management systems"
-url="https://github.com/forste/haskellVCSGUI"
-license=("GPL")
+pkgdesc="JavaScriptCore FFI from webkitgtk"
+url="http://hackage.haskell.org/package/${_hkgname}"
+license=("BSD3")
 arch=('i686' 'x86_64')
 makedepends=()
 depends=("ghc=7.8.3-1"
+         "haskell-glib=0.13.0.6-1"
          "haskell-gtk3=0.13.3-1"
-         "haskell-mtl=2.1.3.1-4"
-         "haskell-text=1.1.1.3-2"
-         "haskell-vcswrapper=0.1.1-1")
+         "haskell-webkitgtk3=0.13.1.0-1")
 options=('strip' 'staticlibs')
 source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
 install="${pkgname}.install"
-sha256sums=("d363a83726e212d424126d80f5560153b54b54242e3c556adad5dfca6c7853ea")
+sha256sums=("cfff0179a575afdb859d08cea842d4bfd8a9802e8ff1cc919814d2ec9b0fffe5")
 
 # PKGBUILD functions
 
@@ -35,8 +34,7 @@ build() {
     
     runhaskell Setup configure -O --enable-library-profiling --enable-shared \
         --prefix=/usr --docdir="/usr/share/doc/${pkgname}" \
-        --libsubdir=\$compiler/site-local/\$pkgid \
-            -fgtk3
+        --libsubdir=\$compiler/site-local/\$pkgid
     runhaskell Setup build
     runhaskell Setup haddock --hoogle --html
     runhaskell Setup register --gen-script

@@ -6,4 +6,4 @@ LO=haskell-$(echo $1 | tr '[:upper:]' '[:lower:]')
 
 (existsinpacman $LO || providedinpacman $LO) && echo "$LO exists in repo" && (pacman -Siq $LO | grep Ver) && exit
 
-(bash version.sh $1 | xargs bash add.sh) && bash build.sh $1
+bash add.sh $(bash version.sh $1) && bash build.sh $1
