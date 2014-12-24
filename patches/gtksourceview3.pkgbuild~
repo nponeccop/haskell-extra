@@ -10,3 +10,15 @@ Index: cblrepo/haskell-gtksourceview3/PKGBUILD
           "haskell-glib=0.13.0.6-1"
           "haskell-gtk3=0.13.3-1"
           "haskell-mtl=2.1.3.1-4"
+Index: cblrepo/haskell-webkitgtk3/PKGBUILD
+===================================================================
+--- cblrepo.orig/haskell-webkitgtk3/PKGBUILD
++++ cblrepo/haskell-webkitgtk3/PKGBUILD
+@@ -12,6 +12,7 @@ license=("LGPL-2.1")
+ arch=('i686' 'x86_64')
+ makedepends=()
+ depends=("ghc=7.8.3-1"
++         "webkitgtk3"
+          "haskell-cairo=0.13.0.5-1"
+          "haskell-glib=0.13.0.6-1"
+          "haskell-gtk3=0.13.3-1"
