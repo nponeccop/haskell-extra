@@ -67,8 +67,6 @@
 ["hlint",{"DistroPkg":{"version":{"versionBranch":[1,9,13],"versionTags":[]},"release":"3"}}]
 ["hslogger",{"DistroPkg":{"version":{"versionBranch":[1,2,6],"versionTags":[]},"release":"1"}}]
 ["hsp",{"DistroPkg":{"version":{"versionBranch":[0,10,0],"versionTags":[]},"release":"7"}}]
-["http",{"DistroPkg":{"version":{"versionBranch":[4000,2,19],"versionTags":[]},"release":"1"}}]
-["hunit",{"DistroPkg":{"version":{"versionBranch":[1,2,5,2],"versionTags":[]},"release":"56"}}]
 ["hxt",{"DistroPkg":{"version":{"versionBranch":[9,3,1,10],"versionTags":[]},"release":"1"}}]
 ["language-ecmascript",{"DistroPkg":{"version":{"versionBranch":[0,16,2],"versionTags":[]},"release":"10"}}]
 ["lens",{"DistroPkg":{"version":{"versionBranch":[4,6,0,1],"versionTags":[]},"release":"3"}}]

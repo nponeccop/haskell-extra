@@ -4,3 +4,4 @@ haskell-*/src
 haskell-*/pkg
 core/
 git/
+appstack/
