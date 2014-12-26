@@ -1,0 +1,13 @@
+Index: hsbuild/haskell-diagrams/PKGBUILD
+===================================================================
+--- hsbuild.orig/haskell-diagrams/PKGBUILD
++++ hsbuild/haskell-diagrams/PKGBUILD
+@@ -38,7 +38,7 @@ build() {
+         --libsubdir=\$compiler/site-local/\$pkgid \
+             -f-rasterific -f-ps -fsvg -f-gtk -f-cairo
+     runhaskell Setup build
+-    runhaskell Setup haddock --hoogle --html
++    # runhaskell Setup haddock --hoogle --html
+     runhaskell Setup register --gen-script
+     runhaskell Setup unregister --gen-script
+     sed -i -r -e "s|ghc-pkg.*unregister[^ ]* |&'--force' |" unregister.sh
