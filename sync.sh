@@ -66,12 +66,13 @@ function pretendUpdated ()
 {
 	cblrepo add $(cat dd) $(updatedPackagesV | sed -e 's/^/-d /;s/$/,7777/'| xargs)
 }
-#bash mkdist.sh
+bash mkdist.sh
 makeDd
 makeUu
 pretendUpdated
 goal
-bumpAll
+#bumpAll
+bump
 goal
 buildOrder > tobuild
 dv | grep -v DistroPkg
