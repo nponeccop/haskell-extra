@@ -5,15 +5,15 @@ _licensefile=LICENSE
 # PKGBUILD options/directives
 pkgname=haskell-errors
 pkgver=1.4.7
-pkgrel=1
+pkgrel=2
 pkgdesc="Simplified error-handling"
 url="http://hackage.haskell.org/package/${_hkgname}"
 license=("BSD3")
 arch=('i686' 'x86_64')
 makedepends=()
-depends=("ghc=7.8.3-1"
-         "haskell-either=4.3.2-5"
-         "haskell-safe=0.3.8-1")
+depends=("ghc=7.8.4-1"
+         "haskell-either=4.3.2-6"
+         "haskell-safe=0.3.8-2")
 options=('strip' 'staticlibs')
 source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
 install="${pkgname}.install"

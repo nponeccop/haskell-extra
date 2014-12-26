@@ -5,17 +5,17 @@ _licensefile=LICENSE
 # PKGBUILD options/directives
 pkgname=haskell-hmatrix
 pkgver=0.16.1.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Numeric Linear Algebra"
 url="https://github.com/albertoruiz/hmatrix"
 license=("BSD3")
 arch=('i686' 'x86_64')
 makedepends=()
-depends=("ghc=7.8.3-1"
-         "haskell-random=1.0.1.3-1"
-         "haskell-split=0.2.2-56"
-         "haskell-storable-complex=0.2.1-1"
-         "haskell-vector=0.10.12.2-1"
+depends=("ghc=7.8.4-1"
+         "haskell-random=1.0.1.3-2"
+         "haskell-split=0.2.2-57"
+         "haskell-storable-complex=0.2.1-2"
+         "haskell-vector=0.10.12.2-2"
          "blas"
          "lapack")
 options=('strip' 'staticlibs')
