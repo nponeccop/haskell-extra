@@ -5,42 +5,45 @@ _licensefile=LICENSE
 # PKGBUILD options/directives
 pkgname=haskell-leksah-server
 pkgver=0.14.3.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Metadata collection for leksah"
 url="http://leksah.org"
 license=("GPL")
 arch=('i686' 'x86_64')
 makedepends=()
 depends=("ghc=7.8.3-1"
-         "haskell-http=4000.2.19-1"
-         "haskell-attoparsec=0.12.1.2-1"
-         "haskell-attoparsec-conduit=1.1.0-1"
-         "haskell-binary-shared=0.8.3-1"
-         "haskell-conduit=1.2.3.1-1"
-         "haskell-conduit-extra=1.1.5.1-4"
-         "haskell-executable-path=0.0.3-2"
-         "haskell-hslogger=1.2.6-1"
-         "haskell-ltk=0.14.3.0-1"
-         "haskell-network=2.6.0.2-1"
-         "haskell-network-uri=2.6.0.1-2"
-         "haskell-parsec=3.1.7-1"
-         "haskell-resourcet=1.1.3.3-1"
-         "haskell-strict=0.3.2-56"
-         "haskell-text=1.1.1.3-2")
+         "haskell-http=4000.2.19-2"
+         "haskell-attoparsec=0.12.1.2-2"
+         "haskell-attoparsec-conduit=1.1.0-2"
+         "haskell-binary-shared=0.8.3-2"
+         "haskell-conduit=1.2.3.1-2"
+         "haskell-conduit-extra=1.1.5.1-5"
+         "haskell-executable-path=0.0.3-3"
+         "haskell-haddock-api=2.15.0.1-2"
+         "haskell-hslogger=1.2.6-2"
+         "haskell-ltk=0.14.3.0-2"
+         "haskell-network=2.6.0.2-2"
+         "haskell-network-uri=2.6.0.1-3"
+         "haskell-parsec=3.1.7-2"
+         "haskell-resourcet=1.1.3.3-2"
+         "haskell-strict=0.3.2-57"
+         "haskell-text=1.1.1.3-3")
 options=('strip' 'staticlibs')
 source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz"
-        "cabal.patch")
+        "cabal.patch"
+        "source.patch")
 install="${pkgname}.install"
 sha256sums=("1b7c15d02c4fd4a86712b636b7812f070cb3e34755ffe8737e2139a7cb65825b"
-            "0ae1511a6e9364e9b3bdfe99fa680ef74192e01f11fbd0c103680b81fe9652f4")
+            "4e8253c7c9cdabccb0c4c76be449ab195a1b4a8b596f171b99885208ee1b7910"
+            "49c1b9989a831c2a0795a0f9a84f47e00cdd8f85211a8107bf6ee3c671640135")
 
 # PKGBUILD functions
 
 prepare() {
     cd "${srcdir}/${_hkgname}-${pkgver}"
     
-#    patch leksah-server.cabal "${srcdir}/cabal.patch" 
-    # no source patch
+    patch leksah-server.cabal "${srcdir}/cabal.patch" 
+    patch -p4 < "${srcdir}/source.patch"
 }
 
 build() {
