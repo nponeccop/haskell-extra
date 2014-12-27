@@ -1,24 +1,25 @@
 # custom variables
-_hkgname=hosc
-
+_hkgname=pbkdf
+_licensefile=LICENSE
 
 # PKGBUILD options/directives
-pkgname=haskell-hosc
-pkgver=0.14.1
-pkgrel=2
-pkgdesc="Haskell Open Sound Control"
-url="http://rd.slavepianos.org/?t=hosc"
-license=("GPL")
+pkgname=haskell-pbkdf
+pkgver=1.1.1.1
+pkgrel=1
+pkgdesc="Haskell implementation of the PBKDF functions from RFC-2898."
+url="https://github.com/cdornan/pbkdf"
+license=("BSD3")
 arch=('i686' 'x86_64')
 makedepends=()
 depends=("ghc=7.8.4-1"
-         "haskell-blaze-builder=0.3.3.4-2"
-         "haskell-data-binary-ieee754=0.4.4-2"
-         "haskell-network=2.6.0.2-2")
+         "haskell-byteable=0.1.1-57"
+         "haskell-bytedump=1.0-2"
+         "haskell-cryptohash=0.11.6-3"
+         "haskell-utf8-string=0.3.8-3")
 options=('strip' 'staticlibs')
 source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
 install="${pkgname}.install"
-sha256sums=("6f8b4e33c5e40000fee4535d221a6a0923c04e2cdf489d608ee039577c7f519f")
+sha256sums=("ddc5755cc895b00af47cadf70f71c0a97675659754a137c403200e62d54476d9")
 
 # PKGBUILD functions
 
@@ -50,5 +51,6 @@ package() {
     install -d -m755 "${pkgdir}/usr/share/doc/ghc/html/libraries"
     ln -s "/usr/share/doc/${pkgname}/html" "${pkgdir}/usr/share/doc/ghc/html/libraries/${_hkgname}"
     runhaskell Setup copy --destdir="${pkgdir}"
-    
+    install -D -m644 "${_licensefile}" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+    rm -f "${pkgdir}/usr/share/doc/${pkgname}/${_licensefile}"
 }

@@ -10,7 +10,7 @@ pkgdesc="Binding to the Gtk+ graphical user interface library."
 url="http://projects.haskell.org/gtk2hs/"
 license=("LGPL-2.1")
 arch=('i686' 'x86_64')
-makedepends=()
+makedepends=("gtk2hs-buildtools")
 depends=("ghc=7.8.4-1"
          "haskell-cairo=0.13.0.5-2"
          "haskell-gio=0.13.0.3-2"

@@ -14,16 +14,18 @@ makedepends=()
 depends=("ghc=7.8.4-1"
          "haskell-cspm-frontend=0.10.0.0-2")
 options=('strip' 'staticlibs')
-source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
+source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz"
+        "cabal.patch")
 install="${pkgname}.install"
-sha256sums=("2240f0cc4e32bdab8a80af2b17af65991be9370d6eb2282a533bd5f67afbc263")
+sha256sums=("2240f0cc4e32bdab8a80af2b17af65991be9370d6eb2282a533bd5f67afbc263"
+            "fd6cf65b6ee9a28d7a2056723c5163ada84fef45c12ccd43baf1722b3433713c")
 
 # PKGBUILD functions
 
 prepare() {
     cd "${srcdir}/${_hkgname}-${pkgver}"
     
-    # no cabal patch
+    patch CSPM-ToProlog.cabal "${srcdir}/cabal.patch" 
     # no source patch
 }
 

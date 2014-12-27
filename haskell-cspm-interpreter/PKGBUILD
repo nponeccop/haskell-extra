@@ -18,16 +18,18 @@ depends=("ghc=7.8.4-1"
          "haskell-prettyclass=1.0.0.0-2"
          "haskell-syb=0.4.2-3")
 options=('strip' 'staticlibs')
-source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
+source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz"
+        "cabal.patch")
 install="${pkgname}.install"
-sha256sums=("1683c9736c46dfa92ae21ccb1e70a1ab9f64bcb67d6fa529dbdde24fd6020e6a")
+sha256sums=("1683c9736c46dfa92ae21ccb1e70a1ab9f64bcb67d6fa529dbdde24fd6020e6a"
+            "69cf12b226535a3c73a1505a1bc85152e79ed5e5ce643d879e5f1df71454abf8")
 
 # PKGBUILD functions
 
 prepare() {
     cd "${srcdir}/${_hkgname}-${pkgver}"
     
-    # no cabal patch
+    patch CSPM-Interpreter.cabal "${srcdir}/cabal.patch" 
     # no source patch
 }
 

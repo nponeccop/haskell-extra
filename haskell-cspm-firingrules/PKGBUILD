@@ -17,16 +17,18 @@ depends=("ghc=7.8.4-1"
          "haskell-parallel-tree-search=0.4.1-2"
          "haskell-tree-monad=0.3-2")
 options=('strip' 'staticlibs')
-source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
+source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz"
+        "cabal.patch")
 install="${pkgname}.install"
-sha256sums=("159c3536753cfeea4d2554091faf40edae8c7a241366e31491a1e00f807baf65")
+sha256sums=("159c3536753cfeea4d2554091faf40edae8c7a241366e31491a1e00f807baf65"
+            "c8135e09a0c1aa604b7a67043dc2eb47b2a9cacc76f5a7f780e5086d72768b47")
 
 # PKGBUILD functions
 
 prepare() {
     cd "${srcdir}/${_hkgname}-${pkgver}"
     
-    # no cabal patch
+    patch CSPM-FiringRules.cabal "${srcdir}/cabal.patch" 
     # no source patch
 }
 
