@@ -1,0 +1,4 @@
+haskell-fmlist: upstream/ghc
+haskell-fmlist/haskell-fmlist-0.8-2.pkg.tar.xz: haskell-fmlist/PKGBUILD
+aur/haskell-fmlist-0.8-2.src.tar.gz: haskell-fmlist/haskell-fmlist-0.8-2.pkg.tar.xz
+haskell-fmlist/PKGBUILD: cblrepo.db

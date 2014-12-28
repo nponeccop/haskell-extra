@@ -1,0 +1,7 @@
+
+haskell-listlike: upstream/ghc upstream/haskell-dlist haskell-fmlist upstream/haskell-text upstream/haskell-vector
+haskell-listlike/listlike-4.1.0-2.pkg.tar.xz: haskell-listlike/PKGBUILD
+aur/%.src.tar.gz: haskell-listlike/%.pkg.tar.xz
+	cp $(<) $(@)
+haskell-listlike/PKGBUILD:  cblrepo.db
+haskell-listlike: haskell-listlike/listlike-4.1.0-2.pkg.tar.xz

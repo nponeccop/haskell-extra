@@ -1,0 +1,2 @@
+haskell-boolean: upstream/ghc
+
