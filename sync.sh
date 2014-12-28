@@ -1,5 +1,4 @@
 #!/bin/bash
-
 function diffPkgs ()
 {
 	hg diff -U 0 cblrepo.db | grep "^\+" | sed 's/^+//g' | while read p ; do echo $p | jshon -e0 -u ; done
@@ -17,8 +16,8 @@ function updatedPackages()
 
 function updatedPackagesV ()
 {
-	cblrepo build $(updatedPackages | xargs) \
-		| xargs -l perl -e 'system("grep $ARGV[0]: uu")' \
+	updatedPackages | xargs --no-run-if-empty cblrepo build \
+		| xargs -l --no-run-if-empty perl -e 'system("grep $ARGV[0]: uu")' \
 		| tr -d '():' \
 		| awk '{print $1 "," $3}'
 }
