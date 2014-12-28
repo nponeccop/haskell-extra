@@ -12,16 +12,23 @@ function already_installed()
 
 function add
 {
-	already_installed haskell-$1 && return
 	local foo
 	if inrepo core $1
 	then
 		echo $1 is queued for installation
-
 		x=$(cblrepo --db core/cblrepo.db list $1 | cut -d ' ' -f 3 | sed 's| +|,|g;s|-|,|g')
 		cblrepo add -d $1,$x
-		echo haskell-$1 >>installation.log 
+		already_installed haskell-$1 || echo haskell-$1 >>installation.log 
+
+	elif inrepo appstack $1
+	then
+		echo $1 is queued for installation
+		x=$(cblrepo --db appstack/cblrepo.db list $1 | cut -d ' ' -f 3 | sed 's| +|,|g;s|-|,|g')
+		cblrepo add -d $1,$x
+		already_installed haskell-$1 || echo haskell-$1 >>installation.log 
+
 	else
+		already_installed haskell-$1 && return
 		inrepo . $1 && echo "inrepo $1" && return
 	    echo "not inrepo $1"
 		echo $1 should be queued for packaging
