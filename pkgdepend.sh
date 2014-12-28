@@ -9,7 +9,7 @@ name=$(tolower $1)
 path=haskell-$name
 hkgname=$1
 set -e
-echo 2>"Dependencies for $1"
+echo "Dependencies for $1" >2
 for i in $(pkgbuild_deps $path)
 do
 	[[ -r upstream/$i ]] && dep+=" upstream/$i" || dep+=" $i"
@@ -18,9 +18,8 @@ nv=$name-$(pkgbuild_version $path/PKGBUILD)
 pkg=$path/$nv.pkg.tar.xz
 cat <<EEE
 $path:$dep
-$pkg: $path/PKGBUILD
-aur/%.src.tar.gz: $path/%.pkg.tar.xz
-	cp \$(<) \$(@)
-$path/PKGBUILD: $(find patches -name \'$hkgname.*\') cblrepo.db
+$path/PKGBUILD: $(find patches -name \'$hkgname.*\')
 $path: $path/$nv.pkg.tar.xz
+$path/$nv.pkg.tar.xz: $path/PKGBUILD
+
 EEE
