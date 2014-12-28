@@ -36,10 +36,13 @@ function add
 		echo $1 >>packaging.log
 		foo=$(cblrepo add $(bash version.sh $1) \
 			| awk '$1 != "Failed" { print $1}')
+		[[ $foo ]] || (echo "successfully added $1" && return)
 		for aaa in $foo 
 		do
 			add $aaa
 		done
+		echo "secondary addition of $1"
+		cblrepo add $(bash_version.sh $1)
 	fi
 }
 
