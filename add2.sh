@@ -1,16 +1,31 @@
 #!/bin/bash
+function inrepo()
+{
+		grep RepoPkg $1/cblrepo.db | cut -d \" -f 2 | grep -Fx $2 >/dev/null
+}
+
+function already_installed()
+{
+	echo checking $1
+	pacman -T $(echo $1 | tr '[:upper:]' '[:lower:]') >/dev/null && echo "$1 is already installed"
+}
 
 function add
 {
-	local foo x version aaa
-	x=$(awk "/^haskell-$aaa / {print \$2}" distpkg)
-	if [[ $x ]]
+	already_installed haskell-$1 && return
+	local foo
+	if inrepo core $1
 	then
-		echo $1-$x is queued for installation
-		cblrepo add $(echo $x | tr "-" ",")
-		echo $1 >>installation.log 
+		echo $1 is queued for installation
+
+		x=$(cblrepo --db core/cblrepo.db list $1 | cut -d ' ' -f 3 | sed 's| +|,|g;s|-|,|g')
+		cblrepo add -d $1,$x
+		echo haskell-$1 >>installation.log 
 	else
+		inrepo . $1 && echo "inrepo $1" && return
+	    echo "not inrepo $1"
 		echo $1 should be queued for packaging
+		$(cblrepo list $1)
 		echo $1 >>packaging.log
 		foo=$(cblrepo add $(bash version.sh $1) \
 			| awk '$1 != "Failed" { print $1}')
@@ -24,7 +39,8 @@ function add
 truncate --size 0 packaging.log
 truncate --size 0 installation.log
 add $1
-yaourt -S $(cat installation.log)
+x=$(cat installation.log)
+[[ $x ]] && yaourt -S $x
 tac packaging.log
 for aaa in $(tac packaging.log)
 do

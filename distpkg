@@ -1,405 +1,405 @@
-haskell-core alex 3.1.3-65 [installed]
-haskell-core c2hs 0.20.1-2
-haskell-core cabal-install 1.18.0.5-11 [installed]
-haskell-core cblrepo 0.13-10 [installed]
-haskell-core ghc 7.8.4-1 [installed]
-haskell-core gtk2hs-buildtools 0.13.0.3-5 [installed]
-haskell-core happy 1.19.4-2 [installed]
-haskell-core haskell-abstract-deque 0.3-8
-haskell-core haskell-abstract-par 0.3.3-57
-haskell-core haskell-aeson 0.8.0.2-7 [installed]
-haskell-core haskell-aeson-pretty 0.7.2-5
-haskell-core haskell-alsa-core 0.5.0.1-3
-haskell-core haskell-alsa-mixer 0.2.0.2-3
-haskell-core haskell-ansi-terminal 0.6.2.1-2 [installed]
-haskell-core haskell-ansi-wl-pprint 0.6.7.1-59 [installed]
-haskell-core haskell-asn1-encoding 0.9.0-2 [installed]
-haskell-core haskell-asn1-parse 0.9.0-2 [installed]
-haskell-core haskell-asn1-types 0.3.0-2 [installed]
-haskell-core haskell-async 2.0.1.6-3 [installed]
-haskell-core haskell-atomic-primops 0.6.1-2
-haskell-core haskell-attoparsec 0.12.1.2-2 [installed]
-haskell-core haskell-auto-update 0.1.2-2 [installed]
-haskell-core haskell-base-unicode-symbols 0.2.2.4-57
-haskell-core haskell-base16-bytestring 0.1.1.6-57
-haskell-core haskell-base64-bytestring 1.0.0.1-57 [installed]
-haskell-core haskell-bifunctors 4.2-6 [installed]
-haskell-core haskell-bktrees 0.3.1-57
-haskell-core haskell-blaze-builder 0.3.3.4-2 [installed]
-haskell-core haskell-blaze-html 0.7.0.3-3 [installed]
-haskell-core haskell-blaze-markup 0.6.1.1-3 [installed]
-haskell-core haskell-byteable 0.1.1-57 [installed]
-haskell-core haskell-byteorder 1.0.4-2
-haskell-core haskell-cabal-file-th 0.2.3-7
-haskell-core haskell-cairo 0.13.0.5-2 [installed]
-haskell-core haskell-case-insensitive 1.2.0.3-2 [installed]
-haskell-core haskell-cassava 0.4.2.0-8
-haskell-core haskell-cereal 0.4.1.0-2 [installed]
-haskell-core haskell-chunked-data 0.1.0.1-20 [installed]
-haskell-core haskell-cipher-aes 0.2.9-3 [installed]
-haskell-core haskell-cipher-des 0.0.6-4 [installed]
-haskell-core haskell-cipher-rc4 0.1.4-4 [installed]
-haskell-core haskell-cmdargs 0.10.12-2 [installed]
-haskell-core haskell-cmdlib 0.3.5-59
-haskell-core haskell-colour 2.3.3-57 [installed]
-haskell-core haskell-comonad 4.2.2-10 [installed]
-haskell-core haskell-conduit 1.2.3.1-2 [installed]
-haskell-core haskell-conduit-combinators 0.3.0.4-10
-haskell-core haskell-conduit-extra 1.1.5.1-5 [installed]
-haskell-core haskell-connection 0.2.3-13 [installed]
-haskell-core haskell-contravariant 1.2-9 [installed]
-haskell-core haskell-cookie 0.4.1.4-2 [installed]
-haskell-core haskell-cpphs 1.18.6-2 [installed]
-haskell-core haskell-cprng-aes 0.6.1-3 [installed]
-haskell-core haskell-criterion 1.0.2.0-11
-haskell-core haskell-crypto 4.2.5.1-65
-haskell-core haskell-crypto-api 0.13.2-5
-haskell-core haskell-crypto-cipher-types 0.0.9-4 [installed]
-haskell-core haskell-crypto-numbers 0.2.3-10 [installed]
-haskell-core haskell-crypto-pubkey 0.2.6-2 [installed]
-haskell-core haskell-crypto-pubkey-types 0.4.2.3-2 [installed]
-haskell-core haskell-crypto-random 0.0.8-5 [installed]
-haskell-core haskell-cryptohash 0.11.6-3 [installed]
-haskell-core haskell-csv 0.1.2-66 [installed]
-haskell-core haskell-curl 1.3.8-57
-haskell-core haskell-data-default 0.5.3-59 [installed]
-haskell-core haskell-data-default-class 0.0.1-57 [installed]
-haskell-core haskell-data-default-instances-base 0.0.1-57 [installed]
-haskell-core haskell-data-default-instances-containers 0.0.1-57 [installed]
-haskell-core haskell-data-default-instances-dlist 0.0.1-59 [installed]
-haskell-core haskell-data-default-instances-old-locale 0.0.1-57 [installed]
-haskell-core haskell-date-cache 0.3.0-57
-haskell-core haskell-dbus 0.10.9-2
-haskell-core haskell-deepseq-generics 0.1.1.2-2
-haskell-core haskell-diff 0.3.0-57 [installed]
-haskell-core haskell-digest 0.0.1.2-57
-haskell-core haskell-distributive 0.4.4-6 [installed]
-haskell-core haskell-djinn-ghc 0.0.2.2-4
-haskell-core haskell-djinn-lib 0.0.1.2-2
-haskell-core haskell-dlist 0.7.1-3 [installed]
-haskell-core haskell-dlist-instances 0.1-14 [installed]
-haskell-core haskell-dyre 0.8.12-3
-haskell-core haskell-easy-file 0.2.0-2
-haskell-core haskell-edit-distance 0.2.1.2-58
-haskell-core haskell-either 4.3.2-6 [installed]
-haskell-core haskell-enclosed-exceptions 1.0.1-5 [installed]
-haskell-core haskell-entropy 0.3.4.1-2
-haskell-core haskell-enumerator 0.4.20-6 [installed]
-haskell-core haskell-erf 2.0.0.0-57
-haskell-core haskell-exceptions 0.6.1-3 [installed]
-haskell-core haskell-executable-path 0.0.3-3 [installed]
-haskell-core haskell-extensible-exceptions 0.1.1.4-57 [installed]
-haskell-core haskell-extra 1.0-2 [installed]
-haskell-core haskell-fast-logger 2.2.3-2 [installed]
-haskell-core haskell-fgl 5.5.0.1-3
-haskell-core haskell-filemanip 0.3.6.2-59
-haskell-core haskell-filemanipcompat 0.18-59
-haskell-core haskell-free 4.10.0.1-5 [installed]
-haskell-core haskell-ghc-mod 5.2.1.1-7
-haskell-core haskell-ghc-paths 0.1.0.9-57 [installed]
-haskell-core haskell-ghc-syb-utils 0.2.2-2
-haskell-core haskell-gio 0.13.0.3-2 [installed]
-haskell-core haskell-glib 0.13.0.6-2 [installed]
-haskell-core haskell-glob 0.7.5-4
-haskell-core haskell-gluraw 1.4.0.1-3
-haskell-core haskell-glut 2.5.1.1-4
-haskell-core haskell-graphviz 2999.17.0.1-5
-haskell-core haskell-gtk 0.13.3-3 [installed]
-haskell-core haskell-gtk-traymanager 0.1.5-8
-haskell-core haskell-haddock-library 1.1.1-2 [installed]
-haskell-core haskell-hakyll 4.6.2.0-2
-haskell-core haskell-hashable 1.2.3.0-3 [installed]
-haskell-core haskell-hashtables 1.2.0.1-3
-haskell-core haskell-haskeline 0.7.1.3-1
-haskell-core haskell-haskell-lexer 1.0-5 [installed]
-haskell-core haskell-haskell-src-exts 1.16.0.1-2 [installed]
-haskell-core haskell-hasktags 0.69.0-8
-haskell-core haskell-hastache 0.6.0-13
-haskell-core haskell-hexpat 0.20.7-2
-haskell-core haskell-highlighting-kate 0.5.11.1-2
-haskell-core haskell-hinotify 0.3.7-3
-haskell-core haskell-hlint 1.9.13-4 [installed]
-haskell-core haskell-hoogle 4.2.36-13
-haskell-core haskell-hostname 1.0-57
-haskell-core haskell-hourglass 0.2.6-2 [installed]
-haskell-core haskell-hs-bibutils 5.0-58
-haskell-core haskell-hscolour 1.20.3-57 [installed]
-haskell-core haskell-hslogger 1.2.6-2 [installed]
-haskell-core haskell-hslua 0.3.13-2
-haskell-core haskell-hspec 2.1.2-4
-haskell-core haskell-hspec-core 2.1.2-4
-haskell-core haskell-hspec-expectations 0.6.1-2
-haskell-core haskell-hstringtemplate 0.7.3-22
-haskell-core haskell-html 1.0.1.2-57
-haskell-core haskell-http 4000.2.19-2 [installed]
-haskell-core haskell-http-attoparsec 0.1.1-77
-haskell-core haskell-http-client 0.4.6.1-2 [installed]
-haskell-core haskell-http-client-tls 0.2.2-26 [installed]
-haskell-core haskell-http-conduit 2.1.5-7 [installed]
-haskell-core haskell-http-date 0.0.4-73
-haskell-core haskell-http-types 0.8.5-9 [installed]
-haskell-core haskell-hunit 1.2.5.2-57 [installed]
-haskell-core haskell-hxt 9.3.1.10-2 [installed]
-haskell-core haskell-hxt-charproperties 9.2.0.0-2 [installed]
-haskell-core haskell-hxt-regex-xmlschema 9.2.0-2 [installed]
-haskell-core haskell-hxt-unicode 9.0.2.2-5 [installed]
-haskell-core haskell-ieee754 0.7.4-2
-haskell-core haskell-ifelse 0.85-58
-haskell-core haskell-interlude 0.1.2-57
-haskell-core haskell-io-choice 0.0.5-65
-haskell-core haskell-io-storage 0.3-3
-haskell-core haskell-js-flot 0.8.3-2
-haskell-core haskell-js-jquery 1.11.1-2
-haskell-core haskell-json 0.7-66
-haskell-core haskell-juicypixels 3.1.7.1-5 [installed]
-haskell-core haskell-keys 3.10.1-16 [installed]
-haskell-core haskell-language-c 0.4.7-2
-haskell-core haskell-language-haskell-extract 0.2.4-58
-haskell-core haskell-largeword 1.2.3-3
-haskell-core haskell-libxml-sax 0.7.5-6
-haskell-core haskell-lifted-base 0.2.3.3-2 [installed]
-haskell-core haskell-list 0.5.1-2 [installed]
-haskell-core haskell-lrucache 1.1.1.4-2
-haskell-core haskell-maccatcher 2.1.5-66
-haskell-core haskell-math-functions 0.1.5.2-10
-haskell-core haskell-mime-types 0.1.0.4-5 [installed]
-haskell-core haskell-mmap 0.5.9-57 [installed]
-haskell-core haskell-mmorph 1.0.4-2 [installed]
-haskell-core haskell-monad-control 0.3.3.0-5 [installed]
-haskell-core haskell-monad-journal 0.6-2
-haskell-core haskell-monad-logger 0.3.11.1-2 [installed]
-haskell-core haskell-monad-loops 0.4.2.1-3 [installed]
-haskell-core haskell-monad-par 0.3.4.7-2
-haskell-core haskell-monad-par-extras 0.3.3-60
-haskell-core haskell-monadcatchio-mtl 0.3.1.0-58
-haskell-core haskell-monadcatchio-transformers 0.3.1.0-58
-haskell-core haskell-monadrandom 0.3.0.1-2 [installed]
-haskell-core haskell-monads-tf 0.1.0.2-3
-haskell-core haskell-mono-traversable 0.7.0-4 [installed]
-haskell-core haskell-mtl 2.1.3.1-5 [installed]
-haskell-core haskell-mwc-random 0.13.2.2-3 [installed]
-haskell-core haskell-nats 1-4 [installed]
-haskell-core haskell-network 2.6.0.2-2 [installed]
-haskell-core haskell-network-info 0.2.0.5-3
-haskell-core haskell-network-uri 2.6.0.1-3 [installed]
-haskell-core haskell-objectname 1.0.1.0-2
-haskell-core haskell-opengl 2.9.2.0-4
-haskell-core haskell-openglraw 1.5.0.0-3
-haskell-core haskell-optparse-applicative 0.11.0.1-3 [installed]
-haskell-core haskell-pandoc 1.13.1-22
-haskell-core haskell-pandoc-citeproc 0.6-14
-haskell-core haskell-pandoc-types 1.12.4.1-15
-haskell-core haskell-pango 0.13.0.4-2 [installed]
-haskell-core haskell-parallel 3.2.0.5-2 [installed]
-haskell-core haskell-parallel-io 0.3.3-58
-haskell-core haskell-parsec 3.1.7-2 [installed]
-haskell-core haskell-path-pieces 0.1.5-2
-haskell-core haskell-pem 0.2.2-3 [installed]
-haskell-core haskell-persistent 2.1.1.2-2
-haskell-core haskell-persistent-sqlite 2.1.1.1-2
-haskell-core haskell-persistent-template 2.1.0.1-2
-haskell-core haskell-pointed 4.1.1-4 [installed]
-haskell-core haskell-polyparse 1.9-63 [installed]
-haskell-core haskell-prelude-extras 0.4-3 [installed]
-haskell-core haskell-pretty-show 1.6.8-3 [installed]
-haskell-core haskell-primitive 0.5.4.0-2 [installed]
-haskell-core haskell-profunctors 4.3.2-6 [installed]
-haskell-core haskell-publicsuffixlist 0.1-8 [installed]
-haskell-core haskell-puremd5 2.1.2.1-66
-haskell-core haskell-quickcheck 2.7.6-4 [installed]
-haskell-core haskell-quickcheck-io 0.1.1-8
-haskell-core haskell-random 1.0.1.3-2 [installed]
-haskell-core haskell-regex-base 0.93.2-58 [installed]
-haskell-core haskell-regex-compat 0.95.1-58 [installed]
-haskell-core haskell-regex-pcre 0.94.4-58
-haskell-core haskell-regex-pcre-builtin 0.94.4.8.8.35-3
-haskell-core haskell-regex-posix 0.95.2-58 [installed]
-haskell-core haskell-regex-tdfa 1.2.0-64 [installed]
-haskell-core haskell-regex-tdfa-rc 1.1.8.3-4
-haskell-core haskell-resource-pool 0.2.3.2-2
-haskell-core haskell-resourcet 1.1.3.3-2 [installed]
-haskell-core haskell-rfc5051 0.1.0.3-3
-haskell-core haskell-safe 0.3.8-2 [installed]
-haskell-core haskell-safesemaphore 0.10.1-4
-haskell-core haskell-scientific 0.3.3.3-4 [installed]
-haskell-core haskell-securemem 0.1.4-2 [installed]
-haskell-core haskell-semigroupoids 4.2-10 [installed]
-haskell-core haskell-semigroups 0.16.0.1-2 [installed]
-haskell-core haskell-setenv 0.1.1.1-3
-haskell-core haskell-sha 1.6.4.1-3
-haskell-core haskell-shake 0.14.2-4
-haskell-core haskell-shellish 0.1.4-59
-haskell-core haskell-silently 1.2.4.1-57
-haskell-core haskell-simple-sendfile 0.2.18-2
-haskell-core haskell-socks 0.5.4-9 [installed]
-haskell-core haskell-split 0.2.2-57 [installed]
-haskell-core haskell-statevar 1.0.1.0-2
-haskell-core haskell-statistics 0.13.2.1-17
-haskell-core haskell-stm 2.4.4-2 [installed]
-haskell-core haskell-stm-chans 3.0.0.2-6 [installed]
-haskell-core haskell-streaming-commons 0.1.8-2 [installed]
-haskell-core haskell-strict 0.3.2-57 [installed]
-haskell-core haskell-stringsearch 0.3.6.5-2
-haskell-core haskell-stylish-haskell 0.5.11.0-15
-haskell-core haskell-syb 0.4.2-3 [installed]
-haskell-core haskell-system-argv0 0.1.1-66
-haskell-core haskell-system-fileio 0.3.16-2 [installed]
-haskell-core haskell-system-filepath 0.4.13-2 [installed]
-haskell-core haskell-taffybar 0.4.4-5
-haskell-core haskell-tagged 0.7.3-2 [installed]
-haskell-core haskell-tagsoup 0.13.3-2
-haskell-core haskell-tar 0.4.0.1-57
-haskell-core haskell-tasty 0.10.1-3
-haskell-core haskell-tasty-hunit 0.9.0.1-4
-haskell-core haskell-tasty-quickcheck 0.8.3.2-4
-haskell-core haskell-tasty-th 0.1.3-3
-haskell-core haskell-temporary 1.2.0.3-3
-haskell-core haskell-test-framework 0.8.1.0-2
-haskell-core haskell-test-framework-hunit 0.3.0.1-68
-haskell-core haskell-texmath 0.8.0.1-2
-haskell-core haskell-text 1.1.1.3-3 [installed]
-haskell-core haskell-text-stream-decode 0.1.0.5-8
-haskell-core haskell-tf-random 0.5-7 [installed]
-haskell-core haskell-th-expand-syns 0.3.0.4-2
-haskell-core haskell-th-lift 0.7-3
-haskell-core haskell-th-orphans 0.8.2-4
-haskell-core haskell-th-reify-many 0.1.2-2
-haskell-core haskell-time-compat 0.1.0.3-57
-haskell-core haskell-timezone-olson 0.1.6-2
-haskell-core haskell-timezone-series 0.1.4-2
-haskell-core haskell-tls 1.2.13-5 [installed]
-haskell-core haskell-transformers-base 0.4.3-3 [installed]
-haskell-core haskell-transformers-compat 0.3.3.4-2 [installed]
-haskell-core haskell-unbounded-delays 0.1.0.8-2
-haskell-core haskell-uniplate 1.6.12-70 [installed]
-haskell-core haskell-unix-compat 0.4.1.3-3 [installed]
-haskell-core haskell-unix-time 0.3.4-2
-haskell-core haskell-unixutils 1.52-71
-haskell-core haskell-unixutils-shadow 1.0.0-57
-haskell-core haskell-unordered-containers 0.2.5.1-4 [installed]
-haskell-core haskell-utf8-string 0.3.8-3 [installed]
-haskell-core haskell-uuid 1.3.6-2
-haskell-core haskell-vault 0.3.0.4-2
-haskell-core haskell-vector 0.10.12.2-2 [installed]
-haskell-core haskell-vector-algorithms 0.6.0.3-6 [installed]
-haskell-core haskell-vector-binary-instances 0.2.1.0-64
-haskell-core haskell-vector-instances 3.3-16 [installed]
-haskell-core haskell-vector-th-unbox 0.2.1.0-7 [installed]
-haskell-core haskell-void 0.7-5 [installed]
-haskell-core haskell-wai 3.0.2-6
-haskell-core haskell-wai-extra 3.0.3-4
-haskell-core haskell-wai-logger 2.2.3-14
-haskell-core haskell-warp 3.0.4-6
-haskell-core haskell-wl-pprint-text 1.1.0.2-63 [installed]
-haskell-core haskell-word8 0.1.1-2
-haskell-core haskell-x11 1.6.1.2-4
-haskell-core haskell-x11-xft 0.3.1-61
-haskell-core haskell-x509 1.5.0.1-2 [installed]
-haskell-core haskell-x509-store 1.5.0-2 [installed]
-haskell-core haskell-x509-system 1.5.0-2 [installed]
-haskell-core haskell-x509-validation 1.5.1-5 [installed]
-haskell-core haskell-xdg-basedir 0.2.2-3
-haskell-core haskell-xhtml 3000.2.1-55
-haskell-core haskell-xml 1.3.13-63
-haskell-core haskell-xml-conduit 1.2.3.1-2
-haskell-core haskell-xml-types 0.3.4-63
-haskell-core haskell-xmlgen 0.6.2.1-66
-haskell-core haskell-xmonad 0.11-62
-haskell-core haskell-xmonad-contrib 0.11.3-7
-haskell-core haskell-yaml 0.8.10.1-6
-haskell-core haskell-zip-archive 0.2.3.5-3
-haskell-core haskell-zlib 0.5.4.2-2 [installed]
-haskell-core hasktags 0.68.7-61
-haskell-core pxsl-tools 1.0.1-66
-haskell-core scan 0.1.0.9-8
-haskell-core shelltestrunner 1.3.4-12
-haskell-happstack flaccuraterip 0.3.3-5
-haskell-happstack haskell-acid-state 0.12.3-5
-haskell-happstack haskell-acid-state-tls 0.9.2-10
-haskell-happstack haskell-authenticate 1.3.2.11-2
-haskell-happstack haskell-bytestring-show 0.3.5.6-2
-haskell-happstack haskell-cabal-test-quickcheck 0.1.2-8
-haskell-happstack haskell-clientsession 0.9.1.1-4
-haskell-happstack haskell-configfile 1.1.4-3
-haskell-happstack haskell-cryptohash-cryptoapi 0.1.3-13
-haskell-happstack haskell-css-text 0.1.2.1-15
-haskell-happstack haskell-data-lens-light 0.1.2.1-2 [installed]
-haskell-happstack haskell-email-validate 2.0.1-15
-haskell-happstack haskell-fay 0.21.2.1-6 [installed]
-haskell-happstack haskell-fay-base 0.19.4.1-8 [installed]
-haskell-happstack haskell-fay-dom 0.5-6 [installed]
-haskell-happstack haskell-fay-jquery 0.6.0.2-27 [installed]
-haskell-happstack haskell-fay-text 0.3.2-9 [installed]
-haskell-happstack haskell-fb 1.0.7-11
-haskell-happstack haskell-feed 0.3.9.2-9
-haskell-happstack haskell-filestore 0.6.0.4-2
-haskell-happstack haskell-foldl 1.0.7-4
-haskell-happstack haskell-gd 3000.7.3-5
-haskell-happstack haskell-gitit 0.10.6.1-13
-haskell-happstack haskell-groom 0.1.2-9
-haskell-happstack haskell-happstack-authenticate 0.10.15-11
-haskell-happstack haskell-happstack-clientsession 7.2.7-17
-haskell-happstack haskell-happstack-hamlet 7.0.4-32
-haskell-happstack haskell-happstack-hstringtemplate 7.0.4-15
-haskell-happstack haskell-happstack-lite 7.3.5-5
-haskell-happstack haskell-happstack-server 7.3.9-5
-haskell-happstack haskell-happstack-server-tls 7.1.4-5
-haskell-happstack haskell-harp 0.4-5
-haskell-happstack haskell-haskell-names 0.4.1-10 [installed]
-haskell-happstack haskell-haskell-packages 0.2.4.3-6 [installed]
-haskell-happstack haskell-haskell-src-meta 0.6.0.8-6
-haskell-happstack haskell-hoauth2 0.4.3-9
-haskell-happstack haskell-hse-cpp 0.1-9 [installed]
-haskell-happstack haskell-hsopenssl 0.11-3
-haskell-happstack haskell-hsp 0.10.0-8 [installed]
-haskell-happstack haskell-irc 0.6.1.0-2
-haskell-happstack haskell-ircbot 0.6.1-11
-haskell-happstack haskell-ixset 1.0.6-3
-haskell-happstack haskell-jmacro 0.6.9-13
-haskell-happstack haskell-language-ecmascript 0.16.2-11 [installed]
-haskell-happstack haskell-lens 4.6.0.1-4 [installed]
-haskell-happstack haskell-magic 1.1-2
-haskell-happstack haskell-mime-mail 0.4.6.2-2
-haskell-happstack haskell-missingh 1.3.0.1-3 [installed]
-haskell-happstack haskell-network-simple 0.4.0.2-2
-haskell-happstack haskell-parseargs 0.1.5.2-5
-haskell-happstack haskell-pipes 4.1.4-2
-haskell-happstack haskell-pipes-aeson 0.4.1.2-14
-haskell-happstack haskell-pipes-attoparsec 0.5.1.1-6
-haskell-happstack haskell-pipes-binary 0.4.0.3-9
-haskell-happstack haskell-pipes-bytestring 2.1.0-14
-haskell-happstack haskell-pipes-concurrency 2.0.2-11
-haskell-happstack haskell-pipes-extras 1.0.0-12
-haskell-happstack haskell-pipes-group 1.0.1-14
-haskell-happstack haskell-pipes-http 1.0.2-5
-haskell-happstack haskell-pipes-network 0.6.4-6
-haskell-happstack haskell-pipes-parse 3.0.2-6
-haskell-happstack haskell-pipes-safe 2.2.0-6
-haskell-happstack haskell-pwstore-purehaskell 2.1.4-2
-haskell-happstack haskell-recaptcha 0.1.0.3-4
-haskell-happstack haskell-reflection 1.5.1-3 [installed]
-haskell-happstack haskell-reform 0.2.6-2
-haskell-happstack haskell-reform-blaze 0.2.3-2
-haskell-happstack haskell-reform-happstack 0.2.4-5
-haskell-happstack haskell-safecopy 0.8.3-10
-haskell-happstack haskell-sendfile 0.7.9-15
-haskell-happstack haskell-shakespeare 2.0.2.1-5 [installed]
-haskell-happstack haskell-skein 1.0.9.2-2
-haskell-happstack haskell-sourcemap 0.1.3.0-18 [installed]
-haskell-happstack haskell-spoon 0.3.1-3 [installed]
-haskell-happstack haskell-syb-with-class 0.6.1.5-3
-haskell-happstack haskell-tagshare 0.0-3 [installed]
-haskell-happstack haskell-tagstream-conduit 0.5.5.3-13
-haskell-happstack haskell-testing-feat 0.4.0.2-8 [installed]
-haskell-happstack haskell-threads 0.5.1.2-4
-haskell-happstack haskell-traverse-with-class 0.2.0.3-2 [installed]
-haskell-happstack haskell-type-eq 0.4.2-3 [installed]
-haskell-happstack haskell-uri 0.1.6.3-2
-haskell-happstack haskell-url 2.1.3-6
-haskell-happstack haskell-web-plugins 0.2.7-3
-haskell-happstack haskell-web-routes 0.27.7-4
-haskell-happstack haskell-web-routes-happstack 0.23.8-6
-haskell-happstack haskell-web-routes-hsp 0.24.5-4
-haskell-happstack haskell-web-routes-th 0.22.2-14
-haskell-happstack haskell-wl-pprint 1.1-3 [installed]
-haskell-happstack haskell-xss-sanitize 0.3.5.4-6
+alex 3.1.3-65
+c2hs 0.20.1-2
+cabal-install 1.18.0.5-11
+cblrepo 0.13-10
+ghc 7.8.4-1
+gtk2hs-buildtools 0.13.0.3-5
+happy 1.19.4-2
+haskell-abstract-deque 0.3-8
+haskell-abstract-par 0.3.3-57
+haskell-aeson 0.8.0.2-7
+haskell-aeson-pretty 0.7.2-5
+haskell-alsa-core 0.5.0.1-3
+haskell-alsa-mixer 0.2.0.2-3
+haskell-ansi-terminal 0.6.2.1-2
+haskell-ansi-wl-pprint 0.6.7.1-59
+haskell-asn1-encoding 0.9.0-2
+haskell-asn1-parse 0.9.0-2
+haskell-asn1-types 0.3.0-2
+haskell-async 2.0.1.6-3
+haskell-atomic-primops 0.6.1-2
+haskell-attoparsec 0.12.1.2-2
+haskell-auto-update 0.1.2-2
+haskell-base-unicode-symbols 0.2.2.4-57
+haskell-base16-bytestring 0.1.1.6-57
+haskell-base64-bytestring 1.0.0.1-57
+haskell-bifunctors 4.2-6
+haskell-bktrees 0.3.1-57
+haskell-blaze-builder 0.3.3.4-2
+haskell-blaze-html 0.7.0.3-3
+haskell-blaze-markup 0.6.1.1-3
+haskell-byteable 0.1.1-57
+haskell-byteorder 1.0.4-2
+haskell-cabal-file-th 0.2.3-7
+haskell-cairo 0.13.0.5-2
+haskell-case-insensitive 1.2.0.3-2
+haskell-cassava 0.4.2.0-8
+haskell-cereal 0.4.1.0-2
+haskell-chunked-data 0.1.0.1-20
+haskell-cipher-aes 0.2.9-3
+haskell-cipher-des 0.0.6-4
+haskell-cipher-rc4 0.1.4-4
+haskell-cmdargs 0.10.12-2
+haskell-cmdlib 0.3.5-59
+haskell-colour 2.3.3-57
+haskell-comonad 4.2.2-10
+haskell-conduit 1.2.3.1-2
+haskell-conduit-combinators 0.3.0.4-10
+haskell-conduit-extra 1.1.5.1-5
+haskell-connection 0.2.3-13
+haskell-contravariant 1.2-9
+haskell-cookie 0.4.1.4-2
+haskell-cpphs 1.18.6-2
+haskell-cprng-aes 0.6.1-3
+haskell-criterion 1.0.2.0-11
+haskell-crypto 4.2.5.1-65
+haskell-crypto-api 0.13.2-5
+haskell-crypto-cipher-types 0.0.9-4
+haskell-crypto-numbers 0.2.3-10
+haskell-crypto-pubkey 0.2.6-2
+haskell-crypto-pubkey-types 0.4.2.3-2
+haskell-crypto-random 0.0.8-5
+haskell-cryptohash 0.11.6-3
+haskell-csv 0.1.2-66
+haskell-curl 1.3.8-57
+haskell-data-default 0.5.3-59
+haskell-data-default-class 0.0.1-57
+haskell-data-default-instances-base 0.0.1-57
+haskell-data-default-instances-containers 0.0.1-57
+haskell-data-default-instances-dlist 0.0.1-59
+haskell-data-default-instances-old-locale 0.0.1-57
+haskell-date-cache 0.3.0-57
+haskell-dbus 0.10.9-2
+haskell-deepseq-generics 0.1.1.2-2
+haskell-diff 0.3.0-57
+haskell-digest 0.0.1.2-57
+haskell-distributive 0.4.4-6
+haskell-djinn-ghc 0.0.2.2-4
+haskell-djinn-lib 0.0.1.2-2
+haskell-dlist 0.7.1-3
+haskell-dlist-instances 0.1-14
+haskell-dyre 0.8.12-3
+haskell-easy-file 0.2.0-2
+haskell-edit-distance 0.2.1.2-58
+haskell-either 4.3.2-6
+haskell-enclosed-exceptions 1.0.1-5
+haskell-entropy 0.3.4.1-2
+haskell-enumerator 0.4.20-6
+haskell-erf 2.0.0.0-57
+haskell-exceptions 0.6.1-3
+haskell-executable-path 0.0.3-3
+haskell-extensible-exceptions 0.1.1.4-57
+haskell-extra 1.0-2
+haskell-fast-logger 2.2.3-2
+haskell-fgl 5.5.0.1-3
+haskell-filemanip 0.3.6.2-59
+haskell-filemanipcompat 0.18-59
+haskell-free 4.10.0.1-5
+haskell-ghc-mod 5.2.1.1-7
+haskell-ghc-paths 0.1.0.9-57
+haskell-ghc-syb-utils 0.2.2-2
+haskell-gio 0.13.0.3-2
+haskell-glib 0.13.0.6-2
+haskell-glob 0.7.5-4
+haskell-gluraw 1.4.0.1-3
+haskell-glut 2.5.1.1-4
+haskell-graphviz 2999.17.0.1-5
+haskell-gtk 0.13.3-3
+haskell-gtk-traymanager 0.1.5-8
+haskell-haddock-library 1.1.1-2
+haskell-hakyll 4.6.2.0-2
+haskell-hashable 1.2.3.0-3
+haskell-hashtables 1.2.0.1-3
+haskell-haskeline 0.7.1.3-1
+haskell-haskell-lexer 1.0-5
+haskell-haskell-src-exts 1.16.0.1-2
+haskell-hasktags 0.69.0-8
+haskell-hastache 0.6.0-13
+haskell-hexpat 0.20.7-2
+haskell-highlighting-kate 0.5.11.1-2
+haskell-hinotify 0.3.7-3
+haskell-hlint 1.9.13-4
+haskell-hoogle 4.2.36-13
+haskell-hostname 1.0-57
+haskell-hourglass 0.2.6-2
+haskell-hs-bibutils 5.0-58
+haskell-hscolour 1.20.3-57
+haskell-hslogger 1.2.6-2
+haskell-hslua 0.3.13-2
+haskell-hspec 2.1.2-4
+haskell-hspec-core 2.1.2-4
+haskell-hspec-expectations 0.6.1-2
+haskell-hstringtemplate 0.7.3-22
+haskell-html 1.0.1.2-57
+haskell-http 4000.2.19-2
+haskell-http-attoparsec 0.1.1-77
+haskell-http-client 0.4.6.1-2
+haskell-http-client-tls 0.2.2-26
+haskell-http-conduit 2.1.5-7
+haskell-http-date 0.0.4-73
+haskell-http-types 0.8.5-9
+haskell-hunit 1.2.5.2-57
+haskell-hxt 9.3.1.10-2
+haskell-hxt-charproperties 9.2.0.0-2
+haskell-hxt-regex-xmlschema 9.2.0-2
+haskell-hxt-unicode 9.0.2.2-5
+haskell-ieee754 0.7.4-2
+haskell-ifelse 0.85-58
+haskell-interlude 0.1.2-57
+haskell-io-choice 0.0.5-65
+haskell-io-storage 0.3-3
+haskell-js-flot 0.8.3-2
+haskell-js-jquery 1.11.1-2
+haskell-json 0.7-66
+haskell-juicypixels 3.1.7.1-5
+haskell-keys 3.10.1-16
+haskell-language-c 0.4.7-2
+haskell-language-haskell-extract 0.2.4-58
+haskell-largeword 1.2.3-3
+haskell-libxml-sax 0.7.5-6
+haskell-lifted-base 0.2.3.3-2
+haskell-list 0.5.1-2
+haskell-lrucache 1.1.1.4-2
+haskell-maccatcher 2.1.5-66
+haskell-math-functions 0.1.5.2-10
+haskell-mime-types 0.1.0.4-5
+haskell-mmap 0.5.9-57
+haskell-mmorph 1.0.4-2
+haskell-monad-control 0.3.3.0-5
+haskell-monad-journal 0.6-2
+haskell-monad-logger 0.3.11.1-2
+haskell-monad-loops 0.4.2.1-3
+haskell-monad-par 0.3.4.7-2
+haskell-monad-par-extras 0.3.3-60
+haskell-monadcatchio-mtl 0.3.1.0-58
+haskell-monadcatchio-transformers 0.3.1.0-58
+haskell-monadrandom 0.3.0.1-2
+haskell-monads-tf 0.1.0.2-3
+haskell-mono-traversable 0.7.0-4
+haskell-mtl 2.1.3.1-5
+haskell-mwc-random 0.13.2.2-3
+haskell-nats 1-4
+haskell-network 2.6.0.2-2
+haskell-network-info 0.2.0.5-3
+haskell-network-uri 2.6.0.1-3
+haskell-objectname 1.0.1.0-2
+haskell-opengl 2.9.2.0-4
+haskell-openglraw 1.5.0.0-3
+haskell-optparse-applicative 0.11.0.1-3
+haskell-pandoc 1.13.1-22
+haskell-pandoc-citeproc 0.6-14
+haskell-pandoc-types 1.12.4.1-15
+haskell-pango 0.13.0.4-2
+haskell-parallel 3.2.0.5-2
+haskell-parallel-io 0.3.3-58
+haskell-parsec 3.1.7-2
+haskell-path-pieces 0.1.5-2
+haskell-pem 0.2.2-3
+haskell-persistent 2.1.1.2-2
+haskell-persistent-sqlite 2.1.1.1-2
+haskell-persistent-template 2.1.0.1-2
+haskell-pointed 4.1.1-4
+haskell-polyparse 1.9-63
+haskell-prelude-extras 0.4-3
+haskell-pretty-show 1.6.8-3
+haskell-primitive 0.5.4.0-2
+haskell-profunctors 4.3.2-6
+haskell-publicsuffixlist 0.1-8
+haskell-puremd5 2.1.2.1-66
+haskell-quickcheck 2.7.6-4
+haskell-quickcheck-io 0.1.1-8
+haskell-random 1.0.1.3-2
+haskell-regex-base 0.93.2-58
+haskell-regex-compat 0.95.1-58
+haskell-regex-pcre 0.94.4-58
+haskell-regex-pcre-builtin 0.94.4.8.8.35-3
+haskell-regex-posix 0.95.2-58
+haskell-regex-tdfa 1.2.0-64
+haskell-regex-tdfa-rc 1.1.8.3-4
+haskell-resource-pool 0.2.3.2-2
+haskell-resourcet 1.1.3.3-2
+haskell-rfc5051 0.1.0.3-3
+haskell-safe 0.3.8-2
+haskell-safesemaphore 0.10.1-4
+haskell-scientific 0.3.3.3-4
+haskell-securemem 0.1.4-2
+haskell-semigroupoids 4.2-10
+haskell-semigroups 0.16.0.1-2
+haskell-setenv 0.1.1.1-3
+haskell-sha 1.6.4.1-3
+haskell-shake 0.14.2-4
+haskell-shellish 0.1.4-59
+haskell-silently 1.2.4.1-57
+haskell-simple-sendfile 0.2.18-2
+haskell-socks 0.5.4-9
+haskell-split 0.2.2-57
+haskell-statevar 1.0.1.0-2
+haskell-statistics 0.13.2.1-17
+haskell-stm 2.4.4-2
+haskell-stm-chans 3.0.0.2-6
+haskell-streaming-commons 0.1.8-2
+haskell-strict 0.3.2-57
+haskell-stringsearch 0.3.6.5-2
+haskell-stylish-haskell 0.5.11.0-15
+haskell-syb 0.4.2-3
+haskell-system-argv0 0.1.1-66
+haskell-system-fileio 0.3.16-2
+haskell-system-filepath 0.4.13-2
+haskell-taffybar 0.4.4-5
+haskell-tagged 0.7.3-2
+haskell-tagsoup 0.13.3-2
+haskell-tar 0.4.0.1-57
+haskell-tasty 0.10.1-3
+haskell-tasty-hunit 0.9.0.1-4
+haskell-tasty-quickcheck 0.8.3.2-4
+haskell-tasty-th 0.1.3-3
+haskell-temporary 1.2.0.3-3
+haskell-test-framework 0.8.1.0-2
+haskell-test-framework-hunit 0.3.0.1-68
+haskell-texmath 0.8.0.1-2
+haskell-text 1.1.1.3-3
+haskell-text-stream-decode 0.1.0.5-8
+haskell-tf-random 0.5-7
+haskell-th-expand-syns 0.3.0.4-2
+haskell-th-lift 0.7-3
+haskell-th-orphans 0.8.2-4
+haskell-th-reify-many 0.1.2-2
+haskell-time-compat 0.1.0.3-57
+haskell-timezone-olson 0.1.6-2
+haskell-timezone-series 0.1.4-2
+haskell-tls 1.2.13-5
+haskell-transformers-base 0.4.3-3
+haskell-transformers-compat 0.3.3.4-2
+haskell-unbounded-delays 0.1.0.8-2
+haskell-uniplate 1.6.12-70
+haskell-unix-compat 0.4.1.3-3
+haskell-unix-time 0.3.4-2
+haskell-unixutils 1.52-71
+haskell-unixutils-shadow 1.0.0-57
+haskell-unordered-containers 0.2.5.1-4
+haskell-utf8-string 0.3.8-3
+haskell-uuid 1.3.6-2
+haskell-vault 0.3.0.4-2
+haskell-vector 0.10.12.2-2
+haskell-vector-algorithms 0.6.0.3-6
+haskell-vector-binary-instances 0.2.1.0-64
+haskell-vector-instances 3.3-16
+haskell-vector-th-unbox 0.2.1.0-7
+haskell-void 0.7-5
+haskell-wai 3.0.2-6
+haskell-wai-extra 3.0.3-4
+haskell-wai-logger 2.2.3-14
+haskell-warp 3.0.4-6
+haskell-wl-pprint-text 1.1.0.2-63
+haskell-word8 0.1.1-2
+haskell-x11 1.6.1.2-4
+haskell-x11-xft 0.3.1-61
+haskell-x509 1.5.0.1-2
+haskell-x509-store 1.5.0-2
+haskell-x509-system 1.5.0-2
+haskell-x509-validation 1.5.1-5
+haskell-xdg-basedir 0.2.2-3
+haskell-xhtml 3000.2.1-55
+haskell-xml 1.3.13-63
+haskell-xml-conduit 1.2.3.1-2
+haskell-xml-types 0.3.4-63
+haskell-xmlgen 0.6.2.1-66
+haskell-xmonad 0.11-62
+haskell-xmonad-contrib 0.11.3-7
+haskell-yaml 0.8.10.1-6
+haskell-zip-archive 0.2.3.5-3
+haskell-zlib 0.5.4.2-2
+hasktags 0.68.7-61
+pxsl-tools 1.0.1-66
+scan 0.1.0.9-8
+shelltestrunner 1.3.4-12
+flaccuraterip 0.3.3-5
+haskell-acid-state 0.12.3-5
+haskell-acid-state-tls 0.9.2-10
+haskell-authenticate 1.3.2.11-2
+haskell-bytestring-show 0.3.5.6-2
+haskell-cabal-test-quickcheck 0.1.2-8
+haskell-clientsession 0.9.1.1-4
+haskell-configfile 1.1.4-3
+haskell-cryptohash-cryptoapi 0.1.3-13
+haskell-css-text 0.1.2.1-15
+haskell-data-lens-light 0.1.2.1-2
+haskell-email-validate 2.0.1-15
+haskell-fay 0.21.2.1-6
+haskell-fay-base 0.19.4.1-8
+haskell-fay-dom 0.5-6
+haskell-fay-jquery 0.6.0.2-27
+haskell-fay-text 0.3.2-9
+haskell-fb 1.0.7-11
+haskell-feed 0.3.9.2-9
+haskell-filestore 0.6.0.4-2
+haskell-foldl 1.0.7-4
+haskell-gd 3000.7.3-5
+haskell-gitit 0.10.6.1-13
+haskell-groom 0.1.2-9
+haskell-happstack-authenticate 0.10.15-11
+haskell-happstack-clientsession 7.2.7-17
+haskell-happstack-hamlet 7.0.4-32
+haskell-happstack-hstringtemplate 7.0.4-15
+haskell-happstack-lite 7.3.5-5
+haskell-happstack-server 7.3.9-5
+haskell-happstack-server-tls 7.1.4-5
+haskell-harp 0.4-5
+haskell-haskell-names 0.4.1-10
+haskell-haskell-packages 0.2.4.3-6
+haskell-haskell-src-meta 0.6.0.8-6
+haskell-hoauth2 0.4.3-9
+haskell-hse-cpp 0.1-9
+haskell-hsopenssl 0.11-3
+haskell-hsp 0.10.0-8
+haskell-irc 0.6.1.0-2
+haskell-ircbot 0.6.1-11
+haskell-ixset 1.0.6-3
+haskell-jmacro 0.6.9-13
+haskell-language-ecmascript 0.16.2-11
+haskell-lens 4.6.0.1-4
+haskell-magic 1.1-2
+haskell-mime-mail 0.4.6.2-2
+haskell-missingh 1.3.0.1-3
+haskell-network-simple 0.4.0.2-2
+haskell-parseargs 0.1.5.2-5
+haskell-pipes 4.1.4-2
+haskell-pipes-aeson 0.4.1.2-14
+haskell-pipes-attoparsec 0.5.1.1-6
+haskell-pipes-binary 0.4.0.3-9
+haskell-pipes-bytestring 2.1.0-14
+haskell-pipes-concurrency 2.0.2-11
+haskell-pipes-extras 1.0.0-12
+haskell-pipes-group 1.0.1-14
+haskell-pipes-http 1.0.2-5
+haskell-pipes-network 0.6.4-6
+haskell-pipes-parse 3.0.2-6
+haskell-pipes-safe 2.2.0-6
+haskell-pwstore-purehaskell 2.1.4-2
+haskell-recaptcha 0.1.0.3-4
+haskell-reflection 1.5.1-3
+haskell-reform 0.2.6-2
+haskell-reform-blaze 0.2.3-2
+haskell-reform-happstack 0.2.4-5
+haskell-safecopy 0.8.3-10
+haskell-sendfile 0.7.9-15
+haskell-shakespeare 2.0.2.1-5
+haskell-skein 1.0.9.2-2
+haskell-sourcemap 0.1.3.0-18
+haskell-spoon 0.3.1-3
+haskell-syb-with-class 0.6.1.5-3
+haskell-tagshare 0.0-3
+haskell-tagstream-conduit 0.5.5.3-13
+haskell-testing-feat 0.4.0.2-8
+haskell-threads 0.5.1.2-4
+haskell-traverse-with-class 0.2.0.3-2
+haskell-type-eq 0.4.2-3
+haskell-uri 0.1.6.3-2
+haskell-url 2.1.3-6
+haskell-web-plugins 0.2.7-3
+haskell-web-routes 0.27.7-4
+haskell-web-routes-happstack 0.23.8-6
+haskell-web-routes-hsp 0.24.5-4
+haskell-web-routes-th 0.22.2-14
+haskell-wl-pprint 1.1-3
+haskell-xss-sanitize 0.3.5.4-6
