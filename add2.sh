@@ -45,6 +45,7 @@ function add
 
 truncate --size 0 packaging.log
 truncate --size 0 installation.log
+(inrepo core $1 || inrepo appstack $1 || inrepo . $1) && echo Already available && exit || true
 add $1
 x=$(cat installation.log)
 [[ $x ]] && yaourt -S $x
