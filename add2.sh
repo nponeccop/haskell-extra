@@ -41,8 +41,8 @@ function add
 		do
 			add $aaa
 		done
-		echo "secondary addition of $1"
-		cblrepo add $(bash_version.sh $1)
+		# echo "secondary addition of $1"
+		# cblrepo add $(bash version.sh $1)
 	fi
 }
 
@@ -52,6 +52,8 @@ truncate --size 0 installation.log
 add $1
 x=$(cat installation.log)
 [[ $x ]] && yaourt -S $x
+echo "Secondary addition of $1"
+add $1
 tac packaging.log
 for aaa in $(tac packaging.log)
 do
