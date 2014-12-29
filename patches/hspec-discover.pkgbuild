@@ -1,0 +1,17 @@
+Index: cblrepo/haskell-hspec-discover/PKGBUILD
+===================================================================
+--- cblrepo.orig/haskell-hspec-discover/PKGBUILD
++++ cblrepo/haskell-hspec-discover/PKGBUILD
+@@ -30,10 +30,10 @@ build() {
+     cd "${srcdir}/${_hkgname}-${pkgver}"
+     
+     runhaskell Setup configure -O --enable-library-profiling --enable-shared \
+-        --prefix=/usr --docdir="/usr/share/doc/${pkgname}" \
++        --prefix=/usr \
+         --libsubdir=\$compiler/site-local/\$pkgid
+     runhaskell Setup build
+-    runhaskell Setup haddock --hoogle --html
++    # runhaskell Setup haddock --hoogle --html
+     runhaskell Setup register --gen-script
+     runhaskell Setup unregister --gen-script
+     sed -i -r -e "s|ghc-pkg.*unregister[^ ]* |&'--force' |" unregister.sh
