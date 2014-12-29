@@ -14,12 +14,16 @@ for i in $(pkgbuild_deps $path)
 do
 	[[ -r upstream/$i ]] && dep+=" upstream/$i" || dep+=" $i"
 done
-nv=$name-$(pkgbuild_version $path/PKGBUILD)
-pkg=$path/$nv.pkg.tar.xz
+pbnv=haskell-$name-$(pkgbuild_version $path/PKGBUILD)
+nv=haskell-$(tolower $(cblrepo list $1 | sed 's|  |-|'))
+[[ "$nv" == "$pbnv" ]] || (echo >2 "inconsistent versions: PKGBUILD has $pbnv while cblrepo.db has $nv" ; exit 1)
+pkg=$path/$nv-i686.pkg.tar.xz
 cat <<EEE
+.PHONY: $path hackage-$1
 $path:$dep
 $path/PKGBUILD: $(find patches -name \'$hkgname.*\')
-$path: $path/$nv.pkg.tar.xz
-$path/$nv.pkg.tar.xz: $path/PKGBUILD
-
+$path: $pkg
+$pkg: $path/PKGBUILD
+hackage-$1: $path
+pacman-U-$1: $pkg
 EEE

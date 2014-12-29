@@ -1,2 +1,7 @@
+.PHONY: haskell-boolean hackage-Boolean
 haskell-boolean: upstream/ghc
-
+haskell-boolean/PKGBUILD: 
+haskell-boolean: haskell-boolean/haskell-boolean-0.2.3-1-i686.pkg.tar.xz
+haskell-boolean/haskell-boolean-0.2.3-1-i686.pkg.tar.xz: haskell-boolean/PKGBUILD
+hackage-Boolean: haskell-boolean
+pacman-U-Boolean: haskell-boolean/haskell-boolean-0.2.3-1-i686.pkg.tar.xz

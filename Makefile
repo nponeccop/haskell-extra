@@ -9,6 +9,11 @@ upstream-cache:
 	cd upstream && pacman -Slq haskell-{core,happstack} | xargs touch
 	cd upstream && pacman -Slq community extra | grep -v haskell | xargs touch
 
+aurball-%:
+	cd $* && mkaurball && mv *.src.tar.gz ../aur
+
+sync:
+	bash sync.sh
 
 cblrepo-add-%:
 	bash madd.sh $*	
@@ -16,6 +21,9 @@ cblrepo-add-%:
 cblrepo-pkgbuild-%: cblrepo-add-%
 	cblrepo pkgbuild --ghc-version=7.8.4 $*
 	$(MAKEDEPEND.package) $* >P/$*.P
+
+pacman-U-%:
+	bash pacman-U.sh $*
 
 %.src.tar.xz: %.pkg.tar.xz
 	cd $(<D) && mkaurball && cp $@ ../aur
