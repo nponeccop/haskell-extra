@@ -13,3 +13,4 @@ upstream/
 abs-builder/
 aur/
 oldaur/
+*.swp

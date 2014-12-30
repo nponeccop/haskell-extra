@@ -37,9 +37,14 @@ function makeUu ()
 	cblrepo updates | grep -vFf blacklist | tee uu
 }
 
-function buildOrder ()
+function buildOrderAll()
 {
 	cblrepo build $(cblrepo list | cut -d ' ' -f 1 | xargs)
+}
+
+function buildOrder()
+{
+	cblrepo build $(updatedPackages | xargs)
 }
 
 function bump ()

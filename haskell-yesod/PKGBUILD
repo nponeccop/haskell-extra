@@ -5,7 +5,7 @@ _licensefile=LICENSE
 # PKGBUILD options/directives
 pkgname=haskell-yesod
 pkgver=1.4.1.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Creation of type-safe, RESTful web applications."
 url="http://www.yesodweb.com/"
 license=("MIT")
@@ -31,7 +31,7 @@ depends=("ghc=7.8.4-1"
          "haskell-wai-logger=2.2.3-14"
          "haskell-warp=3.0.4-6"
          "haskell-yaml=0.8.10.1-6"
-         "haskell-yesod-auth=1.4.1.1-1"
+         "haskell-yesod-auth=1.4.1.2-1"
          "haskell-yesod-core=1.4.7.1-1"
          "haskell-yesod-form=1.4.3.1-1"
          "haskell-yesod-persistent=1.4.0.2-1")

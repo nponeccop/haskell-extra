@@ -22,6 +22,15 @@ cblrepo-pkgbuild-%: cblrepo-add-%
 	cblrepo pkgbuild --ghc-version=7.8.4 $*
 	$(MAKEDEPEND.package) $* >P/$*.P
 
+cblrepo-tobuild: tobuild
+	cblrepo pkgbuild --ghc-version=7.8.4 $(cat tobuild | xargs)
+
+cblrepo-updates:
+	@cblrepo updates	| grep -Fxvf blacklist | tr -d ':()' | tr ' ' '\t' 
+
+yaourt-Rs-tobuild: tobuild
+	yaourt -Rs $(cat tobuild | sed 's|^|haskell-|g' | xargs)
+
 pacman-U-%:
 	bash pacman-U.sh $*
 
