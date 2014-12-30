@@ -16,6 +16,9 @@ aurball-%:
 aurhaskell:
 	package-query -As haskell- -f "%n\t%L\t%V\t%w\t%o\t%i\t%m\t%U" | tee aurhaskell | head | column -t
 
+build-%:
+	bash build.sh $*
+
 sync:
 	bash sync.sh
 
