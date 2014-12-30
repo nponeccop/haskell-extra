@@ -1,6 +1,2 @@
-distributed-process-async: 0.2.0 (0.2.1)
-distributed-process-client-server: 0.1.1 (0.1.2)
-distributed-process-supervisor: 0.1.1 (0.1.2)
-distributed-process-extras: 0.1.1 (0.2.0)
 HaXml: 1.24.1 (1.25)
 hosc: 0.14.1 (0.15)
