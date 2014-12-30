@@ -12,6 +12,10 @@ upstream-cache:
 aurball-%:
 	cd $* && mkaurball && mv *.src.tar.gz ../aur
 
+.PHONY: aurhaskell
+aurhaskell:
+	package-query -As haskell- -f "%n\t%L\t%V\t%w\t%o\t%i\t%m\t%U" | tee aurhaskell | head | column -t
+
 sync:
 	bash sync.sh
 
