@@ -1,0 +1,290 @@
+Index: cblrepo/haskell-hoodle-core/src/hoodle-core-0.14/src/Hoodle/ModelAction/ContextMenu.hs
+===================================================================
+--- cblrepo.orig/haskell-hoodle-core/src/hoodle-core-0.14/src/Hoodle/ModelAction/ContextMenu.hs
++++ cblrepo/haskell-hoodle-core/src/hoodle-core-0.14/src/Hoodle/ModelAction/ContextMenu.hs
+@@ -76,7 +76,7 @@ menuCreateALink :: (AllEvent -> IO ()) -
+ menuCreateALink evhandler sitems = 
+   if (length . filter isLinkInRItem) sitems > 0
+   then return Nothing 
+-  else do mi <- menuItemNewWithLabel "Create a link to..." 
++  else do mi <- menuItemNewWithLabel ("Create a link to..." :: String)
+           mi `on` menuItemActivate $ 
+             evhandler (UsrEv (GotContextMenuSignal CMenuCreateALink))
+           return (Just mi)
+Index: cblrepo/haskell-hoodle-core/src/hoodle-core-0.14/src/Hoodle/ModelAction/File.hs
+===================================================================
+--- cblrepo.orig/haskell-hoodle-core/src/hoodle-core-0.14/src/Hoodle/ModelAction/File.hs
++++ cblrepo/haskell-hoodle-core/src/hoodle-core-0.14/src/Hoodle/ModelAction/File.hs
+@@ -191,7 +191,7 @@ toggleSave ui b = do
+       case x of
+         [] -> error "No action group?"
+         y:_ -> return y
+-    Just savea <- actionGroupGetAction agr "SAVEA"
++    Just savea <- actionGroupGetAction agr ("SAVEA" :: String)
+     actionSetSensitive savea b
+ 
+ -- | 
+Index: cblrepo/haskell-hoodle-core/src/hoodle-core-0.14/src/Hoodle/ModelAction/Window.hs
+===================================================================
+--- cblrepo.orig/haskell-hoodle-core/src/hoodle-core-0.14/src/Hoodle/ModelAction/Window.hs
++++ cblrepo/haskell-hoodle-core/src/hoodle-core-0.14/src/Hoodle/ModelAction/Window.hs
+@@ -72,7 +72,7 @@ setTitleFromFileName :: HoodleState -> I
+ setTitleFromFileName xstate = do 
+   case view (hoodleFileControl.hoodleFileName) xstate of
+     Nothing -> Gtk.set (view rootOfRootWindow xstate) 
+-                       [ windowTitle := "untitled" ]
++                       [ windowTitle := ("untitled"::String) ]
+     Just filename -> Gtk.set (view rootOfRootWindow xstate) 
+                              [ windowTitle := takeFileName filename] 
+ 
+@@ -179,7 +179,7 @@ connectDefaultEventCanvasInfo xstate cin
+                       case x of 
+                         [] -> error "No action group? "
+                         y:_ -> return y )
+-    uxinputa <- liftIO (actionGroupGetAction agr "UXINPUTA" >>= \(Just x) -> 
++    uxinputa <- liftIO (actionGroupGetAction agr ("UXINPUTA"::String) >>= \(Just x) -> 
+                           return (castToToggleAction x) )
+     b <- liftIO $ toggleActionGetActive uxinputa
+     if b then widgetSetExtensionEvents canvas [ExtensionEventsAll]
+@@ -295,4 +295,4 @@ constructFrame' template xstate (VSplit
+     panedPack2 vpane' win2 True False
+     widgetShowAll vpane' 
+     return (xstate'',castToWidget vpane', VSplit wconf1' wconf2')
+-  
+\ No newline at end of file
++  
+Index: cblrepo/haskell-hoodle-core/src/hoodle-core-0.14/src/Hoodle/GUI/Menu.hs
+===================================================================
+--- cblrepo.orig/haskell-hoodle-core/src/hoodle-core-0.14/src/Hoodle/GUI/Menu.hs
++++ cblrepo/haskell-hoodle-core/src/hoodle-core-0.14/src/Hoodle/GUI/Menu.hs
+@@ -1,4 +1,5 @@
+ {-# LANGUAGE QuasiQuotes #-}
++{-# LANGUAGE OverloadedStrings #-}
+ 
+ -----------------------------------------------------------------------------
+ -- |
+@@ -34,7 +35,7 @@ justMenu :: MenuEvent -> Maybe UserEvent
+ justMenu = Just . Menu 
+ 
+ 
+-iconList :: [ (String,String) ]
++iconList :: [ (FilePath,StockId) ]
+ iconList = [ ("fullscreen.png" , "myfullscreen")
+            , ("pencil.png"     , "mypen")
+            , ("eraser.png"     , "myeraser")
+@@ -323,32 +324,32 @@ getMenuUI evar = do
+   -----------------  
+   -- option menu --
+   -----------------
+-  uxinputa <- toggleActionNew "UXINPUTA" "Use XInput" (Just "Just a Stub") Nothing 
++  uxinputa <- toggleActionNew ("UXINPUTA"::String) "Use XInput" (Just "Just a Stub") Nothing 
+   uxinputa `on` actionToggled $ do 
+     eventHandler evar (UsrEv (Menu MenuUseXInput))
+   -- handa <- actionNewAndRegister "HANDA" "Use Touch" (Just "Use touch") (Just "myhand") (justMenu MenuUseTouch)    
+-  handa     <- toggleActionNew "HANDA" "Use Touch" (Just "Toggle touch") (Just "myhand") 
++  handa     <- toggleActionNew ("HANDA"::String) "Use Touch" (Just "Toggle touch") (Just "myhand") 
+   handa `on` actionToggled $ do 
+     eventHandler evar (UsrEv (Menu MenuUseTouch))
+-  smthscra <- toggleActionNew "SMTHSCRA" "Smooth Scrolling" (Just "Just a stub") Nothing
++  smthscra <- toggleActionNew ("SMTHSCRA"::String) "Smooth Scrolling" (Just "Just a stub") Nothing
+   smthscra `on` actionToggled $ do 
+     eventHandler evar (UsrEv (Menu MenuSmoothScroll))
+-  popmenua <- toggleActionNew "POPMENUA" "Use Popup Menu" (Just "Just a stub") Nothing
++  popmenua <- toggleActionNew ("POPMENUA"::String) "Use Popup Menu" (Just "Just a stub") Nothing
+   popmenua `on` actionToggled $ do 
+     eventHandler evar (UsrEv (Menu MenuUsePopUpMenu))
+-  ebdimga <- toggleActionNew "EBDIMGA" "Embed PNG/JPG Image" (Just "Just a stub") Nothing
++  ebdimga <- toggleActionNew ("EBDIMGA"::String) "Embed PNG/JPG Image" (Just "Just a stub") Nothing
+   ebdimga `on` actionToggled $ do 
+     eventHandler evar (UsrEv (Menu MenuEmbedImage))
+-  ebdpdfa <- toggleActionNew "EBDPDFA" "Embed PDF" (Just "Just a stub") Nothing
++  ebdpdfa <- toggleActionNew ("EBDPDFA"::String) "Embed PDF" (Just "Just a stub") Nothing
+   ebdpdfa `on` actionToggled $ do 
+     eventHandler evar (UsrEv (Menu MenuEmbedPDF))
+-  flwlnka <- toggleActionNew "FLWLNKA" "Follow Links" (Just "Just a stub") Nothing
++  flwlnka <- toggleActionNew ("FLWLNKA"::String) "Follow Links" (Just "Just a stub") Nothing
+   flwlnka `on` actionToggled $ do 
+     eventHandler evar (UsrEv (Menu MenuFollowLinks))    
+-  keepratioa <- toggleActionNew "KEEPRATIOA" "Keep Aspect Ratio" (Just "Just a stub") Nothing
++  keepratioa <- toggleActionNew ("KEEPRATIOA"::String) "Keep Aspect Ratio" (Just "Just a stub") Nothing
+   keepratioa `on` actionToggled $ do 
+     eventHandler evar (UsrEv (Menu MenuKeepAspectRatio))
+-  vcursora <- toggleActionNew "VCURSORA" "Use Variable Cursor" (Just "Just a stub") Nothing
++  vcursora <- toggleActionNew ("VCURSORA"::String) "Use Variable Cursor" (Just "Just a stub") Nothing
+   vcursora `on` actionToggled $ do 
+     eventHandler evar (UsrEv (Menu MenuUseVariableCursor))
+   -- temporary implementation (later will be as submenus with toggle action. appropriate reflection)
+@@ -356,7 +357,7 @@ getMenuUI evar = do
+     
+   dcrdcorea <- actionNewAndRegister "DCRDCOREA" "Discard Core Events" (Just "Just a Stub") Nothing (justMenu MenuDiscardCoreEvents)
+   ersrtipa <- actionNewAndRegister "ERSRTIPA" "Eraser Tip" (Just "Just a Stub") Nothing (justMenu MenuEraserTip)
+-  pressrsensa <- toggleActionNew "PRESSRSENSA" "Pressure Sensitivity" (Just "Just a Stub") Nothing 
++  pressrsensa <- toggleActionNew ("PRESSRSENSA"::String) "Pressure Sensitivity" (Just "Just a Stub") Nothing 
+   pressrsensa `on` actionToggled $ do 
+     eventHandler evar (UsrEv (Menu MenuPressureSensitivity))
+ 
+@@ -383,12 +384,12 @@ getMenuUI evar = do
+   -- others
+   defaulta <- actionNewAndRegister "DEFAULTA" "Default" (Just "Default") (Just "mydefault") (justMenu MenuDefault)
+   
+-  agr <- actionGroupNew "AGR"
++  agr <- actionGroupNew ("AGR" :: String)
+   mapM_ (actionGroupAddAction agr) 
+         [fma,ema,vma,lma,ima,pma,tma,verma,oma,hma]
+   mapM_ (actionGroupAddAction agr)   
+         [ undoa, redoa, cuta, copya, pastea, deletea ] 
+-  mapM_ (\act -> actionGroupAddActionWithAccel agr act Nothing)   
++  mapM_ (\act -> actionGroupAddActionWithAccel agr act (Nothing :: Maybe String))   
+         [ newa, annpdfa, opena, savea, saveasa
+         , reloada, recenta, printa, exporta, synca, versiona, showreva, showida, quita
+         , fscra, zooma, zmina, zmouta, nrmsizea, pgwdtha, pgheighta, setzma
+@@ -456,25 +457,25 @@ getMenuUI evar = do
+   --
+   ui <- uiManagerNew
+   
+-  uiDecl <- readFile (resDir </> "menu.xml")   
++  uiDecl <- readFile (resDir </> ("menu.xml" :: String))
+   uiManagerAddUiFromString ui uiDecl
+   uiManagerInsertActionGroup ui agr 0 
+-  Just ra2 <- actionGroupGetAction agr "PENFINEA"
++  Just ra2 <- actionGroupGetAction agr ("PENFINEA" :: String)
+   Gtk.set (castToRadioAction ra2) [radioActionCurrentValue := 2]
+-  Just ra3 <- actionGroupGetAction agr "SELREGNA"
++  Just ra3 <- actionGroupGetAction agr ("SELREGNA" :: String)
+   actionSetSensitive ra3 True 
+-  Just ra4 <- actionGroupGetAction agr "VERTSPA"
++  Just ra4 <- actionGroupGetAction agr ("VERTSPA" :: String)
+   actionSetSensitive ra4 True
+   -- Just ra5 <- actionGroupGetAction agr "HANDA"
+   -- actionSetSensitive ra5 False
+-  Just ra6 <- actionGroupGetAction agr "CONTA"
++  Just ra6 <- actionGroupGetAction agr ("CONTA" :: String)
+   actionSetSensitive ra6 True
+-  Just _ra7 <- actionGroupGetAction agr "PENA"
++  Just _ra7 <- actionGroupGetAction agr ("PENA" :: String)
+   actionSetSensitive ra6 True  
+-  Just toolbar1 <- uiManagerGetWidget ui "/ui/toolbar1"
++  Just toolbar1 <- uiManagerGetWidget ui ("/ui/toolbar1" :: String)
+   toolbarSetStyle (castToToolbar toolbar1) ToolbarIcons 
+   toolbarSetIconSize (castToToolbar toolbar1) IconSizeSmallToolbar
+-  Just toolbar2 <- uiManagerGetWidget ui "/ui/toolbar2"
++  Just toolbar2 <- uiManagerGetWidget ui ("/ui/toolbar2" :: String)
+   toolbarSetStyle (castToToolbar toolbar2) ToolbarIcons 
+   toolbarSetIconSize (castToToolbar toolbar2) IconSizeSmallToolbar  
+   
+Index: cblrepo/haskell-hoodle-core/src/hoodle-core-0.14/src/Hoodle/Coroutine/HandwritingRecognition.hs
+===================================================================
+--- cblrepo.orig/haskell-hoodle-core/src/hoodle-core-0.14/src/Hoodle/Coroutine/HandwritingRecognition.hs
++++ cblrepo/haskell-hoodle-core/src/hoodle-core-0.14/src/Hoodle/Coroutine/HandwritingRecognition.hs
+@@ -122,7 +122,7 @@ showRecogTextDialog txts = do
+                          else doesFileExist (hoodletdir </> str <.> "hdlt")      
+                  return (n,(b2,txt))
+                mapM_ (addOneTextBox evhandler dialog vbox) txtlst  
+-               _btnCancel <- dialogAddButton dialog "Cancel" ResponseCancel
++               _btnCancel <- dialogAddButton dialog ("Cancel"::String) ResponseCancel
+                widgetShowAll dialog
+                res <- dialogRun dialog
+                widgetDestroy dialog
+Index: cblrepo/haskell-hoodle-core/src/hoodle-core-0.14/src/Hoodle/Coroutine/TextInput.hs
+===================================================================
+--- cblrepo.orig/haskell-hoodle-core/src/hoodle-core-0.14/src/Hoodle/Coroutine/TextInput.hs
++++ cblrepo/haskell-hoodle-core/src/hoodle-core-0.14/src/Hoodle/Coroutine/TextInput.hs
+@@ -85,7 +85,7 @@ textInputDialog :: MainCoroutine (Maybe
+ textInputDialog = do 
+   doIOaction $ \_evhandler -> do 
+                  dialog <- Gtk.messageDialogNew Nothing [Gtk.DialogModal]
+-                   Gtk.MessageQuestion Gtk.ButtonsOkCancel "text input"
++                   Gtk.MessageQuestion Gtk.ButtonsOkCancel ("text input"::String)
+                  vbox <- Gtk.dialogGetUpper dialog
+                  txtvw <- Gtk.textViewNew
+                  Gtk.boxPackStart vbox txtvw Gtk.PackGrow 0 
+@@ -125,7 +125,7 @@ multiLineDialog str = mkIOaction $ \evha
+     hscrbar <- Gtk.hScrollbarNew =<< Gtk.textViewGetHadjustment textarea 
+     textarea `Gtk.on` Gtk.sizeRequest $ return (Gtk.Requisition 500 600)
+     fdesc <- Gtk.fontDescriptionNew
+-    Gtk.fontDescriptionSetFamily fdesc "Mono"
++    Gtk.fontDescriptionSetFamily fdesc ("Mono"::String)
+     Gtk.widgetModifyFont textarea (Just fdesc)
+     -- 
+     table <- Gtk.tableNew 2 2 False
+@@ -134,9 +134,9 @@ multiLineDialog str = mkIOaction $ \evha
+     Gtk.tableAttachDefaults table hscrbar 0 1 1 2 
+     Gtk.boxPackStart vbox table Gtk.PackNatural 0
+     -- 
+-    _btnOk <- Gtk.dialogAddButton dialog "Ok" Gtk.ResponseOk
+-    _btnCancel <- Gtk.dialogAddButton dialog "Cancel" Gtk.ResponseCancel
+-    _btnNetwork <- Gtk.dialogAddButton dialog "Network" (Gtk.ResponseUser 1)
++    _btnOk <- Gtk.dialogAddButton dialog ("Ok"::String) Gtk.ResponseOk
++    _btnCancel <- Gtk.dialogAddButton dialog ("Cancel"::String) Gtk.ResponseCancel
++    _btnNetwork <- Gtk.dialogAddButton dialog ("Network"::String) (Gtk.ResponseUser 1)
+     Gtk.widgetShowAll dialog
+     res <- Gtk.dialogRun dialog
+     Gtk.widgetDestroy dialog
+@@ -517,16 +517,16 @@ linePosDialog = mkIOaction $ \evhandler
+     hbox <- Gtk.hBoxNew False 0
+     Gtk.boxPackStart vbox hbox Gtk.PackNatural 0
+ 
+-    line1buf <- Gtk.entryBufferNew Nothing
++    line1buf <- Gtk.entryBufferNew (Nothing::Maybe String)
+     line1 <- Gtk.entryNewWithBuffer line1buf
+     Gtk.boxPackStart hbox line1 Gtk.PackNatural 2
+ 
+-    line2buf <- Gtk.entryBufferNew Nothing
++    line2buf <- Gtk.entryBufferNew (Nothing:: Maybe String)
+     line2 <- Gtk.entryNewWithBuffer line2buf
+     Gtk.boxPackStart hbox line2 Gtk.PackNatural 2
+     -- 
+-    _btnOk <- Gtk.dialogAddButton dialog "Ok" Gtk.ResponseOk
+-    _btnCancel <- Gtk.dialogAddButton dialog "Cancel" Gtk.ResponseCancel
++    _btnOk <- Gtk.dialogAddButton dialog ("Ok"::String) Gtk.ResponseOk
++    _btnCancel <- Gtk.dialogAddButton dialog ("Cancel"::String) Gtk.ResponseCancel
+     Gtk.widgetShowAll dialog
+     res <- Gtk.dialogRun dialog
+     Gtk.widgetDestroy dialog
+@@ -581,12 +581,12 @@ keywordDialog = mkIOaction $ \evhandler
+     vbox <- Gtk.dialogGetUpper dialog
+     hbox <- Gtk.hBoxNew False 0
+     Gtk.boxPackStart vbox hbox Gtk.PackNatural 0
+-    keybuf <- Gtk.entryBufferNew Nothing
++    keybuf <- Gtk.entryBufferNew (Nothing :: Maybe String)
+     key <- Gtk.entryNewWithBuffer keybuf
+     Gtk.boxPackStart hbox key Gtk.PackNatural 2
+     -- 
+-    _btnOk <- Gtk.dialogAddButton dialog "Ok" Gtk.ResponseOk
+-    _btnCancel <- Gtk.dialogAddButton dialog "Cancel" Gtk.ResponseCancel
++    _btnOk <- Gtk.dialogAddButton dialog ("Ok"::String) Gtk.ResponseOk
++    _btnCancel <- Gtk.dialogAddButton dialog ("Cancel"::String) Gtk.ResponseCancel
+     Gtk.widgetShowAll dialog
+     res <- Gtk.dialogRun dialog
+     Gtk.widgetDestroy dialog
+Index: cblrepo/haskell-hoodle-core/src/hoodle-core-0.14/src/Hoodle/Coroutine/File.hs
+===================================================================
+--- cblrepo.orig/haskell-hoodle-core/src/hoodle-core-0.14/src/Hoodle/Coroutine/File.hs
++++ cblrepo/haskell-hoodle-core/src/hoodle-core-0.14/src/Hoodle/Coroutine/File.hs
+@@ -617,7 +617,7 @@ showRevisionDialog hdl revs =
+                dialog <- Gtk.dialogNew
+                vbox <- Gtk.dialogGetUpper dialog
+                mapM_ (addOneRevisionBox cache vbox hdl) revs 
+-               _btnOk <- Gtk.dialogAddButton dialog "Ok" Gtk.ResponseOk
++               _btnOk <- Gtk.dialogAddButton dialog ("Ok"::String) Gtk.ResponseOk
+                Gtk.widgetShowAll dialog
+                _res <- Gtk.dialogRun dialog
+                Gtk.widgetDestroy dialog
+@@ -630,7 +630,7 @@ mkPangoText str = do
+           ctxt <- Gtk.cairoCreateContext Nothing 
+           layout <- Gtk.layoutEmpty ctxt   
+           fdesc <- Gtk.fontDescriptionNew 
+-          Gtk.fontDescriptionSetFamily fdesc "Sans Mono"
++          Gtk.fontDescriptionSetFamily fdesc ("Sans Mono"::String)
+           Gtk.fontDescriptionSetSize fdesc 8.0 
+           Gtk.layoutSetFontDescription layout (Just fdesc)
+           Gtk.layoutSetWidth layout (Just 250)
+@@ -655,7 +655,7 @@ addOneRevisionBox cache vbox hdl rev = d
+           Revision _ txt -> mkPangoText (B.unpack txt)            
+     hdir <- getHomeDirectory
+     let vcsdir = hdir </> ".hoodle.d" </> "vcs"
+-    btn <- Gtk.buttonNewWithLabel "view"
++    btn <- Gtk.buttonNewWithLabel ("view"::String)
+     btn `Gtk.on` Gtk.buttonPressEvent $ Gtk.tryEvent $ do 
+       files <- liftIO $ getDirectoryContents vcsdir 
+       let fstrinit = "UUID_" ++ B.unpack (view hoodleID hdl)  
