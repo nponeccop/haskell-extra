@@ -5,12 +5,11 @@ haskell-*/pkg
 yesod-bin/*.tar.*
 yesod-bin/src
 yesod-bin/pkg
-core/
 git/
-appstack/
 oo/
 upstream/
 abs-builder/
 aur/
 oldaur/
 *.swp
+upstream-repos/
