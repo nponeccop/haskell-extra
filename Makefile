@@ -14,7 +14,10 @@ aurball-%:
 
 .PHONY: aurhaskell
 aurhaskell:
-	package-query -As haskell- -f "%n\t%L\t%V\t%w\t%o\t%i\t%m\t%U" | tee aurhaskell | head | column -t
+	package-query -As haskell- -f "%n\t%L\t%V\t%w\t%o\t%i\t%m\t%U" | tee aurhaskell | column -t
+
+aurrepo:
+	join  <(cblrepo list | awk 'BEGIN {OFS="\t"}; {print "haskell-" tolower($1), $2}' | sort) <(cat aurhaskell | cut -f 1,3,7 | sort) | awk '$4 != "zoidberg_md" {print}' | column -t
 
 build-%:
 	bash build.sh $*
