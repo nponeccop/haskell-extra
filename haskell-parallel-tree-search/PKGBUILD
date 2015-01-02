@@ -5,14 +5,14 @@ _licensefile=LICENSE
 # PKGBUILD options/directives
 pkgname=haskell-parallel-tree-search
 pkgver=0.4.1
-pkgrel=2
+pkgrel=3
 pkgdesc="Parallel Tree Search"
 url="http://github.com/sebfisch/parallel-tree-search"
 license=("PublicDomain")
 arch=('i686' 'x86_64')
 makedepends=()
 depends=("ghc=7.8.4-1"
-         "haskell-parallel=3.2.0.5-2"
+         "haskell-parallel=3.2.0.6-1"
          "haskell-tree-monad=0.3-2")
 options=('strip' 'staticlibs')
 source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")

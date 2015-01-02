@@ -5,7 +5,7 @@ _licensefile=LICENSE
 # PKGBUILD options/directives
 pkgname=haskell-hint
 pkgver=0.4.2.1
-pkgrel=2
+pkgrel=3
 pkgdesc="Runtime Haskell interpreter (GHC API wrapper)"
 url="http://hub.darcs.net/jcpetruzza/hint"
 license=("BSD3")
@@ -17,7 +17,7 @@ depends=("ghc=7.8.4-1"
          "haskell-ghc-mtl=1.2.1.0-2"
          "haskell-ghc-paths=0.1.0.9-57"
          "haskell-mtl=2.1.3.1-5"
-         "haskell-random=1.0.1.3-2"
+         "haskell-random=1.1-1"
          "haskell-utf8-string=0.3.8-3")
 options=('strip' 'staticlibs')
 source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")

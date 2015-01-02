@@ -11,15 +11,4 @@ Index: hsbuild/haskell-hamlet/PKGBUILD
      runhaskell Setup register --gen-script
      runhaskell Setup unregister --gen-script
      sed -i -r -e "s|ghc-pkg.*unregister[^ ]* |&'--force' |" unregister.sh
-Index: hsbuild/haskell-hsmagick/PKGBUILD
-===================================================================
---- hsbuild.orig/haskell-hsmagick/PKGBUILD
-+++ hsbuild/haskell-hsmagick/PKGBUILD
-@@ -15,6 +15,7 @@ depends=("ghc=7.8.4-1"
-          "jasper"
-          "libpng"
-          "libwmf"
-+		 "lcms"
-          "graphicsmagick")
- options=('strip' 'staticlibs')
- source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz"
+

@@ -12,6 +12,11 @@ function myaur()
 	cat aurhaskell | awk '$7=="zoidberg_md" {print}' | cut -f 1,3 | parse_rel | sort
 }
 
+function all_unmarked_aur()
+{
+	cat aurhaskell | awk '$5==0 {print}' | cut -f 1,3 | parse_rel | sort
+}
+
 function mkjoin()
 {
 	join <(list . $2 $3) <(list upstream-repos/$1) 
@@ -67,5 +72,9 @@ echo "==> AUR packages to upload (new release)"
 join <(myaur) <(list . | awk 'BEGIN{OFS="\t"}; {$1="haskell-" tolower($1); print $1,$2,$3}' | sort) | awk 'BEGIN {OFS="\t"}; $2==$4 && $3 + 1 == $5 {print "'$1'", $1, $2, $3 " -> " $5 }' | column -t
 echo "==> AUR packages to upload (broken bumping)" 
 join <(myaur) <(list . | awk 'BEGIN{OFS="\t"}; {$1="haskell-" tolower($1); print $1,$2,$3}' | sort ) | awk 'BEGIN {OFS="\t"}; $2==$4 && $3 != $5 && $3 + 1 != $5 {print "'$1'", $1, $2, $3 " -> " $5 }' | column -t
-
+echo "==> AUR packages to upload (new version)"
+join <(myaur) <(list . | awk 'BEGIN{OFS="\t"}; {$1="haskell-" tolower($1); print $1,$2,$3}' | sort ) | awk 'BEGIN {OFS="\t"}; $2!=$4 {print "'$1'", $1, $2, $3, "->", $4 , $5 }' | column -t
+echo "==> AUR packages to mark outdated"
+join <(all_unmarked_aur) <(list . | awk 'BEGIN{OFS="\t"}; {$1="haskell-" tolower($1); print $1,$2,$3}' | sort ) | awk 'BEGIN {OFS="\t"}; $2!=$4 {print "'$1'", $1, $2, $3, "->", $4 , $5 }' | column -t
+join <(all_unmarked_aur) <(list upstream-repos/haskell-core | awk 'BEGIN{OFS="\t"}; {$1="haskell-" tolower($1); print $1,$2,$3}' | sort ) | awk 'BEGIN {OFS="\t"}; $2!=$4 {print "'$1'", $1, $2, $3, "->", $4 , $5 }' | column -t
 

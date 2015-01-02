@@ -5,16 +5,16 @@ _licensefile=LICENSE
 # PKGBUILD options/directives
 pkgname=haskell-derive
 pkgver=2.5.18
-pkgrel=1
+pkgrel=2
 pkgdesc="A program and library to derive instances for data types"
 url="http://community.haskell.org/~ndm/derive/"
 license=("BSD3")
 arch=('i686' 'x86_64')
 makedepends=()
 depends=("ghc=7.8.4-1"
-         "haskell-haskell-src-exts=1.16.0.1-2"
+         "haskell-haskell-src-exts=1.16.0.1-3"
          "haskell-syb=0.4.2-3"
-         "haskell-uniplate=1.6.12-70")
+         "haskell-uniplate=1.6.12-71")
 options=('strip' 'staticlibs')
 source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
 install="${pkgname}.install"

@@ -1,5 +1,6 @@
-set -ex
+set -e
 PKG=$(echo $1 | tr '[:upper:]' '[:lower:]')
+echo Building $PKG
 cblrepo pkgbuild $1 --ghc-version 7.8.4
 cd haskell-$PKG
 makepkg -sc --needed --asdeps --noconfirm

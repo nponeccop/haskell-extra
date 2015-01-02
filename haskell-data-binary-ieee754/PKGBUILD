@@ -5,13 +5,14 @@ _licensefile=license.txt
 # PKGBUILD options/directives
 pkgname=haskell-data-binary-ieee754
 pkgver=0.4.4
-pkgrel=2
+pkgrel=3
 pkgdesc="Parser/Serialiser for IEEE-754 floating-point values"
 url="https://john-millikin.com/software/data-binary-ieee754/"
 license=("MIT")
 arch=('i686' 'x86_64')
 makedepends=()
-depends=("ghc=7.8.4-1")
+depends=("ghc=7.8.4-1"
+         "haskell-binary=0.7.2.3-1")
 options=('strip' 'staticlibs')
 source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
 install="${pkgname}.install"
