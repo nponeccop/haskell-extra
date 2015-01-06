@@ -11,7 +11,7 @@ url="http://github.com/haskell-distributed/distributed-process-client-server"
 license=("BSD3")
 arch=('i686' 'x86_64')
 makedepends=()
-depends=("ghc=7.8.4-1"
+depends=("ghc=7.8.3-1"
          "haskell-binary=0.7.2.3-1"
          "haskell-data-accessor=0.2.2.6-2"
          "haskell-distributed-process=0.5.3-3"

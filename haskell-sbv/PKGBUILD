@@ -11,7 +11,7 @@ url="http://leventerkok.github.com/sbv/"
 license=("BSD3")
 arch=('i686' 'x86_64')
 makedepends=()
-depends=("ghc=7.8.4-1"
+depends=("ghc=7.8.3-1"
          "haskell-hunit=1.2.5.2-57"
          "haskell-quickcheck=2.7.6-5"
          "haskell-async=2.0.2-1"

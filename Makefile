@@ -9,6 +9,13 @@ upstream-cache:
 	cd upstream && pacman -Slq haskell-{core,happstack} | xargs touch
 	cd upstream && pacman -Slq community extra | grep -v haskell | xargs touch
 
+clean-unpacked:
+	ls -1 | grep '\-[0-9]' | xargs rm -rf
+
+clean-adopted: 
+	cblrepo list -g -d --no-repo | grep -iFf <(ls -d haskell-* -1 | sed 's|^haskell-||g') | cut -d ' ' -f 1 | sed 's|^|haskell-|g' | tr '[:upper:]' '[:lower:]' | xargs rm -r
+
+
 aurball-%:
 	cd $* && mkaurball && mv *.src.tar.gz ../aur
 

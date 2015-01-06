@@ -11,7 +11,7 @@ url="http://github.com/ekmett/trifecta/"
 license=("BSD3")
 arch=('i686' 'x86_64')
 makedepends=()
-depends=("ghc=7.8.4-1"
+depends=("ghc=7.8.3-1"
          "haskell-ansi-terminal=0.6.2.1-2"
          "haskell-ansi-wl-pprint=0.6.7.1-59"
          "haskell-blaze-builder=0.3.3.4-3"

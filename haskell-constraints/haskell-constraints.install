@@ -1,5 +1,5 @@
 # custom variables
-pkgname=haskell-byteable
+pkgname=haskell-constraints
 HS_DIR=usr/share/haskell/${pkgname}
 
 # functions

@@ -1,0 +1,13 @@
+Index: cblrepo/haskell-haste-compiler/PKGBUILD
+===================================================================
+--- cblrepo.orig/haskell-haste-compiler/PKGBUILD
++++ cblrepo/haskell-haste-compiler/PKGBUILD
+@@ -52,7 +52,7 @@ build() {
+         --libsubdir=\$compiler/site-local/\$pkgid \
+             -f-portable
+     runhaskell Setup build
+-    runhaskell Setup haddock --hoogle --html
++    #runhaskell Setup haddock --hoogle --html
+     runhaskell Setup register --gen-script
+     runhaskell Setup unregister --gen-script
+     sed -i -r -e "s|ghc-pkg.*unregister[^ ]* |&'--force' |" unregister.sh

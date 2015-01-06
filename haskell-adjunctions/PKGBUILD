@@ -11,7 +11,7 @@ url="http://github.com/ekmett/adjunctions/"
 license=("BSD3")
 arch=('i686' 'x86_64')
 makedepends=()
-depends=("ghc=7.8.4-1"
+depends=("ghc=7.8.3-1"
          "haskell-comonad=4.2.2-11"
          "haskell-contravariant=1.2-10"
          "haskell-distributive=0.4.4-6"

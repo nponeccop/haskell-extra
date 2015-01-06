@@ -11,7 +11,7 @@ url="http://code.haskell.org/~wren/"
 license=("BSD3")
 arch=('i686' 'x86_64')
 makedepends=()
-depends=("ghc=7.8.4-1"
+depends=("ghc=7.8.3-1"
          "haskell-logict=0.6.0.2-2"
          "haskell-mtl=2.1.3.1-5")
 options=('strip' 'staticlibs')

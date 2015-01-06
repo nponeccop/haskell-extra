@@ -11,7 +11,7 @@ url="http://www.haskell.org/haskellwiki/Probabilistic_Functional_Programming"
 license=("BSD3")
 arch=('i686' 'x86_64')
 makedepends=()
-depends=("ghc=7.8.4-1"
+depends=("ghc=7.8.3-1"
          "haskell-random=1.1-1"
          "haskell-utility-ht=0.0.10-2")
 options=('strip' 'staticlibs')

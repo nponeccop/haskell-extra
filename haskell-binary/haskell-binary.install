@@ -1,5 +1,5 @@
 # custom variables
-pkgname=haskell-appar
+pkgname=haskell-binary
 HS_DIR=usr/share/haskell/${pkgname}
 
 # functions

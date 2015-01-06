@@ -11,7 +11,7 @@ url="http://haste-lang.org/"
 license=("BSD3")
 arch=('i686' 'x86_64')
 makedepends=()
-depends=("ghc=7.8.4-1"
+depends=("ghc=7.8.3-1"
          "haskell-http=4000.2.19-3"
          "haskell-binary=0.7.2.3-1"
          "haskell-blaze-builder=0.3.3.4-3"

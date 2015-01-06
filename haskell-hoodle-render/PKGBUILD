@@ -11,7 +11,7 @@ url="http://hackage.haskell.org/package/${_hkgname}"
 license=("GPL-3")
 arch=('i686' 'x86_64')
 makedepends=()
-depends=("ghc=7.8.4-1"
+depends=("ghc=7.8.3-1"
          "haskell-base64-bytestring=1.0.0.1-57"
          "haskell-cairo=0.13.0.6-1"
          "haskell-gd=3000.7.3-5"

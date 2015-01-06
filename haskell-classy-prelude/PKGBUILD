@@ -11,7 +11,7 @@ url="https://github.com/snoyberg/classy-prelude"
 license=("MIT")
 arch=('i686' 'x86_64')
 makedepends=()
-depends=("ghc=7.8.4-1"
+depends=("ghc=7.8.3-1"
          "haskell-basic-prelude=0.3.10-3"
          "haskell-bifunctors=4.2-7"
          "haskell-chunked-data=0.1.0.1-21"

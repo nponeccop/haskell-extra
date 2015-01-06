@@ -11,7 +11,7 @@ url="http://www.tbi.univie.ac.at/~choener/"
 license=("GPL-3")
 arch=('i686' 'x86_64')
 makedepends=()
-depends=("ghc=7.8.4-1"
+depends=("ghc=7.8.3-1"
          "haskell-primitivearray=0.5.4.0-4"
          "haskell-cmdargs=0.10.12-2"
          "haskell-csv=0.1.2-67"

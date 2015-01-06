@@ -1,21 +1,21 @@
 # custom variables
-_hkgname=appar
+_hkgname=binary
 _licensefile=LICENSE
 
 # PKGBUILD options/directives
-pkgname=haskell-appar
-pkgver=0.1.4
+pkgname=haskell-binary
+pkgver=0.7.2.3
 pkgrel=1
-pkgdesc="A simple applicative parser"
-url="http://hackage.haskell.org/package/${_hkgname}"
+pkgdesc="Binary serialisation for Haskell values using lazy ByteStrings"
+url="https://github.com/kolmodin/binary"
 license=("BSD3")
 arch=('i686' 'x86_64')
 makedepends=()
-depends=("ghc=7.8.4-1")
+depends=("ghc=7.8.3-1")
 options=('strip' 'staticlibs')
 source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
 install="${pkgname}.install"
-sha256sums=("58ea66abe4dd502d2fc01eecdb0828d5e214704a3c1b33b1f8b33974644c4b26")
+sha256sums=("fd7f59302cbb137068de28efe6e2c403fa45c10077641ec33fa1fb09a8a5c499")
 
 # PKGBUILD functions
 

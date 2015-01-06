@@ -1,4 +1,5 @@
 #!/bin/bash
+#set -ex
 function diffPkgs ()
 {
 	hg diff -U 0 cblrepo.db | grep "^\+" | sed 's/^+//g' | while read p ; do echo $p | jshon -e0 -u ; done
@@ -27,14 +28,20 @@ function smartRm ()
 	xargs cblrepo build | tac | xargs cblrepo rm
 }
 
+
 function makeDd ()
 {
-	bash appstack/updates.sh -a | tee dd
+	bash upstream-repos/haskell-happstack/updates.sh -a | tee dd
 } 
+
+function stripx
+{
+	sed 's/:x[0-9][0-9]*//g'
+}
 
 function makeUu () 
 {
-	cblrepo updates | grep -vFf blacklist | tee uu
+	cblrepo updates | stripx | grep -vFf blacklist | tee uu
 }
 
 function buildOrderAll()
@@ -49,7 +56,7 @@ function buildOrder()
 
 function bump ()
 {
-	cblrepo bump $(appstack/updates.sh -b) $(updatedPackages)	
+	cblrepo bump $(upstream-repos/haskell-happstack/updates.sh -b) $(updatedPackages)
 }
 
 function bumpAll ()
@@ -68,9 +75,11 @@ function dv ()
 
 function pretendUpdated ()
 {
+	echo "PretendUpdated"
 	cblrepo add $(cat dd) $(updatedPackagesV | sed -e 's/^/-d /;s/$/,7777/'| xargs)
+	echo "pretendUpdated done"
 }
-bash mkdist.sh
+#bash mkdist.sh
 makeDd
 makeUu
 pretendUpdated

@@ -11,7 +11,7 @@ url="http://www.yesodweb.com/book/web-application-interface"
 license=("MIT")
 arch=('i686' 'x86_64')
 makedepends=()
-depends=("ghc=7.8.4-1"
+depends=("ghc=7.8.3-1"
          "haskell-base64-bytestring=1.0.0.1-57"
          "haskell-blaze-builder=0.3.3.4-3"
          "haskell-blaze-html=0.7.0.3-4"
