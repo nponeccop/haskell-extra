@@ -1,31 +1,21 @@
 # custom variables
-_hkgname=adjunctions
+_hkgname=appar
 _licensefile=LICENSE
 
 # PKGBUILD options/directives
-pkgname=haskell-adjunctions
-pkgver=4.2
-pkgrel=2
-pkgdesc="Adjunctions and representable functors"
-url="http://github.com/ekmett/adjunctions/"
+pkgname=haskell-appar
+pkgver=0.1.4
+pkgrel=1
+pkgdesc="A simple applicative parser"
+url="http://hackage.haskell.org/package/${_hkgname}"
 license=("BSD3")
 arch=('i686' 'x86_64')
 makedepends=()
-depends=("ghc=7.8.4-1"
-         "haskell-comonad=4.2.2-11"
-         "haskell-contravariant=1.2-10"
-         "haskell-distributive=0.4.4-6"
-         "haskell-free=4.10.0.1-6"
-         "haskell-mtl=2.1.3.1-5"
-         "haskell-profunctors=4.3.2-7"
-         "haskell-semigroupoids=4.2-11"
-         "haskell-semigroups=0.16.0.1-3"
-         "haskell-tagged=0.7.3-2"
-         "haskell-void=0.7-6")
+depends=("ghc=7.8.4-1")
 options=('strip' 'staticlibs')
 source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
 install="${pkgname}.install"
-sha256sums=("31c9988b9e76fa342bff9314af5fd088f99bcaf6d66adb3ba3dc343f4d36251f")
+sha256sums=("58ea66abe4dd502d2fc01eecdb0828d5e214704a3c1b33b1f8b33974644c4b26")
 
 # PKGBUILD functions
 

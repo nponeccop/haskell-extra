@@ -11,7 +11,7 @@ url="http://haskell-distributed.github.com"
 license=("BSD3")
 arch=('i686' 'x86_64')
 makedepends=()
-depends=("ghc=7.8.3-1"
+depends=("ghc=7.8.4-1"
          "haskell-data-accessor=0.2.2.6-2"
          "haskell-network=2.6.0.2-2"
          "haskell-network-transport=0.4.1.0-3")

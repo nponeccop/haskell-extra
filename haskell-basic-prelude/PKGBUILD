@@ -11,7 +11,7 @@ url="https://github.com/snoyberg/basic-prelude"
 license=("MIT")
 arch=('i686' 'x86_64')
 makedepends=()
-depends=("ghc=7.8.3-1"
+depends=("ghc=7.8.4-1"
          "haskell-readargs=1.2.2-3"
          "haskell-hashable=1.2.3.1-1"
          "haskell-lifted-base=0.2.3.3-3"

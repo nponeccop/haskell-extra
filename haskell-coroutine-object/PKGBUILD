@@ -11,7 +11,7 @@ url="http://hackage.haskell.org/package/${_hkgname}"
 license=("BSD3")
 arch=('i686' 'x86_64')
 makedepends=()
-depends=("ghc=7.8.3-1"
+depends=("ghc=7.8.4-1"
          "haskell-cereal=0.4.1.0-2"
          "haskell-either=4.3.2.1-2"
          "haskell-lens=4.7-1"

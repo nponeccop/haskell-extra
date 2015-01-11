@@ -11,7 +11,7 @@ url="http://ianwookim.org/hoodle"
 license=("BSD3")
 arch=('i686' 'x86_64')
 makedepends=()
-depends=("ghc=7.8.3-1"
+depends=("ghc=7.8.4-1"
          "haskell-attoparsec=0.12.1.2-3"
          "haskell-attoparsec-conduit=1.1.0-3"
          "haskell-conduit=1.2.3.1-3"

@@ -11,7 +11,7 @@ url="http://github.com/ekmett/recursion-schemes/"
 license=("BSD3")
 arch=('i686' 'x86_64')
 makedepends=()
-depends=("ghc=7.8.3-1"
+depends=("ghc=7.8.4-1"
          "haskell-comonad=4.2.2-11"
          "haskell-free=4.10.0.1-6")
 options=('strip' 'staticlibs')

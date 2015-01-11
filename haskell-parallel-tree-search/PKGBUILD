@@ -11,7 +11,7 @@ url="http://github.com/sebfisch/parallel-tree-search"
 license=("PublicDomain")
 arch=('i686' 'x86_64')
 makedepends=()
-depends=("ghc=7.8.3-1"
+depends=("ghc=7.8.4-1"
          "haskell-parallel=3.2.0.6-1"
          "haskell-tree-monad=0.3-2")
 options=('strip' 'staticlibs')

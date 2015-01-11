@@ -11,7 +11,7 @@ url="http://snapframework.com/"
 license=("BSD3")
 arch=('i686' 'x86_64')
 makedepends=()
-depends=("ghc=7.8.3-1"
+depends=("ghc=7.8.4-1"
          "haskell-monadcatchio-transformers=0.3.1.0-58"
          "haskell-aeson=0.8.0.2-8"
          "haskell-attoparsec=0.12.1.2-3"
