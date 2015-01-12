@@ -1,0 +1,7 @@
+.PHONY: haskell-derive hackage-derive
+haskell-derive: upstream/ghc upstream/haskell-haskell-src-exts upstream/haskell-syb upstream/haskell-uniplate
+haskell-derive/PKGBUILD: 
+haskell-derive: haskell-derive/haskell-derive-2.5.19-1-i686.pkg.tar.xz
+haskell-derive/haskell-derive-2.5.19-1-i686.pkg.tar.xz: haskell-derive/PKGBUILD
+hackage-derive: haskell-derive
+pacman-U-derive: haskell-derive/haskell-derive-2.5.19-1-i686.pkg.tar.xz

@@ -1,0 +1,7 @@
+.PHONY: haskell-diagrams-core hackage-diagrams-core
+haskell-diagrams-core: upstream/ghc haskell-dual-tree upstream/haskell-lens haskell-memotrie haskell-monoid-extras haskell-newtype upstream/haskell-semigroups haskell-vector-space haskell-vector-space-points
+haskell-diagrams-core/PKGBUILD: 
+haskell-diagrams-core: haskell-diagrams-core/haskell-diagrams-core-1.2.0.4-4-i686.pkg.tar.xz
+haskell-diagrams-core/haskell-diagrams-core-1.2.0.4-4-i686.pkg.tar.xz: haskell-diagrams-core/PKGBUILD
+hackage-diagrams-core: haskell-diagrams-core
+pacman-U-diagrams-core: haskell-diagrams-core/haskell-diagrams-core-1.2.0.4-4-i686.pkg.tar.xz

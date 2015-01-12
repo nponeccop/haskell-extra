@@ -4,19 +4,19 @@ _licensefile=LICENSE
 
 # PKGBUILD options/directives
 pkgname=haskell-fclabels
-pkgver=2.0.2
-pkgrel=2
+pkgver=2.0.2.2
+pkgrel=1
 pkgdesc="First class accessor labels implemented as lenses."
 url="https://github.com/sebastiaanvisser/fclabels"
 license=("BSD3")
 arch=('i686' 'x86_64')
 makedepends=()
-depends=("ghc=7.8.3-1"
+depends=("ghc=7.8.4-1"
          "haskell-mtl=2.1.3.1-5")
 options=('strip' 'staticlibs')
 source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
 install="${pkgname}.install"
-sha256sums=("b7bd4e6aad908dd2d6c6872a5d3f0b5f538d2fe69e42008025e4af88a8690a81")
+sha256sums=("4865e78c114120bde4313ee9b0e90d39e4e03292c7c80f20359140e167ad754b")
 
 # PKGBUILD functions
 

@@ -1,0 +1,7 @@
+.PHONY: haskell-fclabels hackage-fclabels
+haskell-fclabels: upstream/ghc upstream/haskell-mtl
+haskell-fclabels/PKGBUILD: 
+haskell-fclabels: haskell-fclabels/haskell-fclabels-2.0.2.2-1-i686.pkg.tar.xz
+haskell-fclabels/haskell-fclabels-2.0.2.2-1-i686.pkg.tar.xz: haskell-fclabels/PKGBUILD
+hackage-fclabels: haskell-fclabels
+pacman-U-fclabels: haskell-fclabels/haskell-fclabels-2.0.2.2-1-i686.pkg.tar.xz

@@ -1,7 +1,7 @@
 .PHONY: haskell-htensor hackage-hTensor
 haskell-htensor: upstream/ghc haskell-hmatrix upstream/haskell-random
 haskell-htensor/PKGBUILD: 
-haskell-htensor: haskell-htensor/haskell-htensor-0.8.2-3-i686.pkg.tar.xz
-haskell-htensor/haskell-htensor-0.8.2-3-i686.pkg.tar.xz: haskell-htensor/PKGBUILD
+haskell-htensor: haskell-htensor/haskell-htensor-0.8.2-6-i686.pkg.tar.xz
+haskell-htensor/haskell-htensor-0.8.2-6-i686.pkg.tar.xz: haskell-htensor/PKGBUILD
 hackage-hTensor: haskell-htensor
-pacman-U-hTensor: haskell-htensor/haskell-htensor-0.8.2-3-i686.pkg.tar.xz
+pacman-U-hTensor: haskell-htensor/haskell-htensor-0.8.2-6-i686.pkg.tar.xz

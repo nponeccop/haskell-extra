@@ -1,0 +1,7 @@
+.PHONY: haskell-lifted-async hackage-lifted-async
+haskell-lifted-async: upstream/ghc upstream/haskell-async haskell-constraints upstream/haskell-lifted-base upstream/haskell-monad-control upstream/haskell-transformers-base
+haskell-lifted-async/PKGBUILD: 
+haskell-lifted-async: haskell-lifted-async/haskell-lifted-async-0.5.0.1-2-i686.pkg.tar.xz
+haskell-lifted-async/haskell-lifted-async-0.5.0.1-2-i686.pkg.tar.xz: haskell-lifted-async/PKGBUILD
+hackage-lifted-async: haskell-lifted-async
+pacman-U-lifted-async: haskell-lifted-async/haskell-lifted-async-0.5.0.1-2-i686.pkg.tar.xz

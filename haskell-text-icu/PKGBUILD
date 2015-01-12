@@ -4,8 +4,8 @@ _licensefile=LICENSE
 
 # PKGBUILD options/directives
 pkgname=haskell-text-icu
-pkgver=0.7.0.0
-pkgrel=2
+pkgver=0.7.0.1
+pkgrel=1
 pkgdesc="Bindings to the ICU library"
 url="https://github.com/bos/text-icu"
 license=("BSD3")
@@ -17,7 +17,7 @@ depends=("ghc=7.8.4-1"
 options=('strip' 'staticlibs')
 source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
 install="${pkgname}.install"
-sha256sums=("3edbfe54e35ab0547d66d2e1ab1cd7390ac5f906a4a52ab61087ef99223678bb")
+sha256sums=("e2764c2749033706eed5b9fb3cda11177ad15cdf11912028f551eca39a2c7f78")
 
 # PKGBUILD functions
 

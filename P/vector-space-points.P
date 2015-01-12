@@ -1,0 +1,7 @@
+.PHONY: haskell-vector-space-points hackage-vector-space-points
+haskell-vector-space-points: upstream/ghc haskell-vector-space
+haskell-vector-space-points/PKGBUILD: 
+haskell-vector-space-points: haskell-vector-space-points/haskell-vector-space-points-0.2-4-i686.pkg.tar.xz
+haskell-vector-space-points/haskell-vector-space-points-0.2-4-i686.pkg.tar.xz: haskell-vector-space-points/PKGBUILD
+hackage-vector-space-points: haskell-vector-space-points
+pacman-U-vector-space-points: haskell-vector-space-points/haskell-vector-space-points-0.2-4-i686.pkg.tar.xz

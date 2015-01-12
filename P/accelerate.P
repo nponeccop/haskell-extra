@@ -1,0 +1,7 @@
+.PHONY: haskell-accelerate hackage-accelerate
+haskell-accelerate: upstream/ghc haskell-fclabels upstream/haskell-hashable upstream/haskell-hashtables upstream/haskell-unordered-containers
+haskell-accelerate/PKGBUILD: 
+haskell-accelerate: haskell-accelerate/haskell-accelerate-0.15.0.0-2-i686.pkg.tar.xz
+haskell-accelerate/haskell-accelerate-0.15.0.0-2-i686.pkg.tar.xz: haskell-accelerate/PKGBUILD
+hackage-accelerate: haskell-accelerate
+pacman-U-accelerate: haskell-accelerate/haskell-accelerate-0.15.0.0-2-i686.pkg.tar.xz

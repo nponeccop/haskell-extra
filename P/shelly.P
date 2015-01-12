@@ -1,0 +1,7 @@
+.PHONY: haskell-shelly hackage-shelly
+haskell-shelly: upstream/ghc upstream/haskell-async upstream/haskell-enclosed-exceptions upstream/haskell-exceptions haskell-lifted-async upstream/haskell-lifted-base upstream/haskell-monad-control upstream/haskell-mtl upstream/haskell-system-fileio upstream/haskell-system-filepath upstream/haskell-text upstream/haskell-transformers-base upstream/haskell-unix-compat
+haskell-shelly/PKGBUILD: 
+haskell-shelly: haskell-shelly/haskell-shelly-1.6.0-1-i686.pkg.tar.xz
+haskell-shelly/haskell-shelly-1.6.0-1-i686.pkg.tar.xz: haskell-shelly/PKGBUILD
+hackage-shelly: haskell-shelly
+pacman-U-shelly: haskell-shelly/haskell-shelly-1.6.0-1-i686.pkg.tar.xz

@@ -1,0 +1,7 @@
+.PHONY: haskell-storable-complex hackage-storable-complex
+haskell-storable-complex: upstream/ghc
+haskell-storable-complex/PKGBUILD: 
+haskell-storable-complex: haskell-storable-complex/haskell-storable-complex-0.2.2-1-i686.pkg.tar.xz
+haskell-storable-complex/haskell-storable-complex-0.2.2-1-i686.pkg.tar.xz: haskell-storable-complex/PKGBUILD
+hackage-storable-complex: haskell-storable-complex
+pacman-U-storable-complex: haskell-storable-complex/haskell-storable-complex-0.2.2-1-i686.pkg.tar.xz

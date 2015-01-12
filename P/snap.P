@@ -1,0 +1,7 @@
+.PHONY: haskell-snap hackage-snap
+haskell-snap: upstream/ghc upstream/haskell-aeson upstream/haskell-attoparsec upstream/haskell-cereal upstream/haskell-clientsession upstream/haskell-comonad haskell-configurator haskell-directory-tree upstream/haskell-dlist haskell-errors upstream/haskell-hashable haskell-heist upstream/haskell-lens haskell-logict upstream/haskell-monadcatchio-transformers upstream/haskell-mtl upstream/haskell-mwc-random haskell-pwstore-fast upstream/haskell-regex-posix haskell-snap-core haskell-snap-server upstream/haskell-stm upstream/haskell-syb upstream/haskell-text upstream/haskell-unordered-containers upstream/haskell-vector upstream/haskell-vector-algorithms haskell-xmlhtml
+haskell-snap/PKGBUILD: 
+haskell-snap: haskell-snap/haskell-snap-0.13.3.2-1-i686.pkg.tar.xz
+haskell-snap/haskell-snap-0.13.3.2-1-i686.pkg.tar.xz: haskell-snap/PKGBUILD
+hackage-snap: haskell-snap
+pacman-U-snap: haskell-snap/haskell-snap-0.13.3.2-1-i686.pkg.tar.xz

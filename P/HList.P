@@ -1,0 +1,7 @@
+.PHONY: haskell-hlist hackage-HList
+haskell-hlist: upstream/ghc upstream/haskell-mtl upstream/haskell-tagged
+haskell-hlist/PKGBUILD: 
+haskell-hlist: haskell-hlist/haskell-hlist-0.3.4.1-2-i686.pkg.tar.xz
+haskell-hlist/haskell-hlist-0.3.4.1-2-i686.pkg.tar.xz: haskell-hlist/PKGBUILD
+hackage-HList: haskell-hlist
+pacman-U-HList: haskell-hlist/haskell-hlist-0.3.4.1-2-i686.pkg.tar.xz

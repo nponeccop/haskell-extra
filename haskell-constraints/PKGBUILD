@@ -4,19 +4,19 @@ _licensefile=LICENSE
 
 # PKGBUILD options/directives
 pkgname=haskell-constraints
-pkgver=0.4.1.2
+pkgver=0.4.1.3
 pkgrel=1
 pkgdesc="Constraint manipulation"
 url="http://github.com/ekmett/constraints/"
 license=("BSD3")
 arch=('i686' 'x86_64')
 makedepends=()
-depends=("ghc=7.8.3-1"
+depends=("ghc=7.8.4-1"
          "haskell-newtype=0.2-2")
 options=('strip' 'staticlibs')
 source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
 install="${pkgname}.install"
-sha256sums=("6711cf0893715f55ba070ff065829a02b1093ba18bb0e14f7b9dd86b2f2c2930")
+sha256sums=("dd4353b66c85980363050566a13d17ad0216f072a06f207cb8d36530ded67af0")
 
 # PKGBUILD functions
 

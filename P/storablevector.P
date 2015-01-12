@@ -1,0 +1,7 @@
+.PHONY: haskell-storablevector hackage-storablevector
+haskell-storablevector: upstream/ghc haskell-non-negative upstream/haskell-quickcheck upstream/haskell-syb haskell-unsafe haskell-utility-ht
+haskell-storablevector/PKGBUILD: 
+haskell-storablevector: haskell-storablevector/haskell-storablevector-0.2.10-1-i686.pkg.tar.xz
+haskell-storablevector/haskell-storablevector-0.2.10-1-i686.pkg.tar.xz: haskell-storablevector/PKGBUILD
+hackage-storablevector: haskell-storablevector
+pacman-U-storablevector: haskell-storablevector/haskell-storablevector-0.2.10-1-i686.pkg.tar.xz

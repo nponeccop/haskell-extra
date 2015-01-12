@@ -4,8 +4,8 @@ _licensefile=LICENSE
 
 # PKGBUILD options/directives
 pkgname=haskell-haste-compiler
-pkgver=0.4.3
-pkgrel=2
+pkgver=0.4.4
+pkgrel=1
 pkgdesc="Haskell To ECMAScript compiler"
 url="http://haste-lang.org/"
 license=("BSD3")
@@ -33,7 +33,7 @@ depends=("ghc=7.8.4-1"
 options=('strip' 'staticlibs')
 source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
 install="${pkgname}.install"
-sha256sums=("c2d44adab6bf5de7bf72b728f09e32ca7c298ac1d2954f25c8f2562e83326bf2")
+sha256sums=("cd35c1283f87290ee52cd7baf675ec8fb1ec9c067e5fb00c6c416453aeb952b2")
 
 # PKGBUILD functions
 
@@ -50,7 +50,7 @@ build() {
     runhaskell Setup configure -O --enable-library-profiling --enable-shared \
         --prefix=/usr --docdir="/usr/share/doc/${pkgname}" \
         --libsubdir=\$compiler/site-local/\$pkgid \
-            -f-portable
+            -f-only-library -f-static -f-portable
     runhaskell Setup build
     #runhaskell Setup haddock --hoogle --html
     runhaskell Setup register --gen-script

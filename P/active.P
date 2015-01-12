@@ -1,0 +1,7 @@
+.PHONY: haskell-active hackage-active
+haskell-active: upstream/ghc haskell-newtype upstream/haskell-semigroupoids upstream/haskell-semigroups haskell-vector-space
+haskell-active/PKGBUILD: 
+haskell-active: haskell-active/haskell-active-0.1.0.17-4-i686.pkg.tar.xz
+haskell-active/haskell-active-0.1.0.17-4-i686.pkg.tar.xz: haskell-active/PKGBUILD
+hackage-active: haskell-active
+pacman-U-active: haskell-active/haskell-active-0.1.0.17-4-i686.pkg.tar.xz

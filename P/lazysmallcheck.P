@@ -1,0 +1,7 @@
+.PHONY: haskell-lazysmallcheck hackage-lazysmallcheck
+haskell-lazysmallcheck: upstream/ghc
+haskell-lazysmallcheck/PKGBUILD: 
+haskell-lazysmallcheck: haskell-lazysmallcheck/haskell-lazysmallcheck-0.6-1-i686.pkg.tar.xz
+haskell-lazysmallcheck/haskell-lazysmallcheck-0.6-1-i686.pkg.tar.xz: haskell-lazysmallcheck/PKGBUILD
+hackage-lazysmallcheck: haskell-lazysmallcheck
+pacman-U-lazysmallcheck: haskell-lazysmallcheck/haskell-lazysmallcheck-0.6-1-i686.pkg.tar.xz

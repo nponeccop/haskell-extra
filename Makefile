@@ -29,13 +29,20 @@ aurrepo:
 build-%:
 	bash build.sh $*
 
+changed-pkgbuilds:
+	make $(cblrepo build $(join <(bash dbdiff.sh | tail -n +2 | cut -f 2 -d ' ' | sort | uniq) <(cblrepo list | cut -f 1 -d ' ')) | sed 's|^|cblrepo-pkgbuild-|g' | xargs)
+
+changed-remove:
+	yaourt -Rs $(yaourt -Qq $(cblrepo build $(join <(bash dbdiff.sh | tail -n +2 | cut -f 2 -d ' ' | sort | uniq) <(cblrepo list | cut -f 1 -d ' ')) | bash hackage2pkg.sh | xargs) | xargs)
+
 sync:
 	bash sync.sh
 
 cblrepo-add-%:
 	bash madd.sh $*	
 
-cblrepo-pkgbuild-%: cblrepo-add-%
+cblrepo-pkgbuild-%: 
+	#cblrepo-add-%
 	cblrepo pkgbuild --ghc-version=7.8.4 $*
 	$(MAKEDEPEND.package) $* >P/$*.P
 
@@ -55,7 +62,7 @@ pacman-U-%:
 	cd $(<D) && mkaurball && cp $@ ../aur
 
 %.pkg.tar.xz:
-	pacman -Q $(@D) || (cd $(@D) && makepkg -sci)
+	pacman -Q $(@D) || (cd $(@D) && makepkg -sci --noconfirm)
 	
 %/PKGBUILD: cblrepo.db
 -include P/*.P

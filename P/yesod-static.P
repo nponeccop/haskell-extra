@@ -1,0 +1,7 @@
+.PHONY: haskell-yesod-static hackage-yesod-static
+haskell-yesod-static: upstream/ghc upstream/haskell-async upstream/haskell-attoparsec upstream/haskell-base64-bytestring upstream/haskell-blaze-builder upstream/haskell-byteable upstream/haskell-conduit upstream/haskell-conduit-extra upstream/haskell-cryptohash haskell-cryptohash-conduit upstream/haskell-css-text upstream/haskell-data-default haskell-file-embed upstream/haskell-hashable haskell-hjsmin upstream/haskell-http-types upstream/haskell-mime-types upstream/haskell-resourcet upstream/haskell-system-fileio upstream/haskell-system-filepath upstream/haskell-text upstream/haskell-unix-compat upstream/haskell-unordered-containers upstream/haskell-wai haskell-wai-app-static haskell-yesod-core
+haskell-yesod-static/PKGBUILD: 
+haskell-yesod-static: haskell-yesod-static/haskell-yesod-static-1.4.0.4-3-i686.pkg.tar.xz
+haskell-yesod-static/haskell-yesod-static-1.4.0.4-3-i686.pkg.tar.xz: haskell-yesod-static/PKGBUILD
+hackage-yesod-static: haskell-yesod-static
+pacman-U-yesod-static: haskell-yesod-static/haskell-yesod-static-1.4.0.4-3-i686.pkg.tar.xz

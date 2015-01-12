@@ -1,0 +1,7 @@
+.PHONY: haskell-mflow hackage-MFlow
+haskell-mflow: upstream/ghc upstream/haskell-blaze-html upstream/haskell-blaze-markup upstream/haskell-case-insensitive upstream/haskell-clientsession upstream/haskell-conduit upstream/haskell-conduit-extra upstream/haskell-extensible-exceptions upstream/haskell-http-types haskell-monadloc upstream/haskell-mtl upstream/haskell-parsec haskell-pwstore-fast upstream/haskell-random haskell-refserialize upstream/haskell-resourcet upstream/haskell-stm haskell-tcache upstream/haskell-text upstream/haskell-utf8-string upstream/haskell-vector upstream/haskell-wai upstream/haskell-wai-extra upstream/haskell-warp haskell-warp-tls haskell-workflow
+haskell-mflow/PKGBUILD: 
+haskell-mflow: haskell-mflow/haskell-mflow-0.4.5.9-3-i686.pkg.tar.xz
+haskell-mflow/haskell-mflow-0.4.5.9-3-i686.pkg.tar.xz: haskell-mflow/PKGBUILD
+hackage-MFlow: haskell-mflow
+pacman-U-MFlow: haskell-mflow/haskell-mflow-0.4.5.9-3-i686.pkg.tar.xz

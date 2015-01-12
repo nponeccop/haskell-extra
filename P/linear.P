@@ -1,0 +1,7 @@
+.PHONY: haskell-linear hackage-linear
+haskell-linear: upstream/ghc haskell-adjunctions haskell-binary upstream/haskell-distributive upstream/haskell-hashable upstream/haskell-lens upstream/haskell-reflection upstream/haskell-semigroupoids upstream/haskell-semigroups upstream/haskell-tagged upstream/haskell-unordered-containers upstream/haskell-vector upstream/haskell-void
+haskell-linear/PKGBUILD: 
+haskell-linear: haskell-linear/haskell-linear-1.16-1-i686.pkg.tar.xz
+haskell-linear/haskell-linear-1.16-1-i686.pkg.tar.xz: haskell-linear/PKGBUILD
+hackage-linear: haskell-linear
+pacman-U-linear: haskell-linear/haskell-linear-1.16-1-i686.pkg.tar.xz

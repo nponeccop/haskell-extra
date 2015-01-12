@@ -1,0 +1,7 @@
+.PHONY: haskell-event-list hackage-event-list
+haskell-event-list: upstream/ghc haskell-non-negative upstream/haskell-quickcheck haskell-utility-ht
+haskell-event-list/PKGBUILD: 
+haskell-event-list: haskell-event-list/haskell-event-list-0.1.1.2-1-i686.pkg.tar.xz
+haskell-event-list/haskell-event-list-0.1.1.2-1-i686.pkg.tar.xz: haskell-event-list/PKGBUILD
+hackage-event-list: haskell-event-list
+pacman-U-event-list: haskell-event-list/haskell-event-list-0.1.1.2-1-i686.pkg.tar.xz

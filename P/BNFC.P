@@ -1,0 +1,7 @@
+.PHONY: haskell-bnfc hackage-BNFC
+haskell-bnfc: upstream/ghc upstream/haskell-mtl
+haskell-bnfc/PKGBUILD: 
+haskell-bnfc: haskell-bnfc/haskell-bnfc-2.7.1-1-i686.pkg.tar.xz
+haskell-bnfc/haskell-bnfc-2.7.1-1-i686.pkg.tar.xz: haskell-bnfc/PKGBUILD
+hackage-BNFC: haskell-bnfc
+pacman-U-BNFC: haskell-bnfc/haskell-bnfc-2.7.1-1-i686.pkg.tar.xz

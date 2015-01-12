@@ -4,8 +4,8 @@ _licensefile=LICENSE
 
 # PKGBUILD options/directives
 pkgname=haskell-linear
-pkgver=1.15.5
-pkgrel=2
+pkgver=1.16
+pkgrel=1
 pkgdesc="Linear Algebra"
 url="http://github.com/ekmett/linear/"
 license=("BSD3")
@@ -27,7 +27,7 @@ depends=("ghc=7.8.4-1"
 options=('strip' 'staticlibs')
 source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
 install="${pkgname}.install"
-sha256sums=("b1965b45c9a87a8076ee75eb2f762df761658fbd7fa0a2dda3731bf913f9dd9d")
+sha256sums=("8fbc5b251fcd7ce665ad7221c255d6cc513fbe7d678ebb0f860236ad6fc95838")
 
 # PKGBUILD functions
 

@@ -11,7 +11,7 @@ url="http://snapframework.com/"
 license=("BSD3")
 arch=('i686' 'x86_64')
 makedepends=()
-depends=("ghc=7.8.3-1"
+depends=("ghc=7.8.4-1"
          "haskell-monadcatchio-transformers=0.3.1.0-58"
          "haskell-aeson=0.8.0.2-8"
          "haskell-attoparsec=0.12.1.2-3"
@@ -40,18 +40,16 @@ depends=("ghc=7.8.3-1"
          "haskell-vector-algorithms=0.6.0.3-6"
          "haskell-xmlhtml=0.2.3.4-2")
 options=('strip' 'staticlibs')
-source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz"
-        "cabal.patch")
+source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
 install="${pkgname}.install"
-sha256sums=("3733879096fef9dd5e2e8d211a5dbede74161fc73e974db65b137fc4b968dacc"
-            "da3bbbf7dcf2315f67c60585062c629e056dd9084a6ebe9d8acec4f3c35c3940")
+sha256sums=("3733879096fef9dd5e2e8d211a5dbede74161fc73e974db65b137fc4b968dacc")
 
 # PKGBUILD functions
 
 prepare() {
     cd "${srcdir}/${_hkgname}-${pkgver}"
     
-    patch snap.cabal "${srcdir}/cabal.patch" 
+    # no cabal patch
     # no source patch
 }
 

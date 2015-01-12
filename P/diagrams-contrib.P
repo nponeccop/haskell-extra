@@ -1,7 +1,7 @@
 .PHONY: haskell-diagrams-contrib hackage-diagrams-contrib
 haskell-diagrams-contrib: upstream/ghc haskell-arithmoi haskell-circle-packing upstream/haskell-colour upstream/haskell-data-default upstream/haskell-data-default-class haskell-diagrams-core haskell-diagrams-lib haskell-force-layout upstream/haskell-lens upstream/haskell-monadrandom upstream/haskell-mtl upstream/haskell-parsec upstream/haskell-semigroups upstream/haskell-split upstream/haskell-text haskell-vector-space haskell-vector-space-points
 haskell-diagrams-contrib/PKGBUILD: 
-haskell-diagrams-contrib: haskell-diagrams-contrib/haskell-diagrams-contrib-1.1.2.4-4-i686.pkg.tar.xz
-haskell-diagrams-contrib/haskell-diagrams-contrib-1.1.2.4-4-i686.pkg.tar.xz: haskell-diagrams-contrib/PKGBUILD
+haskell-diagrams-contrib: haskell-diagrams-contrib/haskell-diagrams-contrib-1.1.2.4-6-i686.pkg.tar.xz
+haskell-diagrams-contrib/haskell-diagrams-contrib-1.1.2.4-6-i686.pkg.tar.xz: haskell-diagrams-contrib/PKGBUILD
 hackage-diagrams-contrib: haskell-diagrams-contrib
-pacman-U-diagrams-contrib: haskell-diagrams-contrib/haskell-diagrams-contrib-1.1.2.4-4-i686.pkg.tar.xz
+pacman-U-diagrams-contrib: haskell-diagrams-contrib/haskell-diagrams-contrib-1.1.2.4-6-i686.pkg.tar.xz

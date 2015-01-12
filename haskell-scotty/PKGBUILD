@@ -4,7 +4,7 @@ _licensefile=LICENSE
 
 # PKGBUILD options/directives
 pkgname=haskell-scotty
-pkgver=0.9.0
+pkgver=0.9.1
 pkgrel=1
 pkgdesc="Haskell web framework inspired by Ruby's Sinatra, using WAI and Warp"
 url="https://github.com/scotty-web/scotty"
@@ -26,18 +26,16 @@ depends=("ghc=7.8.4-1"
          "haskell-wai-extra=3.0.3.2-2"
          "haskell-warp=3.0.5-2")
 options=('strip' 'staticlibs')
-source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz"
-        "cabal.patch")
+source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
 install="${pkgname}.install"
-sha256sums=("2dac5968204b5b4bb56e183ccc8d178108f8219ff44636e0424633c2cb04a03f"
-            "b8976ee12905014e0c1df26f30222f083324ade633b0ed730f24149dac5700d4")
+sha256sums=("15eb1c05817ea89a59d934835b91f8c3f7872ca7e45c44975b11d1d32c7c0770")
 
 # PKGBUILD functions
 
 prepare() {
     cd "${srcdir}/${_hkgname}-${pkgver}"
     
-    patch scotty.cabal "${srcdir}/cabal.patch" 
+    # no cabal patch
     # no source patch
 }
 

@@ -1,0 +1,7 @@
+.PHONY: haskell-force-layout hackage-force-layout
+haskell-force-layout: upstream/ghc upstream/haskell-data-default-class upstream/haskell-lens haskell-vector-space haskell-vector-space-points
+haskell-force-layout/PKGBUILD: 
+haskell-force-layout: haskell-force-layout/haskell-force-layout-0.3.0.8-4-i686.pkg.tar.xz
+haskell-force-layout/haskell-force-layout-0.3.0.8-4-i686.pkg.tar.xz: haskell-force-layout/PKGBUILD
+hackage-force-layout: haskell-force-layout
+pacman-U-force-layout: haskell-force-layout/haskell-force-layout-0.3.0.8-4-i686.pkg.tar.xz

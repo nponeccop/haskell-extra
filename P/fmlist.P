@@ -1,7 +1,7 @@
 .PHONY: haskell-fmlist hackage-fmlist
 haskell-fmlist: upstream/ghc
 haskell-fmlist/PKGBUILD: 
-haskell-fmlist: haskell-fmlist/haskell-fmlist-0.8-2-i686.pkg.tar.xz
-haskell-fmlist/haskell-fmlist-0.8-2-i686.pkg.tar.xz: haskell-fmlist/PKGBUILD
+haskell-fmlist: haskell-fmlist/haskell-fmlist-0.9-1-i686.pkg.tar.xz
+haskell-fmlist/haskell-fmlist-0.9-1-i686.pkg.tar.xz: haskell-fmlist/PKGBUILD
 hackage-fmlist: haskell-fmlist
-pacman-U-fmlist: haskell-fmlist/haskell-fmlist-0.8-2-i686.pkg.tar.xz
+pacman-U-fmlist: haskell-fmlist/haskell-fmlist-0.9-1-i686.pkg.tar.xz

@@ -1,0 +1,7 @@
+.PHONY: haskell-warp-tls hackage-warp-tls
+haskell-warp-tls: upstream/ghc upstream/haskell-cprng-aes upstream/haskell-data-default-class upstream/haskell-network upstream/haskell-streaming-commons upstream/haskell-tls upstream/haskell-wai upstream/haskell-warp
+haskell-warp-tls/PKGBUILD: 
+haskell-warp-tls: haskell-warp-tls/haskell-warp-tls-3.0.1.2-1-i686.pkg.tar.xz
+haskell-warp-tls/haskell-warp-tls-3.0.1.2-1-i686.pkg.tar.xz: haskell-warp-tls/PKGBUILD
+hackage-warp-tls: haskell-warp-tls
+pacman-U-warp-tls: haskell-warp-tls/haskell-warp-tls-3.0.1.2-1-i686.pkg.tar.xz
