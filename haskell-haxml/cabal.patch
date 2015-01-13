@@ -1,0 +1,13 @@
+Index: cblrepo/HaXml-1.25.2/HaXml.cabal
+===================================================================
+--- cblrepo.orig/HaXml-1.25.2/HaXml.cabal
++++ cblrepo/HaXml-1.25.2/HaXml.cabal
+@@ -66,7 +66,7 @@ library
+     exposed-modules:
+         Text.XML.HaXml.Schema.Schema
+   hs-source-dirs: src
+-  build-depends: polyparse >= 1.10, filepath
++  build-depends: polyparse, filepath
+   if flag(splitBase)
+     build-depends: base >= 3 && < 6, pretty, random, containers
+   else

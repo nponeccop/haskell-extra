@@ -4,10 +4,10 @@ _licensefile=COPYRIGHT
 
 # PKGBUILD options/directives
 pkgname=haskell-haxml
-pkgver=1.24.1
-pkgrel=3
+pkgver=1.25.2
+pkgrel=1
 pkgdesc="Utilities for manipulating XML documents"
-url="http://www.cs.york.ac.uk/fp/HaXml/"
+url="http://projects.haskell.org/HaXml/"
 license=("LGPL")
 arch=('i686' 'x86_64')
 makedepends=()
@@ -15,16 +15,18 @@ depends=("ghc=7.8.4-1"
          "haskell-polyparse=1.9-64"
          "haskell-random=1.1-1")
 options=('strip' 'staticlibs')
-source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
+source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz"
+        "cabal.patch")
 install="${pkgname}.install"
-sha256sums=("5f258c7c6291ad54bb9a65280dd30efcbca3fc79a499d5b6575a753d3f7b78df")
+sha256sums=("f0e271243330b87822d13298f6ad60947f285b5794d620ab325caf3ef9258358"
+            "17e36110a4cfcda7e430d97f5d02e329ceac35ba0bba478628e84a0e2ed66be2")
 
 # PKGBUILD functions
 
 prepare() {
     cd "${srcdir}/${_hkgname}-${pkgver}"
     
-    # no cabal patch
+    patch HaXml.cabal "${srcdir}/cabal.patch" 
     # no source patch
 }
 
