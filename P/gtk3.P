@@ -1,0 +1,7 @@
+.PHONY: haskell-gtk3 hackage-gtk3
+haskell-gtk3: upstream/ghc upstream/gtk2hs-buildtools upstream/haskell-cairo upstream/haskell-gio upstream/haskell-glib upstream/haskell-mtl upstream/haskell-pango upstream/haskell-text
+haskell-gtk3/PKGBUILD: 
+haskell-gtk3: haskell-gtk3/haskell-gtk3-0.13.4-3-i686.pkg.tar.xz
+haskell-gtk3/haskell-gtk3-0.13.4-3-i686.pkg.tar.xz: haskell-gtk3/PKGBUILD
+hackage-gtk3: haskell-gtk3
+pacman-U-gtk3: haskell-gtk3/haskell-gtk3-0.13.4-3-i686.pkg.tar.xz

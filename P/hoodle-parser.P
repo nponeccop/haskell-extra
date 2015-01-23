@@ -1,0 +1,7 @@
+.PHONY: haskell-hoodle-parser hackage-hoodle-parser
+haskell-hoodle-parser: upstream/ghc upstream/haskell-attoparsec upstream/haskell-either haskell-hoodle-types upstream/haskell-lens upstream/haskell-mtl upstream/haskell-strict upstream/haskell-text haskell-xournal-types
+haskell-hoodle-parser/PKGBUILD: 
+haskell-hoodle-parser: haskell-hoodle-parser/haskell-hoodle-parser-0.3-3-i686.pkg.tar.xz
+haskell-hoodle-parser/haskell-hoodle-parser-0.3-3-i686.pkg.tar.xz: haskell-hoodle-parser/PKGBUILD
+hackage-hoodle-parser: haskell-hoodle-parser
+pacman-U-hoodle-parser: haskell-hoodle-parser/haskell-hoodle-parser-0.3-3-i686.pkg.tar.xz

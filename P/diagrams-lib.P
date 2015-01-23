@@ -1,7 +1,7 @@
 .PHONY: haskell-diagrams-lib hackage-diagrams-lib
 haskell-diagrams-lib: upstream/ghc haskell-active upstream/haskell-colour upstream/haskell-data-default-class haskell-diagrams-core haskell-dual-tree haskell-fingertree upstream/haskell-hashable haskell-intervals upstream/haskell-juicypixels upstream/haskell-lens haskell-memotrie haskell-monoid-extras upstream/haskell-optparse-applicative upstream/haskell-semigroups upstream/haskell-tagged haskell-vector-space haskell-vector-space-points
 haskell-diagrams-lib/PKGBUILD: 
-haskell-diagrams-lib: haskell-diagrams-lib/haskell-diagrams-lib-1.2.0.7-5-i686.pkg.tar.xz
-haskell-diagrams-lib/haskell-diagrams-lib-1.2.0.7-5-i686.pkg.tar.xz: haskell-diagrams-lib/PKGBUILD
+haskell-diagrams-lib: haskell-diagrams-lib/haskell-diagrams-lib-1.2.0.8-1-i686.pkg.tar.xz
+haskell-diagrams-lib/haskell-diagrams-lib-1.2.0.8-1-i686.pkg.tar.xz: haskell-diagrams-lib/PKGBUILD
 hackage-diagrams-lib: haskell-diagrams-lib
-pacman-U-diagrams-lib: haskell-diagrams-lib/haskell-diagrams-lib-1.2.0.7-5-i686.pkg.tar.xz
+pacman-U-diagrams-lib: haskell-diagrams-lib/haskell-diagrams-lib-1.2.0.8-1-i686.pkg.tar.xz

@@ -1,0 +1,7 @@
+.PHONY: haskell-network-transport-tcp hackage-network-transport-tcp
+haskell-network-transport-tcp: upstream/ghc haskell-data-accessor upstream/haskell-network haskell-network-transport
+haskell-network-transport-tcp/PKGBUILD: 
+haskell-network-transport-tcp: haskell-network-transport-tcp/haskell-network-transport-tcp-0.4.1-4-i686.pkg.tar.xz
+haskell-network-transport-tcp/haskell-network-transport-tcp-0.4.1-4-i686.pkg.tar.xz: haskell-network-transport-tcp/PKGBUILD
+hackage-network-transport-tcp: haskell-network-transport-tcp
+pacman-U-network-transport-tcp: haskell-network-transport-tcp/haskell-network-transport-tcp-0.4.1-4-i686.pkg.tar.xz

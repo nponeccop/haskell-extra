@@ -1,0 +1,7 @@
+.PHONY: haskell-parsers hackage-parsers
+haskell-parsers: upstream/ghc upstream/haskell-attoparsec haskell-charset upstream/haskell-parsec upstream/haskell-text upstream/haskell-unordered-containers
+haskell-parsers/PKGBUILD: 
+haskell-parsers: haskell-parsers/haskell-parsers-0.12.1.1-3-i686.pkg.tar.xz
+haskell-parsers/haskell-parsers-0.12.1.1-3-i686.pkg.tar.xz: haskell-parsers/PKGBUILD
+hackage-parsers: haskell-parsers
+pacman-U-parsers: haskell-parsers/haskell-parsers-0.12.1.1-3-i686.pkg.tar.xz

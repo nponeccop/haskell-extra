@@ -1,0 +1,7 @@
+.PHONY: haskell-html-conduit hackage-html-conduit
+haskell-html-conduit: upstream/ghc upstream/haskell-conduit upstream/haskell-conduit-extra upstream/haskell-resourcet upstream/haskell-system-filepath upstream/haskell-tagstream-conduit upstream/haskell-text upstream/haskell-xml-conduit upstream/haskell-xml-types
+haskell-html-conduit/PKGBUILD: 
+haskell-html-conduit: haskell-html-conduit/haskell-html-conduit-1.1.1.1-3-i686.pkg.tar.xz
+haskell-html-conduit/haskell-html-conduit-1.1.1.1-3-i686.pkg.tar.xz: haskell-html-conduit/PKGBUILD
+hackage-html-conduit: haskell-html-conduit
+pacman-U-html-conduit: haskell-html-conduit/haskell-html-conduit-1.1.1.1-3-i686.pkg.tar.xz

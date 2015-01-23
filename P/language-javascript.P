@@ -1,0 +1,7 @@
+.PHONY: haskell-language-javascript hackage-language-javascript
+haskell-language-javascript: upstream/ghc upstream/haskell-blaze-builder upstream/haskell-mtl upstream/haskell-utf8-string
+haskell-language-javascript/PKGBUILD: 
+haskell-language-javascript: haskell-language-javascript/haskell-language-javascript-0.5.13-3-i686.pkg.tar.xz
+haskell-language-javascript/haskell-language-javascript-0.5.13-3-i686.pkg.tar.xz: haskell-language-javascript/PKGBUILD
+hackage-language-javascript: haskell-language-javascript
+pacman-U-language-javascript: haskell-language-javascript/haskell-language-javascript-0.5.13-3-i686.pkg.tar.xz

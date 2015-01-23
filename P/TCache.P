@@ -1,0 +1,7 @@
+.PHONY: haskell-tcache hackage-TCache
+haskell-tcache: upstream/ghc upstream/haskell-hashtables upstream/haskell-mtl haskell-refserialize upstream/haskell-stm upstream/haskell-text
+haskell-tcache/PKGBUILD: 
+haskell-tcache: haskell-tcache/haskell-tcache-0.12.0-3-i686.pkg.tar.xz
+haskell-tcache/haskell-tcache-0.12.0-3-i686.pkg.tar.xz: haskell-tcache/PKGBUILD
+hackage-TCache: haskell-tcache
+pacman-U-TCache: haskell-tcache/haskell-tcache-0.12.0-3-i686.pkg.tar.xz

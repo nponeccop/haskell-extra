@@ -5,7 +5,7 @@ _licensefile=LICENSE
 # PKGBUILD options/directives
 pkgname=haskell-blaze-builder-enumerator
 pkgver=0.2.0.6
-pkgrel=2
+pkgrel=3
 pkgdesc="Enumeratees for the incremental conversion of builders to
 bytestrings."
 url="https://github.com/meiersi/blaze-builder-enumerator"
@@ -13,8 +13,8 @@ license=("BSD3")
 arch=('i686' 'x86_64')
 makedepends=()
 depends=("ghc=7.8.4-1"
-         "haskell-blaze-builder=0.3.3.4-3"
-         "haskell-enumerator=0.4.20-7")
+         "haskell-blaze-builder=0.3.3.4-4"
+         "haskell-enumerator=0.4.20-8")
 options=('strip' 'staticlibs')
 source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
 install="${pkgname}.install"

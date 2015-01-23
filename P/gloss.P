@@ -1,0 +1,7 @@
+.PHONY: haskell-gloss hackage-gloss
+haskell-gloss: upstream/ghc haskell-bmp haskell-gloss-rendering upstream/haskell-glut upstream/haskell-opengl
+haskell-gloss/PKGBUILD: 
+haskell-gloss: haskell-gloss/haskell-gloss-1.9.2.1-3-i686.pkg.tar.xz
+haskell-gloss/haskell-gloss-1.9.2.1-3-i686.pkg.tar.xz: haskell-gloss/PKGBUILD
+hackage-gloss: haskell-gloss
+pacman-U-gloss: haskell-gloss/haskell-gloss-1.9.2.1-3-i686.pkg.tar.xz

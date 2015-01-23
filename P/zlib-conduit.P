@@ -1,0 +1,7 @@
+.PHONY: haskell-zlib-conduit hackage-zlib-conduit
+haskell-zlib-conduit: upstream/ghc upstream/haskell-conduit
+haskell-zlib-conduit/PKGBUILD: 
+haskell-zlib-conduit: haskell-zlib-conduit/haskell-zlib-conduit-1.1.0-3-i686.pkg.tar.xz
+haskell-zlib-conduit/haskell-zlib-conduit-1.1.0-3-i686.pkg.tar.xz: haskell-zlib-conduit/PKGBUILD
+hackage-zlib-conduit: haskell-zlib-conduit
+pacman-U-zlib-conduit: haskell-zlib-conduit/haskell-zlib-conduit-1.1.0-3-i686.pkg.tar.xz

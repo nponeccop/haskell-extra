@@ -1,0 +1,7 @@
+.PHONY: haskell-hosc hackage-hosc
+haskell-hosc: upstream/ghc upstream/haskell-blaze-builder haskell-data-binary-ieee754 upstream/haskell-network
+haskell-hosc/PKGBUILD: 
+haskell-hosc: haskell-hosc/haskell-hosc-0.15-1-i686.pkg.tar.xz
+haskell-hosc/haskell-hosc-0.15-1-i686.pkg.tar.xz: haskell-hosc/PKGBUILD
+hackage-hosc: haskell-hosc
+pacman-U-hosc: haskell-hosc/haskell-hosc-0.15-1-i686.pkg.tar.xz

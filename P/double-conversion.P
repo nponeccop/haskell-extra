@@ -1,0 +1,7 @@
+.PHONY: haskell-double-conversion hackage-double-conversion
+haskell-double-conversion: upstream/ghc upstream/haskell-text
+haskell-double-conversion/PKGBUILD: 
+haskell-double-conversion: haskell-double-conversion/haskell-double-conversion-2.0.1.0-4-i686.pkg.tar.xz
+haskell-double-conversion/haskell-double-conversion-2.0.1.0-4-i686.pkg.tar.xz: haskell-double-conversion/PKGBUILD
+hackage-double-conversion: haskell-double-conversion
+pacman-U-double-conversion: haskell-double-conversion/haskell-double-conversion-2.0.1.0-4-i686.pkg.tar.xz

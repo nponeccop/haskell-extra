@@ -1,0 +1,7 @@
+.PHONY: haskell-adjunctions hackage-adjunctions
+haskell-adjunctions: upstream/ghc upstream/haskell-comonad upstream/haskell-contravariant upstream/haskell-distributive upstream/haskell-free upstream/haskell-mtl upstream/haskell-profunctors upstream/haskell-semigroupoids upstream/haskell-semigroups upstream/haskell-tagged upstream/haskell-void
+haskell-adjunctions/PKGBUILD: 
+haskell-adjunctions: haskell-adjunctions/haskell-adjunctions-4.2-3-i686.pkg.tar.xz
+haskell-adjunctions/haskell-adjunctions-4.2-3-i686.pkg.tar.xz: haskell-adjunctions/PKGBUILD
+hackage-adjunctions: haskell-adjunctions
+pacman-U-adjunctions: haskell-adjunctions/haskell-adjunctions-4.2-3-i686.pkg.tar.xz

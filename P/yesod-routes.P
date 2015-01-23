@@ -1,0 +1,7 @@
+.PHONY: haskell-yesod-routes hackage-yesod-routes
+haskell-yesod-routes: upstream/ghc upstream/haskell-path-pieces upstream/haskell-text upstream/haskell-vector
+haskell-yesod-routes/PKGBUILD: 
+haskell-yesod-routes: haskell-yesod-routes/haskell-yesod-routes-1.2.0.7-3-i686.pkg.tar.xz
+haskell-yesod-routes/haskell-yesod-routes-1.2.0.7-3-i686.pkg.tar.xz: haskell-yesod-routes/PKGBUILD
+hackage-yesod-routes: haskell-yesod-routes
+pacman-U-yesod-routes: haskell-yesod-routes/haskell-yesod-routes-1.2.0.7-3-i686.pkg.tar.xz

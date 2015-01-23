@@ -1,0 +1,7 @@
+.PHONY: haskell-biocore hackage-biocore
+haskell-biocore: upstream/ghc haskell-stringable
+haskell-biocore/PKGBUILD: 
+haskell-biocore: haskell-biocore/haskell-biocore-0.3.1-4-i686.pkg.tar.xz
+haskell-biocore/haskell-biocore-0.3.1-4-i686.pkg.tar.xz: haskell-biocore/PKGBUILD
+hackage-biocore: haskell-biocore
+pacman-U-biocore: haskell-biocore/haskell-biocore-0.3.1-4-i686.pkg.tar.xz

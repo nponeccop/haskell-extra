@@ -1,0 +1,7 @@
+.PHONY: haskell-hsh hackage-HSH
+haskell-hsh: upstream/ghc upstream/haskell-hslogger upstream/haskell-missingh upstream/haskell-mtl upstream/haskell-regex-base upstream/haskell-regex-compat upstream/haskell-regex-posix
+haskell-hsh/PKGBUILD: 
+haskell-hsh: haskell-hsh/haskell-hsh-2.1.2-6-i686.pkg.tar.xz
+haskell-hsh/haskell-hsh-2.1.2-6-i686.pkg.tar.xz: haskell-hsh/PKGBUILD
+hackage-HSH: haskell-hsh
+pacman-U-HSH: haskell-hsh/haskell-hsh-2.1.2-6-i686.pkg.tar.xz

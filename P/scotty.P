@@ -1,7 +1,7 @@
 .PHONY: haskell-scotty hackage-scotty
 haskell-scotty: upstream/ghc upstream/haskell-aeson upstream/haskell-blaze-builder upstream/haskell-case-insensitive upstream/haskell-data-default upstream/haskell-http-types upstream/haskell-monad-control upstream/haskell-mtl upstream/haskell-regex-compat upstream/haskell-text upstream/haskell-transformers-base upstream/haskell-wai upstream/haskell-wai-extra upstream/haskell-warp
 haskell-scotty/PKGBUILD: 
-haskell-scotty: haskell-scotty/haskell-scotty-0.9.1-1-i686.pkg.tar.xz
-haskell-scotty/haskell-scotty-0.9.1-1-i686.pkg.tar.xz: haskell-scotty/PKGBUILD
+haskell-scotty: haskell-scotty/haskell-scotty-0.9.1-2-i686.pkg.tar.xz
+haskell-scotty/haskell-scotty-0.9.1-2-i686.pkg.tar.xz: haskell-scotty/PKGBUILD
 hackage-scotty: haskell-scotty
-pacman-U-scotty: haskell-scotty/haskell-scotty-0.9.1-1-i686.pkg.tar.xz
+pacman-U-scotty: haskell-scotty/haskell-scotty-0.9.1-2-i686.pkg.tar.xz

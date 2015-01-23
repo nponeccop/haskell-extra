@@ -1,0 +1,7 @@
+.PHONY: haskell-monoid-extras hackage-monoid-extras
+haskell-monoid-extras: upstream/ghc haskell-groups upstream/haskell-semigroupoids upstream/haskell-semigroups
+haskell-monoid-extras/PKGBUILD: 
+haskell-monoid-extras: haskell-monoid-extras/haskell-monoid-extras-0.3.3.5-4-i686.pkg.tar.xz
+haskell-monoid-extras/haskell-monoid-extras-0.3.3.5-4-i686.pkg.tar.xz: haskell-monoid-extras/PKGBUILD
+hackage-monoid-extras: haskell-monoid-extras
+pacman-U-monoid-extras: haskell-monoid-extras/haskell-monoid-extras-0.3.3.5-4-i686.pkg.tar.xz

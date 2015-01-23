@@ -1,0 +1,7 @@
+.PHONY: haskell-hjsmin hackage-hjsmin
+haskell-hjsmin: upstream/ghc upstream/haskell-blaze-builder haskell-language-javascript upstream/haskell-optparse-applicative upstream/haskell-text
+haskell-hjsmin/PKGBUILD: 
+haskell-hjsmin: haskell-hjsmin/haskell-hjsmin-0.1.4.7-3-i686.pkg.tar.xz
+haskell-hjsmin/haskell-hjsmin-0.1.4.7-3-i686.pkg.tar.xz: haskell-hjsmin/PKGBUILD
+hackage-hjsmin: haskell-hjsmin
+pacman-U-hjsmin: haskell-hjsmin/haskell-hjsmin-0.1.4.7-3-i686.pkg.tar.xz

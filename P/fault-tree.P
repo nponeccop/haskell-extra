@@ -1,0 +1,7 @@
+.PHONY: haskell-fault-tree hackage-fault-tree
+haskell-fault-tree: upstream/ghc haskell-yices
+haskell-fault-tree/PKGBUILD: 
+haskell-fault-tree: haskell-fault-tree/haskell-fault-tree-0.0.0-3-i686.pkg.tar.xz
+haskell-fault-tree/haskell-fault-tree-0.0.0-3-i686.pkg.tar.xz: haskell-fault-tree/PKGBUILD
+hackage-fault-tree: haskell-fault-tree
+pacman-U-fault-tree: haskell-fault-tree/haskell-fault-tree-0.0.0-3-i686.pkg.tar.xz

@@ -1,13 +1,12 @@
-Index: hsbuild/haskell-gtksourceview3/PKGBUILD
+Index: cblrepo/haskell-gtksourceview3/PKGBUILD
 ===================================================================
---- hsbuild.orig/haskell-gtksourceview3/PKGBUILD
-+++ hsbuild/haskell-gtksourceview3/PKGBUILD
-@@ -11,7 +11,7 @@ url="http://projects.haskell.org/gtk2hs/
- license=("LGPL-2.1")
+--- cblrepo.orig/haskell-gtksourceview3/PKGBUILD
++++ cblrepo/haskell-gtksourceview3/PKGBUILD
+@@ -12,6 +12,7 @@ license=("LGPL-2.1")
  arch=('i686' 'x86_64')
  makedepends=()
--depends=("ghc=7.8.4-1"
-+depends=("ghc=7.8.4-1" "gtksourceview3"
-          "haskell-glib=0.13.0.6-2"
-          "haskell-gtk3=0.13.4-1"
+ depends=("ghc=7.8.4-1"
++         "gtksourceview3"
+          "haskell-glib=0.13.0.7-2"
+          "haskell-gtk3=0.13.4-3"
           "haskell-mtl=2.1.3.1-5"

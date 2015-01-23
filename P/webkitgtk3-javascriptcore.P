@@ -1,0 +1,7 @@
+.PHONY: haskell-webkitgtk3-javascriptcore hackage-webkitgtk3-javascriptcore
+haskell-webkitgtk3-javascriptcore: upstream/ghc upstream/haskell-glib haskell-gtk3 haskell-webkitgtk3
+haskell-webkitgtk3-javascriptcore/PKGBUILD: 
+haskell-webkitgtk3-javascriptcore: haskell-webkitgtk3-javascriptcore/haskell-webkitgtk3-javascriptcore-0.13.0.3-3-i686.pkg.tar.xz
+haskell-webkitgtk3-javascriptcore/haskell-webkitgtk3-javascriptcore-0.13.0.3-3-i686.pkg.tar.xz: haskell-webkitgtk3-javascriptcore/PKGBUILD
+hackage-webkitgtk3-javascriptcore: haskell-webkitgtk3-javascriptcore
+pacman-U-webkitgtk3-javascriptcore: haskell-webkitgtk3-javascriptcore/haskell-webkitgtk3-javascriptcore-0.13.0.3-3-i686.pkg.tar.xz

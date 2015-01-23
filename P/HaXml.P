@@ -1,0 +1,7 @@
+.PHONY: haskell-haxml hackage-HaXml
+haskell-haxml: upstream/ghc upstream/haskell-polyparse upstream/haskell-random
+haskell-haxml/PKGBUILD: 
+haskell-haxml: haskell-haxml/haskell-haxml-1.25.2-2-i686.pkg.tar.xz
+haskell-haxml/haskell-haxml-1.25.2-2-i686.pkg.tar.xz: haskell-haxml/PKGBUILD
+hackage-HaXml: haskell-haxml
+pacman-U-HaXml: haskell-haxml/haskell-haxml-1.25.2-2-i686.pkg.tar.xz

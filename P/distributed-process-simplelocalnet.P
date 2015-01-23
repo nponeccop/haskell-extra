@@ -1,0 +1,7 @@
+.PHONY: haskell-distributed-process-simplelocalnet hackage-distributed-process-simplelocalnet
+haskell-distributed-process-simplelocalnet: upstream/ghc haskell-data-accessor haskell-distributed-process upstream/haskell-network haskell-network-multicast haskell-network-transport haskell-network-transport-tcp
+haskell-distributed-process-simplelocalnet/PKGBUILD: 
+haskell-distributed-process-simplelocalnet: haskell-distributed-process-simplelocalnet/haskell-distributed-process-simplelocalnet-0.2.2.0-4-i686.pkg.tar.xz
+haskell-distributed-process-simplelocalnet/haskell-distributed-process-simplelocalnet-0.2.2.0-4-i686.pkg.tar.xz: haskell-distributed-process-simplelocalnet/PKGBUILD
+hackage-distributed-process-simplelocalnet: haskell-distributed-process-simplelocalnet
+pacman-U-distributed-process-simplelocalnet: haskell-distributed-process-simplelocalnet/haskell-distributed-process-simplelocalnet-0.2.2.0-4-i686.pkg.tar.xz

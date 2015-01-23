@@ -1,0 +1,7 @@
+.PHONY: haskell-xournal-parser hackage-xournal-parser
+haskell-xournal-parser: upstream/ghc upstream/haskell-attoparsec haskell-attoparsec-conduit upstream/haskell-conduit upstream/haskell-conduit-extra upstream/haskell-exceptions upstream/haskell-lens upstream/haskell-mtl upstream/haskell-strict upstream/haskell-text upstream/haskell-xml-conduit upstream/haskell-xml-types haskell-xournal-types haskell-zlib-conduit
+haskell-xournal-parser/PKGBUILD: 
+haskell-xournal-parser: haskell-xournal-parser/haskell-xournal-parser-0.5.0.3-3-i686.pkg.tar.xz
+haskell-xournal-parser/haskell-xournal-parser-0.5.0.3-3-i686.pkg.tar.xz: haskell-xournal-parser/PKGBUILD
+hackage-xournal-parser: haskell-xournal-parser
+pacman-U-xournal-parser: haskell-xournal-parser/haskell-xournal-parser-0.5.0.3-3-i686.pkg.tar.xz

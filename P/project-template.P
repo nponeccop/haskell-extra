@@ -1,0 +1,7 @@
+.PHONY: haskell-project-template hackage-project-template
+haskell-project-template: upstream/ghc upstream/haskell-base64-bytestring upstream/haskell-conduit upstream/haskell-conduit-extra upstream/haskell-mtl upstream/haskell-resourcet upstream/haskell-system-fileio upstream/haskell-system-filepath upstream/haskell-text
+haskell-project-template/PKGBUILD: 
+haskell-project-template: haskell-project-template/haskell-project-template-0.1.4.2-3-i686.pkg.tar.xz
+haskell-project-template/haskell-project-template-0.1.4.2-3-i686.pkg.tar.xz: haskell-project-template/PKGBUILD
+hackage-project-template: haskell-project-template
+pacman-U-project-template: haskell-project-template/haskell-project-template-0.1.4.2-3-i686.pkg.tar.xz

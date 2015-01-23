@@ -7,7 +7,7 @@ upstream-cache:
 	([[ -d upstream ]] && rm -r upstream) || true
 	mkdir upstream
 	cd upstream && pacman -Slq haskell-{core,happstack} | xargs touch
-	cd upstream && pacman -Slq community extra | grep -v haskell | xargs touch
+	cd upstream && pacman -Slq core community extra | grep -v haskell | xargs touch
 
 clean-unpacked:
 	ls -1 | grep '\-[0-9]' | xargs rm -rf
@@ -42,9 +42,8 @@ cblrepo-add-%:
 	bash madd.sh $*	
 
 cblrepo-pkgbuild-%: 
-	#cblrepo-add-%
 	cblrepo pkgbuild --ghc-version=7.8.4 $*
-	$(MAKEDEPEND.package) $* >P/$*.P
+	@$(MAKEDEPEND.package) $* >P/$*.P
 
 cblrepo-tobuild: tobuild
 	cblrepo pkgbuild --ghc-version=7.8.4 $(cat tobuild | xargs)

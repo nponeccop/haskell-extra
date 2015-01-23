@@ -5,7 +5,7 @@ _licensefile=LICENSE
 # PKGBUILD options/directives
 pkgname=haskell-indents
 pkgver=0.3.3
-pkgrel=1
+pkgrel=2
 pkgdesc="indentation sensitive parser-combinators for parsec"
 url="http://patch-tag.com/r/salazar/indents"
 license=("BSD3")
@@ -14,7 +14,7 @@ makedepends=()
 depends=("ghc=7.8.4-1"
          "haskell-concatenative=1.0.1-1"
          "haskell-mtl=2.1.3.1-5"
-         "haskell-parsec=3.1.7-2")
+         "haskell-parsec=3.1.8-1")
 options=('strip' 'staticlibs')
 source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
 install="${pkgname}.install"

@@ -1,0 +1,7 @@
+.PHONY: haskell-distributed-process hackage-distributed-process
+haskell-distributed-process: upstream/ghc haskell-data-accessor haskell-distributed-static upstream/haskell-hashable upstream/haskell-mtl haskell-network-transport upstream/haskell-random haskell-rank1dynamic upstream/haskell-stm upstream/haskell-syb
+haskell-distributed-process/PKGBUILD: 
+haskell-distributed-process: haskell-distributed-process/haskell-distributed-process-0.5.3-4-i686.pkg.tar.xz
+haskell-distributed-process/haskell-distributed-process-0.5.3-4-i686.pkg.tar.xz: haskell-distributed-process/PKGBUILD
+hackage-distributed-process: haskell-distributed-process
+pacman-U-distributed-process: haskell-distributed-process/haskell-distributed-process-0.5.3-4-i686.pkg.tar.xz

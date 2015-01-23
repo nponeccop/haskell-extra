@@ -1,0 +1,7 @@
+.PHONY: haskell-bmp hackage-bmp
+haskell-bmp: upstream/ghc
+haskell-bmp/PKGBUILD: 
+haskell-bmp: haskell-bmp/haskell-bmp-1.2.5.2-4-i686.pkg.tar.xz
+haskell-bmp/haskell-bmp-1.2.5.2-4-i686.pkg.tar.xz: haskell-bmp/PKGBUILD
+hackage-bmp: haskell-bmp
+pacman-U-bmp: haskell-bmp/haskell-bmp-1.2.5.2-4-i686.pkg.tar.xz

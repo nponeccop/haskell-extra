@@ -1,0 +1,7 @@
+.PHONY: haskell-vcsgui hackage-vcsgui
+haskell-vcsgui: upstream/ghc haskell-gtk3 upstream/haskell-mtl upstream/haskell-text haskell-vcswrapper
+haskell-vcsgui/PKGBUILD: 
+haskell-vcsgui: haskell-vcsgui/haskell-vcsgui-0.1.1.0-4-i686.pkg.tar.xz
+haskell-vcsgui/haskell-vcsgui-0.1.1.0-4-i686.pkg.tar.xz: haskell-vcsgui/PKGBUILD
+hackage-vcsgui: haskell-vcsgui
+pacman-U-vcsgui: haskell-vcsgui/haskell-vcsgui-0.1.1.0-4-i686.pkg.tar.xz

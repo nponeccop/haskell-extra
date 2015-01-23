@@ -1,0 +1,7 @@
+.PHONY: haskell-dual-tree hackage-dual-tree
+haskell-dual-tree: upstream/ghc haskell-monoid-extras haskell-newtype upstream/haskell-semigroups
+haskell-dual-tree/PKGBUILD: 
+haskell-dual-tree: haskell-dual-tree/haskell-dual-tree-0.2.0.5-4-i686.pkg.tar.xz
+haskell-dual-tree/haskell-dual-tree-0.2.0.5-4-i686.pkg.tar.xz: haskell-dual-tree/PKGBUILD
+hackage-dual-tree: haskell-dual-tree
+pacman-U-dual-tree: haskell-dual-tree/haskell-dual-tree-0.2.0.5-4-i686.pkg.tar.xz

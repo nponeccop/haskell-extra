@@ -1,7 +1,7 @@
 .PHONY: haskell-vty hackage-vty
 haskell-vty: upstream/ghc upstream/haskell-blaze-builder upstream/haskell-data-default upstream/haskell-hashable upstream/haskell-lens upstream/haskell-mtl upstream/haskell-parallel upstream/haskell-parsec upstream/haskell-text upstream/haskell-utf8-string upstream/haskell-vector
 haskell-vty/PKGBUILD: 
-haskell-vty: haskell-vty/haskell-vty-5.2.7-1-i686.pkg.tar.xz
-haskell-vty/haskell-vty-5.2.7-1-i686.pkg.tar.xz: haskell-vty/PKGBUILD
+haskell-vty: haskell-vty/haskell-vty-5.2.7-2-i686.pkg.tar.xz
+haskell-vty/haskell-vty-5.2.7-2-i686.pkg.tar.xz: haskell-vty/PKGBUILD
 hackage-vty: haskell-vty
-pacman-U-vty: haskell-vty/haskell-vty-5.2.7-1-i686.pkg.tar.xz
+pacman-U-vty: haskell-vty/haskell-vty-5.2.7-2-i686.pkg.tar.xz

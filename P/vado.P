@@ -1,0 +1,7 @@
+.PHONY: haskell-vado hackage-vado
+haskell-vado: upstream/ghc upstream/haskell-attoparsec upstream/haskell-text
+haskell-vado/PKGBUILD: 
+haskell-vado: haskell-vado/haskell-vado-0.0.3-4-i686.pkg.tar.xz
+haskell-vado/haskell-vado-0.0.3-4-i686.pkg.tar.xz: haskell-vado/PKGBUILD
+hackage-vado: haskell-vado
+pacman-U-vado: haskell-vado/haskell-vado-0.0.3-4-i686.pkg.tar.xz

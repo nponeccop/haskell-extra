@@ -1,0 +1,7 @@
+.PHONY: haskell-distributed-process-extras hackage-distributed-process-extras
+haskell-distributed-process-extras: upstream/ghc haskell-data-accessor haskell-distributed-process haskell-fingertree upstream/haskell-hashable upstream/haskell-mtl upstream/haskell-stm upstream/haskell-unordered-containers
+haskell-distributed-process-extras/PKGBUILD: 
+haskell-distributed-process-extras: haskell-distributed-process-extras/haskell-distributed-process-extras-0.2.0-3-i686.pkg.tar.xz
+haskell-distributed-process-extras/haskell-distributed-process-extras-0.2.0-3-i686.pkg.tar.xz: haskell-distributed-process-extras/PKGBUILD
+hackage-distributed-process-extras: haskell-distributed-process-extras
+pacman-U-distributed-process-extras: haskell-distributed-process-extras/haskell-distributed-process-extras-0.2.0-3-i686.pkg.tar.xz

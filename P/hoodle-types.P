@@ -1,0 +1,7 @@
+.PHONY: haskell-hoodle-types hackage-hoodle-types
+haskell-hoodle-types: upstream/ghc upstream/haskell-cereal upstream/haskell-lens upstream/haskell-mtl upstream/haskell-strict upstream/haskell-text upstream/haskell-uuid
+haskell-hoodle-types/PKGBUILD: 
+haskell-hoodle-types: haskell-hoodle-types/haskell-hoodle-types-0.3-3-i686.pkg.tar.xz
+haskell-hoodle-types/haskell-hoodle-types-0.3-3-i686.pkg.tar.xz: haskell-hoodle-types/PKGBUILD
+hackage-hoodle-types: haskell-hoodle-types
+pacman-U-hoodle-types: haskell-hoodle-types/haskell-hoodle-types-0.3-3-i686.pkg.tar.xz

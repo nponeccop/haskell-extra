@@ -1,0 +1,7 @@
+.PHONY: haskell-refserialize hackage-RefSerialize
+haskell-refserialize: upstream/ghc upstream/haskell-hashtables upstream/haskell-stringsearch
+haskell-refserialize/PKGBUILD: 
+haskell-refserialize: haskell-refserialize/haskell-refserialize-0.3.1.3-3-i686.pkg.tar.xz
+haskell-refserialize/haskell-refserialize-0.3.1.3-3-i686.pkg.tar.xz: haskell-refserialize/PKGBUILD
+hackage-RefSerialize: haskell-refserialize
+pacman-U-RefSerialize: haskell-refserialize/haskell-refserialize-0.3.1.3-3-i686.pkg.tar.xz

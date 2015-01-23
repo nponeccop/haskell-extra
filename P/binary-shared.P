@@ -1,0 +1,7 @@
+.PHONY: haskell-binary-shared hackage-binary-shared
+haskell-binary-shared: upstream/ghc upstream/haskell-mtl
+haskell-binary-shared/PKGBUILD: 
+haskell-binary-shared: haskell-binary-shared/haskell-binary-shared-0.8.3-4-i686.pkg.tar.xz
+haskell-binary-shared/haskell-binary-shared-0.8.3-4-i686.pkg.tar.xz: haskell-binary-shared/PKGBUILD
+hackage-binary-shared: haskell-binary-shared
+pacman-U-binary-shared: haskell-binary-shared/haskell-binary-shared-0.8.3-4-i686.pkg.tar.xz

@@ -1,0 +1,7 @@
+.PHONY: haskell-simple-smt hackage-simple-smt
+haskell-simple-smt: upstream/ghc
+haskell-simple-smt/PKGBUILD: 
+haskell-simple-smt: haskell-simple-smt/haskell-simple-smt-0.5.3-1-i686.pkg.tar.xz
+haskell-simple-smt/haskell-simple-smt-0.5.3-1-i686.pkg.tar.xz: haskell-simple-smt/PKGBUILD
+hackage-simple-smt: haskell-simple-smt
+pacman-U-simple-smt: haskell-simple-smt/haskell-simple-smt-0.5.3-1-i686.pkg.tar.xz

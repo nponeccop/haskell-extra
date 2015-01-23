@@ -1,0 +1,7 @@
+.PHONY: haskell-websockets hackage-websockets
+haskell-websockets: upstream/ghc upstream/haskell-attoparsec upstream/haskell-base64-bytestring upstream/haskell-blaze-builder upstream/haskell-case-insensitive upstream/haskell-entropy upstream/haskell-mtl upstream/haskell-network upstream/haskell-random upstream/haskell-sha upstream/haskell-text
+haskell-websockets/PKGBUILD: 
+haskell-websockets: haskell-websockets/haskell-websockets-0.9.2.2-2-i686.pkg.tar.xz
+haskell-websockets/haskell-websockets-0.9.2.2-2-i686.pkg.tar.xz: haskell-websockets/PKGBUILD
+hackage-websockets: haskell-websockets
+pacman-U-websockets: haskell-websockets/haskell-websockets-0.9.2.2-2-i686.pkg.tar.xz

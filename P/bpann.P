@@ -1,0 +1,7 @@
+.PHONY: haskell-bpann hackage-bpann
+haskell-bpann: upstream/ghc upstream/haskell-random upstream/haskell-split
+haskell-bpann/PKGBUILD: 
+haskell-bpann: haskell-bpann/haskell-bpann-0.1.1-3-i686.pkg.tar.xz
+haskell-bpann/haskell-bpann-0.1.1-3-i686.pkg.tar.xz: haskell-bpann/PKGBUILD
+hackage-bpann: haskell-bpann
+pacman-U-bpann: haskell-bpann/haskell-bpann-0.1.1-3-i686.pkg.tar.xz

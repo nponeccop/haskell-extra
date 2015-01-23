@@ -9,5 +9,5 @@ Index: hsbuild/haskell-gtk3/PKGBUILD
 -makedepends=()
 +makedepends=("gtk2hs-buildtools")
  depends=("ghc=7.8.4-1"
-          "haskell-cairo=0.13.0.6-1"
+          "haskell-cairo=0.13.0.6-2"
           "haskell-gio=0.13.0.4-1"

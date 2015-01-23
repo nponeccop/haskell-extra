@@ -1,0 +1,7 @@
+.PHONY: haskell-svgcairo hackage-svgcairo
+haskell-svgcairo: upstream/ghc upstream/haskell-cairo upstream/haskell-glib upstream/haskell-mtl upstream/haskell-text
+haskell-svgcairo/PKGBUILD: 
+haskell-svgcairo: haskell-svgcairo/haskell-svgcairo-0.13.0.1-3-i686.pkg.tar.xz
+haskell-svgcairo/haskell-svgcairo-0.13.0.1-3-i686.pkg.tar.xz: haskell-svgcairo/PKGBUILD
+hackage-svgcairo: haskell-svgcairo
+pacman-U-svgcairo: haskell-svgcairo/haskell-svgcairo-0.13.0.1-3-i686.pkg.tar.xz

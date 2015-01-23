@@ -1,0 +1,7 @@
+.PHONY: haskell-stringable hackage-stringable
+haskell-stringable: upstream/ghc upstream/haskell-system-filepath upstream/haskell-text
+haskell-stringable/PKGBUILD: 
+haskell-stringable: haskell-stringable/haskell-stringable-0.1.3-4-i686.pkg.tar.xz
+haskell-stringable/haskell-stringable-0.1.3-4-i686.pkg.tar.xz: haskell-stringable/PKGBUILD
+hackage-stringable: haskell-stringable
+pacman-U-stringable: haskell-stringable/haskell-stringable-0.1.3-4-i686.pkg.tar.xz

@@ -1,0 +1,7 @@
+.PHONY: haskell-shellmate hackage-shellmate
+haskell-shellmate: upstream/ghc upstream/haskell-temporary
+haskell-shellmate/PKGBUILD: 
+haskell-shellmate: haskell-shellmate/haskell-shellmate-0.1.6-2-i686.pkg.tar.xz
+haskell-shellmate/haskell-shellmate-0.1.6-2-i686.pkg.tar.xz: haskell-shellmate/PKGBUILD
+hackage-shellmate: haskell-shellmate
+pacman-U-shellmate: haskell-shellmate/haskell-shellmate-0.1.6-2-i686.pkg.tar.xz

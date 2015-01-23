@@ -1,0 +1,7 @@
+.PHONY: haskell-distributed-process-supervisor hackage-distributed-process-supervisor
+haskell-distributed-process-supervisor: upstream/ghc haskell-data-accessor haskell-distributed-process haskell-distributed-process-client-server haskell-distributed-process-extras haskell-fingertree upstream/haskell-hashable upstream/haskell-mtl upstream/haskell-stm upstream/haskell-unordered-containers
+haskell-distributed-process-supervisor/PKGBUILD: 
+haskell-distributed-process-supervisor: haskell-distributed-process-supervisor/haskell-distributed-process-supervisor-0.1.2-3-i686.pkg.tar.xz
+haskell-distributed-process-supervisor/haskell-distributed-process-supervisor-0.1.2-3-i686.pkg.tar.xz: haskell-distributed-process-supervisor/PKGBUILD
+hackage-distributed-process-supervisor: haskell-distributed-process-supervisor
+pacman-U-distributed-process-supervisor: haskell-distributed-process-supervisor/haskell-distributed-process-supervisor-0.1.2-3-i686.pkg.tar.xz

@@ -4,3 +4,4 @@ haskell-circle-packing/PKGBUILD:
 haskell-circle-packing: haskell-circle-packing/haskell-circle-packing-0.1.0.4-1-i686.pkg.tar.xz
 haskell-circle-packing/haskell-circle-packing-0.1.0.4-1-i686.pkg.tar.xz: haskell-circle-packing/PKGBUILD
 hackage-circle-packing: haskell-circle-packing
+pacman-U-circle-packing: haskell-circle-packing/haskell-circle-packing-0.1.0.4-1-i686.pkg.tar.xz

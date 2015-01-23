@@ -1,0 +1,7 @@
+.PHONY: haskell-hoodle-render hackage-hoodle-render
+haskell-hoodle-render: upstream/ghc upstream/haskell-base64-bytestring upstream/haskell-cairo upstream/haskell-gd upstream/haskell-gtk haskell-hoodle-types upstream/haskell-lens upstream/haskell-monad-loops upstream/haskell-mtl haskell-poppler upstream/haskell-stm upstream/haskell-strict haskell-svgcairo upstream/haskell-unordered-containers upstream/haskell-uuid
+haskell-hoodle-render/PKGBUILD: 
+haskell-hoodle-render: haskell-hoodle-render/haskell-hoodle-render-0.4-3-i686.pkg.tar.xz
+haskell-hoodle-render/haskell-hoodle-render-0.4-3-i686.pkg.tar.xz: haskell-hoodle-render/PKGBUILD
+hackage-hoodle-render: haskell-hoodle-render
+pacman-U-hoodle-render: haskell-hoodle-render/haskell-hoodle-render-0.4-3-i686.pkg.tar.xz

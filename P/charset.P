@@ -1,0 +1,7 @@
+.PHONY: haskell-charset hackage-charset
+haskell-charset: upstream/ghc upstream/haskell-semigroups upstream/haskell-unordered-containers
+haskell-charset/PKGBUILD: 
+haskell-charset: haskell-charset/haskell-charset-0.3.7-3-i686.pkg.tar.xz
+haskell-charset/haskell-charset-0.3.7-3-i686.pkg.tar.xz: haskell-charset/PKGBUILD
+hackage-charset: haskell-charset
+pacman-U-charset: haskell-charset/haskell-charset-0.3.7-3-i686.pkg.tar.xz

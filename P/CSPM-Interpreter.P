@@ -1,0 +1,7 @@
+.PHONY: haskell-cspm-interpreter hackage-CSPM-Interpreter
+haskell-cspm-interpreter: upstream/ghc haskell-cspm-corelanguage haskell-cspm-frontend upstream/haskell-mtl haskell-prettyclass upstream/haskell-syb
+haskell-cspm-interpreter/PKGBUILD: 
+haskell-cspm-interpreter: haskell-cspm-interpreter/haskell-cspm-interpreter-0.7.0.0-4-i686.pkg.tar.xz
+haskell-cspm-interpreter/haskell-cspm-interpreter-0.7.0.0-4-i686.pkg.tar.xz: haskell-cspm-interpreter/PKGBUILD
+hackage-CSPM-Interpreter: haskell-cspm-interpreter
+pacman-U-CSPM-Interpreter: haskell-cspm-interpreter/haskell-cspm-interpreter-0.7.0.0-4-i686.pkg.tar.xz

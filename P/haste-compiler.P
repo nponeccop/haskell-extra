@@ -1,7 +1,7 @@
 .PHONY: haskell-haste-compiler hackage-haste-compiler
-haskell-haste-compiler: upstream/ghc haskell-binary upstream/haskell-blaze-builder haskell-bzlib haskell-data-binary-ieee754 upstream/haskell-data-default upstream/haskell-either upstream/haskell-ghc-paths upstream/haskell-http upstream/haskell-monads-tf upstream/haskell-mtl upstream/haskell-network upstream/haskell-network-uri upstream/haskell-random haskell-shellmate upstream/haskell-system-fileio upstream/haskell-tar upstream/haskell-utf8-string haskell-websockets
+haskell-haste-compiler: upstream/ghc upstream/haskell-blaze-builder haskell-bzlib haskell-data-binary-ieee754 upstream/haskell-data-default upstream/haskell-either upstream/haskell-ghc-paths upstream/haskell-http upstream/haskell-monads-tf upstream/haskell-mtl upstream/haskell-network upstream/haskell-network-uri upstream/haskell-random haskell-shellmate upstream/haskell-system-fileio upstream/haskell-tar upstream/haskell-utf8-string haskell-websockets
 haskell-haste-compiler/PKGBUILD: 
-haskell-haste-compiler: haskell-haste-compiler/haskell-haste-compiler-0.4.4-1-i686.pkg.tar.xz
-haskell-haste-compiler/haskell-haste-compiler-0.4.4-1-i686.pkg.tar.xz: haskell-haste-compiler/PKGBUILD
+haskell-haste-compiler: haskell-haste-compiler/haskell-haste-compiler-0.4.4.1-1-i686.pkg.tar.xz
+haskell-haste-compiler/haskell-haste-compiler-0.4.4.1-1-i686.pkg.tar.xz: haskell-haste-compiler/PKGBUILD
 hackage-haste-compiler: haskell-haste-compiler
-pacman-U-haste-compiler: haskell-haste-compiler/haskell-haste-compiler-0.4.4-1-i686.pkg.tar.xz
+pacman-U-haste-compiler: haskell-haste-compiler/haskell-haste-compiler-0.4.4.1-1-i686.pkg.tar.xz

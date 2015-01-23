@@ -1,0 +1,7 @@
+.PHONY: haskell-ltk hackage-ltk
+haskell-ltk: upstream/ghc upstream/haskell-glib haskell-gtk3 upstream/haskell-mtl upstream/haskell-parsec upstream/haskell-text
+haskell-ltk/PKGBUILD: 
+haskell-ltk: haskell-ltk/haskell-ltk-0.14.3.0-4-i686.pkg.tar.xz
+haskell-ltk/haskell-ltk-0.14.3.0-4-i686.pkg.tar.xz: haskell-ltk/PKGBUILD
+hackage-ltk: haskell-ltk
+pacman-U-ltk: haskell-ltk/haskell-ltk-0.14.3.0-4-i686.pkg.tar.xz

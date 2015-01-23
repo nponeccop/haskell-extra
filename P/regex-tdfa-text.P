@@ -1,0 +1,7 @@
+.PHONY: haskell-regex-tdfa-text hackage-regex-tdfa-text
+haskell-regex-tdfa-text: upstream/ghc upstream/haskell-regex-base upstream/haskell-regex-tdfa upstream/haskell-text
+haskell-regex-tdfa-text/PKGBUILD: 
+haskell-regex-tdfa-text: haskell-regex-tdfa-text/haskell-regex-tdfa-text-1.0.0.2-4-i686.pkg.tar.xz
+haskell-regex-tdfa-text/haskell-regex-tdfa-text-1.0.0.2-4-i686.pkg.tar.xz: haskell-regex-tdfa-text/PKGBUILD
+hackage-regex-tdfa-text: haskell-regex-tdfa-text
+pacman-U-regex-tdfa-text: haskell-regex-tdfa-text/haskell-regex-tdfa-text-1.0.0.2-4-i686.pkg.tar.xz

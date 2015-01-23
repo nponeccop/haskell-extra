@@ -1,0 +1,7 @@
+.PHONY: haskell-text-binary hackage-text-binary
+haskell-text-binary: upstream/ghc upstream/haskell-text
+haskell-text-binary/PKGBUILD: 
+haskell-text-binary: haskell-text-binary/haskell-text-binary-0.1.0-4-i686.pkg.tar.xz
+haskell-text-binary/haskell-text-binary-0.1.0-4-i686.pkg.tar.xz: haskell-text-binary/PKGBUILD
+hackage-text-binary: haskell-text-binary
+pacman-U-text-binary: haskell-text-binary/haskell-text-binary-0.1.0-4-i686.pkg.tar.xz

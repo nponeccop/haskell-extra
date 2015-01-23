@@ -1,0 +1,7 @@
+.PHONY: haskell-monad-unify hackage-monad-unify
+haskell-monad-unify: upstream/ghc upstream/haskell-mtl upstream/haskell-unordered-containers
+haskell-monad-unify/PKGBUILD: 
+haskell-monad-unify: haskell-monad-unify/haskell-monad-unify-0.2.2-3-i686.pkg.tar.xz
+haskell-monad-unify/haskell-monad-unify-0.2.2-3-i686.pkg.tar.xz: haskell-monad-unify/PKGBUILD
+hackage-monad-unify: haskell-monad-unify
+pacman-U-monad-unify: haskell-monad-unify/haskell-monad-unify-0.2.2-3-i686.pkg.tar.xz

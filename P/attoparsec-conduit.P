@@ -1,0 +1,7 @@
+.PHONY: haskell-attoparsec-conduit hackage-attoparsec-conduit
+haskell-attoparsec-conduit: upstream/ghc upstream/haskell-conduit
+haskell-attoparsec-conduit/PKGBUILD: 
+haskell-attoparsec-conduit: haskell-attoparsec-conduit/haskell-attoparsec-conduit-1.1.0-4-i686.pkg.tar.xz
+haskell-attoparsec-conduit/haskell-attoparsec-conduit-1.1.0-4-i686.pkg.tar.xz: haskell-attoparsec-conduit/PKGBUILD
+hackage-attoparsec-conduit: haskell-attoparsec-conduit
+pacman-U-attoparsec-conduit: haskell-attoparsec-conduit/haskell-attoparsec-conduit-1.1.0-4-i686.pkg.tar.xz

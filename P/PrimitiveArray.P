@@ -1,0 +1,7 @@
+.PHONY: haskell-primitivearray hackage-PrimitiveArray
+haskell-primitivearray: upstream/ghc upstream/haskell-primitive upstream/haskell-quickcheck haskell-repa upstream/haskell-vector upstream/haskell-vector-th-unbox
+haskell-primitivearray/PKGBUILD: 
+haskell-primitivearray: haskell-primitivearray/haskell-primitivearray-0.5.4.0-5-i686.pkg.tar.xz
+haskell-primitivearray/haskell-primitivearray-0.5.4.0-5-i686.pkg.tar.xz: haskell-primitivearray/PKGBUILD
+hackage-PrimitiveArray: haskell-primitivearray
+pacman-U-PrimitiveArray: haskell-primitivearray/haskell-primitivearray-0.5.4.0-5-i686.pkg.tar.xz

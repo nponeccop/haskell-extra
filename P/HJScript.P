@@ -1,0 +1,7 @@
+.PHONY: haskell-hjscript hackage-HJScript
+haskell-hjscript: upstream/ghc haskell-hjavascript upstream/haskell-hsp upstream/haskell-mtl upstream/haskell-text
+haskell-hjscript/PKGBUILD: 
+haskell-hjscript: haskell-hjscript/haskell-hjscript-0.7.0-4-i686.pkg.tar.xz
+haskell-hjscript/haskell-hjscript-0.7.0-4-i686.pkg.tar.xz: haskell-hjscript/PKGBUILD
+hackage-HJScript: haskell-hjscript
+pacman-U-HJScript: haskell-hjscript/haskell-hjscript-0.7.0-4-i686.pkg.tar.xz

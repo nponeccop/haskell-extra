@@ -1,0 +1,7 @@
+.PHONY: haskell-workflow hackage-Workflow
+haskell-workflow: upstream/ghc upstream/haskell-exceptions upstream/haskell-extensible-exceptions upstream/haskell-mtl haskell-refserialize upstream/haskell-stm haskell-tcache upstream/haskell-vector
+haskell-workflow/PKGBUILD: 
+haskell-workflow: haskell-workflow/haskell-workflow-0.8.1-3-i686.pkg.tar.xz
+haskell-workflow/haskell-workflow-0.8.1-3-i686.pkg.tar.xz: haskell-workflow/PKGBUILD
+hackage-Workflow: haskell-workflow
+pacman-U-Workflow: haskell-workflow/haskell-workflow-0.8.1-3-i686.pkg.tar.xz

@@ -1,0 +1,7 @@
+.PHONY: haskell-heist hackage-heist
+haskell-heist: upstream/ghc upstream/haskell-aeson upstream/haskell-attoparsec upstream/haskell-blaze-builder upstream/haskell-blaze-html haskell-directory-tree upstream/haskell-dlist haskell-errors upstream/haskell-hashable haskell-map-syntax upstream/haskell-monadcatchio-transformers upstream/haskell-mtl upstream/haskell-random upstream/haskell-text upstream/haskell-unordered-containers upstream/haskell-vector haskell-xmlhtml
+haskell-heist/PKGBUILD: 
+haskell-heist: haskell-heist/haskell-heist-0.14.0.1-3-i686.pkg.tar.xz
+haskell-heist/haskell-heist-0.14.0.1-3-i686.pkg.tar.xz: haskell-heist/PKGBUILD
+hackage-heist: haskell-heist
+pacman-U-heist: haskell-heist/haskell-heist-0.14.0.1-3-i686.pkg.tar.xz

@@ -1,0 +1,7 @@
+.PHONY: haskell-cspm-frontend hackage-CSPM-Frontend
+haskell-cspm-frontend: upstream/ghc upstream/haskell-dlist upstream/haskell-either upstream/haskell-mtl haskell-parsec2 haskell-prettyclass upstream/haskell-syb
+haskell-cspm-frontend/PKGBUILD: 
+haskell-cspm-frontend: haskell-cspm-frontend/haskell-cspm-frontend-0.10.0.0-4-i686.pkg.tar.xz
+haskell-cspm-frontend/haskell-cspm-frontend-0.10.0.0-4-i686.pkg.tar.xz: haskell-cspm-frontend/PKGBUILD
+hackage-CSPM-Frontend: haskell-cspm-frontend
+pacman-U-CSPM-Frontend: haskell-cspm-frontend/haskell-cspm-frontend-0.10.0.0-4-i686.pkg.tar.xz

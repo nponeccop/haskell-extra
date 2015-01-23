@@ -1,0 +1,7 @@
+.PHONY: haskell-test-framework-quickcheck2 hackage-test-framework-quickcheck2
+haskell-test-framework-quickcheck2: upstream/ghc upstream/haskell-extensible-exceptions upstream/haskell-quickcheck upstream/haskell-random upstream/haskell-test-framework
+haskell-test-framework-quickcheck2/PKGBUILD: 
+haskell-test-framework-quickcheck2: haskell-test-framework-quickcheck2/haskell-test-framework-quickcheck2-0.3.0.3-3-i686.pkg.tar.xz
+haskell-test-framework-quickcheck2/haskell-test-framework-quickcheck2-0.3.0.3-3-i686.pkg.tar.xz: haskell-test-framework-quickcheck2/PKGBUILD
+hackage-test-framework-quickcheck2: haskell-test-framework-quickcheck2
+pacman-U-test-framework-quickcheck2: haskell-test-framework-quickcheck2/haskell-test-framework-quickcheck2-0.3.0.3-3-i686.pkg.tar.xz

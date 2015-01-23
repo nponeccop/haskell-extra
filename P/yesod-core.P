@@ -1,7 +1,7 @@
 .PHONY: haskell-yesod-core hackage-yesod-core
 haskell-yesod-core: upstream/ghc upstream/haskell-aeson upstream/haskell-auto-update upstream/haskell-blaze-builder upstream/haskell-blaze-html upstream/haskell-blaze-markup upstream/haskell-case-insensitive upstream/haskell-cereal upstream/haskell-clientsession upstream/haskell-conduit upstream/haskell-conduit-extra upstream/haskell-cookie upstream/haskell-data-default upstream/haskell-exceptions upstream/haskell-fast-logger upstream/haskell-http-types upstream/haskell-lifted-base upstream/haskell-monad-control upstream/haskell-monad-logger upstream/haskell-mtl upstream/haskell-mwc-random upstream/haskell-parsec upstream/haskell-path-pieces upstream/haskell-primitive upstream/haskell-random upstream/haskell-resourcet upstream/haskell-safe upstream/haskell-shakespeare upstream/haskell-text upstream/haskell-transformers-base upstream/haskell-unix-compat upstream/haskell-unordered-containers upstream/haskell-vector upstream/haskell-wai upstream/haskell-wai-extra upstream/haskell-wai-logger upstream/haskell-warp upstream/haskell-word8
 haskell-yesod-core/PKGBUILD: 
-haskell-yesod-core: haskell-yesod-core/haskell-yesod-core-1.4.7.2-1-i686.pkg.tar.xz
-haskell-yesod-core/haskell-yesod-core-1.4.7.2-1-i686.pkg.tar.xz: haskell-yesod-core/PKGBUILD
+haskell-yesod-core: haskell-yesod-core/haskell-yesod-core-1.4.7.2-2-i686.pkg.tar.xz
+haskell-yesod-core/haskell-yesod-core-1.4.7.2-2-i686.pkg.tar.xz: haskell-yesod-core/PKGBUILD
 hackage-yesod-core: haskell-yesod-core
-pacman-U-yesod-core: haskell-yesod-core/haskell-yesod-core-1.4.7.2-1-i686.pkg.tar.xz
+pacman-U-yesod-core: haskell-yesod-core/haskell-yesod-core-1.4.7.2-2-i686.pkg.tar.xz

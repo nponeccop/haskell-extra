@@ -1,0 +1,7 @@
+.PHONY: haskell-antigate hackage-antigate
+haskell-antigate: upstream/ghc upstream/haskell-data-default upstream/haskell-exceptions haskell-failure upstream/haskell-http-client upstream/haskell-http-conduit upstream/haskell-resourcet upstream/haskell-safe upstream/haskell-text
+haskell-antigate/PKGBUILD: 
+haskell-antigate: haskell-antigate/haskell-antigate-2.0.1-3-i686.pkg.tar.xz
+haskell-antigate/haskell-antigate-2.0.1-3-i686.pkg.tar.xz: haskell-antigate/PKGBUILD
+hackage-antigate: haskell-antigate
+pacman-U-antigate: haskell-antigate/haskell-antigate-2.0.1-3-i686.pkg.tar.xz

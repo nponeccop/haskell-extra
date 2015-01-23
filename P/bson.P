@@ -1,0 +1,7 @@
+.PHONY: haskell-bson hackage-bson
+haskell-bson: upstream/ghc upstream/haskell-cryptohash haskell-data-binary-ieee754 upstream/haskell-mtl upstream/haskell-network upstream/haskell-text
+haskell-bson/PKGBUILD: 
+haskell-bson: haskell-bson/haskell-bson-0.3.1-4-i686.pkg.tar.xz
+haskell-bson/haskell-bson-0.3.1-4-i686.pkg.tar.xz: haskell-bson/PKGBUILD
+hackage-bson: haskell-bson
+pacman-U-bson: haskell-bson/haskell-bson-0.3.1-4-i686.pkg.tar.xz

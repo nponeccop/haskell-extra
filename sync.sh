@@ -79,7 +79,7 @@ function pretendUpdated ()
 	cblrepo add $(cat dd) $(updatedPackagesV | sed -e 's/^/-d /;s/$/,7777/'| xargs)
 	echo "pretendUpdated done"
 }
-bash mkdist.sh
+#bash mkdist.sh
 makeDd
 makeUu
 pretendUpdated
@@ -88,4 +88,5 @@ goal
 bump
 goal
 buildOrder > tobuild
-dv | grep -v DistroPkg
+bash ustream.sh
+

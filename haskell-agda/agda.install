@@ -1,5 +1,5 @@
 # custom variables
-pkgname=haskell-agda
+pkgname=agda
 HS_DIR=usr/share/haskell/${pkgname}
 
 # functions

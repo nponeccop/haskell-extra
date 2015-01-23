@@ -9,5 +9,13 @@ Index: cblrepo/haskell-x11-extras/PKGBUILD
 -         "X11")
 +         "libx11")
  options=('strip' 'staticlibs')
- source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
- install="${pkgname}.install"
+ source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz"
+         "cabal.patch"
+@@ -28,7 +28,6 @@ sha256sums=("ea08c3f71e2f14374c56bbb9050
+ prepare() {
+     cd "${srcdir}/${_hkgname}-${pkgver}"
+     
+-    patch X11-extras.cabal "${srcdir}/cabal.patch" 
+     patch -p4 < "${srcdir}/source.patch"
+ }
+ 

@@ -1,0 +1,7 @@
+.PHONY: haskell-atto-lisp hackage-atto-lisp
+haskell-atto-lisp: upstream/ghc upstream/haskell-attoparsec upstream/haskell-blaze-builder haskell-blaze-textual upstream/haskell-text
+haskell-atto-lisp/PKGBUILD: 
+haskell-atto-lisp: haskell-atto-lisp/haskell-atto-lisp-0.2.2-3-i686.pkg.tar.xz
+haskell-atto-lisp/haskell-atto-lisp-0.2.2-3-i686.pkg.tar.xz: haskell-atto-lisp/PKGBUILD
+hackage-atto-lisp: haskell-atto-lisp
+pacman-U-atto-lisp: haskell-atto-lisp/haskell-atto-lisp-0.2.2-3-i686.pkg.tar.xz

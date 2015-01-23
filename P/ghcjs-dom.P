@@ -1,0 +1,7 @@
+.PHONY: haskell-ghcjs-dom hackage-ghcjs-dom
+haskell-ghcjs-dom: upstream/ghc upstream/haskell-glib haskell-gtk3 upstream/haskell-mtl upstream/haskell-text haskell-webkitgtk3
+haskell-ghcjs-dom/PKGBUILD: 
+haskell-ghcjs-dom: haskell-ghcjs-dom/haskell-ghcjs-dom-0.1.1.3-3-i686.pkg.tar.xz
+haskell-ghcjs-dom/haskell-ghcjs-dom-0.1.1.3-3-i686.pkg.tar.xz: haskell-ghcjs-dom/PKGBUILD
+hackage-ghcjs-dom: haskell-ghcjs-dom
+pacman-U-ghcjs-dom: haskell-ghcjs-dom/haskell-ghcjs-dom-0.1.1.3-3-i686.pkg.tar.xz

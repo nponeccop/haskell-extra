@@ -1,7 +1,7 @@
 .PHONY: haskell-text-icu hackage-text-icu
 haskell-text-icu: upstream/ghc upstream/haskell-text upstream/icu
 haskell-text-icu/PKGBUILD: 
-haskell-text-icu: haskell-text-icu/haskell-text-icu-0.7.0.1-1-i686.pkg.tar.xz
-haskell-text-icu/haskell-text-icu-0.7.0.1-1-i686.pkg.tar.xz: haskell-text-icu/PKGBUILD
+haskell-text-icu: haskell-text-icu/haskell-text-icu-0.7.0.1-2-i686.pkg.tar.xz
+haskell-text-icu/haskell-text-icu-0.7.0.1-2-i686.pkg.tar.xz: haskell-text-icu/PKGBUILD
 hackage-text-icu: haskell-text-icu
-pacman-U-text-icu: haskell-text-icu/haskell-text-icu-0.7.0.1-1-i686.pkg.tar.xz
+pacman-U-text-icu: haskell-text-icu/haskell-text-icu-0.7.0.1-2-i686.pkg.tar.xz

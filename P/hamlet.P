@@ -1,0 +1,7 @@
+.PHONY: haskell-hamlet hackage-hamlet
+haskell-hamlet: upstream/ghc upstream/haskell-shakespeare
+haskell-hamlet/PKGBUILD: 
+haskell-hamlet: haskell-hamlet/haskell-hamlet-1.2.0-4-i686.pkg.tar.xz
+haskell-hamlet/haskell-hamlet-1.2.0-4-i686.pkg.tar.xz: haskell-hamlet/PKGBUILD
+hackage-hamlet: haskell-hamlet
+pacman-U-hamlet: haskell-hamlet/haskell-hamlet-1.2.0-4-i686.pkg.tar.xz

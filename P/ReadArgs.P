@@ -1,0 +1,7 @@
+.PHONY: haskell-readargs hackage-ReadArgs
+haskell-readargs: upstream/ghc upstream/haskell-system-filepath upstream/haskell-text
+haskell-readargs/PKGBUILD: 
+haskell-readargs: haskell-readargs/haskell-readargs-1.2.2-4-i686.pkg.tar.xz
+haskell-readargs/haskell-readargs-1.2.2-4-i686.pkg.tar.xz: haskell-readargs/PKGBUILD
+hackage-ReadArgs: haskell-readargs
+pacman-U-ReadArgs: haskell-readargs/haskell-readargs-1.2.2-4-i686.pkg.tar.xz

@@ -1,0 +1,7 @@
+.PHONY: haskell-xmlhtml hackage-xmlhtml
+haskell-xmlhtml: upstream/ghc upstream/haskell-blaze-builder upstream/haskell-blaze-html upstream/haskell-blaze-markup upstream/haskell-parsec upstream/haskell-text upstream/haskell-unordered-containers
+haskell-xmlhtml/PKGBUILD: 
+haskell-xmlhtml: haskell-xmlhtml/haskell-xmlhtml-0.2.3.4-3-i686.pkg.tar.xz
+haskell-xmlhtml/haskell-xmlhtml-0.2.3.4-3-i686.pkg.tar.xz: haskell-xmlhtml/PKGBUILD
+hackage-xmlhtml: haskell-xmlhtml
+pacman-U-xmlhtml: haskell-xmlhtml/haskell-xmlhtml-0.2.3.4-3-i686.pkg.tar.xz

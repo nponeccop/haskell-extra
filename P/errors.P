@@ -1,0 +1,7 @@
+.PHONY: haskell-errors hackage-errors
+haskell-errors: upstream/ghc upstream/haskell-either upstream/haskell-safe
+haskell-errors/PKGBUILD: 
+haskell-errors: haskell-errors/haskell-errors-1.4.7-4-i686.pkg.tar.xz
+haskell-errors/haskell-errors-1.4.7-4-i686.pkg.tar.xz: haskell-errors/PKGBUILD
+hackage-errors: haskell-errors
+pacman-U-errors: haskell-errors/haskell-errors-1.4.7-4-i686.pkg.tar.xz

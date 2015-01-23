@@ -1,0 +1,7 @@
+.PHONY: haskell-plugins hackage-plugins
+haskell-plugins: upstream/ghc upstream/haskell-ghc-paths haskell-haskell-src upstream/haskell-random
+haskell-plugins/PKGBUILD: 
+haskell-plugins: haskell-plugins/haskell-plugins-1.5.4.0-4-i686.pkg.tar.xz
+haskell-plugins/haskell-plugins-1.5.4.0-4-i686.pkg.tar.xz: haskell-plugins/PKGBUILD
+hackage-plugins: haskell-plugins
+pacman-U-plugins: haskell-plugins/haskell-plugins-1.5.4.0-4-i686.pkg.tar.xz

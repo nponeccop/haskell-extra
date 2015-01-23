@@ -1,7 +1,7 @@
 .PHONY: haskell-diagrams hackage-diagrams
 haskell-diagrams: upstream/ghc haskell-diagrams-contrib haskell-diagrams-core haskell-diagrams-lib haskell-diagrams-svg
 haskell-diagrams/PKGBUILD: 
-haskell-diagrams: haskell-diagrams/haskell-diagrams-1.2-6-i686.pkg.tar.xz
-haskell-diagrams/haskell-diagrams-1.2-6-i686.pkg.tar.xz: haskell-diagrams/PKGBUILD
+haskell-diagrams: haskell-diagrams/haskell-diagrams-1.2-7-i686.pkg.tar.xz
+haskell-diagrams/haskell-diagrams-1.2-7-i686.pkg.tar.xz: haskell-diagrams/PKGBUILD
 hackage-diagrams: haskell-diagrams
-pacman-U-diagrams: haskell-diagrams/haskell-diagrams-1.2-6-i686.pkg.tar.xz
+pacman-U-diagrams: haskell-diagrams/haskell-diagrams-1.2-7-i686.pkg.tar.xz

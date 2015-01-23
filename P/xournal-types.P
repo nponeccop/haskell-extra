@@ -1,0 +1,7 @@
+.PHONY: haskell-xournal-types hackage-xournal-types
+haskell-xournal-types: upstream/ghc upstream/haskell-cereal upstream/haskell-lens upstream/haskell-strict haskell-typecompose
+haskell-xournal-types/PKGBUILD: 
+haskell-xournal-types: haskell-xournal-types/haskell-xournal-types-0.5.0.2-3-i686.pkg.tar.xz
+haskell-xournal-types/haskell-xournal-types-0.5.0.2-3-i686.pkg.tar.xz: haskell-xournal-types/PKGBUILD
+hackage-xournal-types: haskell-xournal-types
+pacman-U-xournal-types: haskell-xournal-types/haskell-xournal-types-0.5.0.2-3-i686.pkg.tar.xz

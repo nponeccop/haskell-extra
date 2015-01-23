@@ -1,7 +1,7 @@
 .PHONY: haskell-doctest hackage-doctest
 haskell-doctest: upstream/ghc upstream/haskell-ghc-paths upstream/haskell-syb
 haskell-doctest/PKGBUILD: 
-haskell-doctest: haskell-doctest/haskell-doctest-0.9.12-1-i686.pkg.tar.xz
-haskell-doctest/haskell-doctest-0.9.12-1-i686.pkg.tar.xz: haskell-doctest/PKGBUILD
+haskell-doctest: haskell-doctest/haskell-doctest-0.9.12-2-i686.pkg.tar.xz
+haskell-doctest/haskell-doctest-0.9.12-2-i686.pkg.tar.xz: haskell-doctest/PKGBUILD
 hackage-doctest: haskell-doctest
-pacman-U-doctest: haskell-doctest/haskell-doctest-0.9.12-1-i686.pkg.tar.xz
+pacman-U-doctest: haskell-doctest/haskell-doctest-0.9.12-2-i686.pkg.tar.xz

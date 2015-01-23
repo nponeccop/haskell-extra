@@ -1,7 +1,7 @@
 .PHONY: haskell-yesod-persistent hackage-yesod-persistent
 haskell-yesod-persistent: upstream/ghc upstream/haskell-blaze-builder upstream/haskell-conduit upstream/haskell-persistent upstream/haskell-persistent-template upstream/haskell-resource-pool upstream/haskell-resourcet haskell-yesod-core
 haskell-yesod-persistent/PKGBUILD: 
-haskell-yesod-persistent: haskell-yesod-persistent/haskell-yesod-persistent-1.4.0.2-3-i686.pkg.tar.xz
-haskell-yesod-persistent/haskell-yesod-persistent-1.4.0.2-3-i686.pkg.tar.xz: haskell-yesod-persistent/PKGBUILD
+haskell-yesod-persistent: haskell-yesod-persistent/haskell-yesod-persistent-1.4.0.2-4-i686.pkg.tar.xz
+haskell-yesod-persistent/haskell-yesod-persistent-1.4.0.2-4-i686.pkg.tar.xz: haskell-yesod-persistent/PKGBUILD
 hackage-yesod-persistent: haskell-yesod-persistent
-pacman-U-yesod-persistent: haskell-yesod-persistent/haskell-yesod-persistent-1.4.0.2-3-i686.pkg.tar.xz
+pacman-U-yesod-persistent: haskell-yesod-persistent/haskell-yesod-persistent-1.4.0.2-4-i686.pkg.tar.xz

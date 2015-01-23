@@ -1,0 +1,7 @@
+.PHONY: haskell-tremulous-query hackage-tremulous-query
+haskell-tremulous-query: upstream/ghc upstream/haskell-attoparsec upstream/haskell-mtl upstream/haskell-network
+haskell-tremulous-query/PKGBUILD: 
+haskell-tremulous-query: haskell-tremulous-query/haskell-tremulous-query-1.0.7-4-i686.pkg.tar.xz
+haskell-tremulous-query/haskell-tremulous-query-1.0.7-4-i686.pkg.tar.xz: haskell-tremulous-query/PKGBUILD
+hackage-tremulous-query: haskell-tremulous-query
+pacman-U-tremulous-query: haskell-tremulous-query/haskell-tremulous-query-1.0.7-4-i686.pkg.tar.xz

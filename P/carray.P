@@ -1,0 +1,7 @@
+.PHONY: haskell-carray hackage-carray
+haskell-carray: upstream/ghc haskell-ix-shapable upstream/haskell-syb
+haskell-carray/PKGBUILD: 
+haskell-carray: haskell-carray/haskell-carray-0.1.5.2-4-i686.pkg.tar.xz
+haskell-carray/haskell-carray-0.1.5.2-4-i686.pkg.tar.xz: haskell-carray/PKGBUILD
+hackage-carray: haskell-carray
+pacman-U-carray: haskell-carray/haskell-carray-0.1.5.2-4-i686.pkg.tar.xz

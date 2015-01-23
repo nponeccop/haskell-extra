@@ -1,0 +1,7 @@
+.PHONY: haskell-zeromq4-haskell hackage-zeromq4-haskell
+haskell-zeromq4-haskell: upstream/ghc upstream/haskell-async upstream/haskell-exceptions upstream/haskell-semigroups
+haskell-zeromq4-haskell/PKGBUILD: 
+haskell-zeromq4-haskell: haskell-zeromq4-haskell/haskell-zeromq4-haskell-0.6.2-3-i686.pkg.tar.xz
+haskell-zeromq4-haskell/haskell-zeromq4-haskell-0.6.2-3-i686.pkg.tar.xz: haskell-zeromq4-haskell/PKGBUILD
+hackage-zeromq4-haskell: haskell-zeromq4-haskell
+pacman-U-zeromq4-haskell: haskell-zeromq4-haskell/haskell-zeromq4-haskell-0.6.2-3-i686.pkg.tar.xz

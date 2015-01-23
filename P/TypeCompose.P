@@ -1,0 +1,7 @@
+.PHONY: haskell-typecompose hackage-TypeCompose
+haskell-typecompose: upstream/ghc
+haskell-typecompose/PKGBUILD: 
+haskell-typecompose: haskell-typecompose/haskell-typecompose-0.9.10-1-i686.pkg.tar.xz
+haskell-typecompose/haskell-typecompose-0.9.10-1-i686.pkg.tar.xz: haskell-typecompose/PKGBUILD
+hackage-TypeCompose: haskell-typecompose
+pacman-U-TypeCompose: haskell-typecompose/haskell-typecompose-0.9.10-1-i686.pkg.tar.xz

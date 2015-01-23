@@ -1,0 +1,7 @@
+.PHONY: haskell-digestive-functors hackage-digestive-functors
+haskell-digestive-functors: upstream/ghc upstream/haskell-mtl upstream/haskell-text
+haskell-digestive-functors/PKGBUILD: 
+haskell-digestive-functors: haskell-digestive-functors/haskell-digestive-functors-0.7.1.3-4-i686.pkg.tar.xz
+haskell-digestive-functors/haskell-digestive-functors-0.7.1.3-4-i686.pkg.tar.xz: haskell-digestive-functors/PKGBUILD
+hackage-digestive-functors: haskell-digestive-functors
+pacman-U-digestive-functors: haskell-digestive-functors/haskell-digestive-functors-0.7.1.3-4-i686.pkg.tar.xz

@@ -1,0 +1,7 @@
+.PHONY: haskell-http-reverse-proxy hackage-http-reverse-proxy
+haskell-http-reverse-proxy: upstream/ghc upstream/haskell-async upstream/haskell-blaze-builder upstream/haskell-case-insensitive upstream/haskell-conduit upstream/haskell-conduit-extra upstream/haskell-data-default-class upstream/haskell-http-client upstream/haskell-http-types upstream/haskell-lifted-base upstream/haskell-monad-control upstream/haskell-network upstream/haskell-resourcet upstream/haskell-streaming-commons upstream/haskell-text upstream/haskell-wai upstream/haskell-wai-logger upstream/haskell-word8
+haskell-http-reverse-proxy/PKGBUILD: 
+haskell-http-reverse-proxy: haskell-http-reverse-proxy/haskell-http-reverse-proxy-0.4.1.2-3-i686.pkg.tar.xz
+haskell-http-reverse-proxy/haskell-http-reverse-proxy-0.4.1.2-3-i686.pkg.tar.xz: haskell-http-reverse-proxy/PKGBUILD
+hackage-http-reverse-proxy: haskell-http-reverse-proxy
+pacman-U-http-reverse-proxy: haskell-http-reverse-proxy/haskell-http-reverse-proxy-0.4.1.2-3-i686.pkg.tar.xz

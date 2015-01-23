@@ -1,0 +1,7 @@
+.PHONY: haskell-snap-core hackage-snap-core
+haskell-snap-core: upstream/ghc upstream/haskell-attoparsec haskell-attoparsec-enumerator upstream/haskell-blaze-builder haskell-blaze-builder-enumerator upstream/haskell-case-insensitive upstream/haskell-enumerator upstream/haskell-hashable upstream/haskell-hunit upstream/haskell-monadcatchio-transformers upstream/haskell-mtl upstream/haskell-random upstream/haskell-regex-posix upstream/haskell-text upstream/haskell-unix-compat upstream/haskell-unordered-containers upstream/haskell-vector haskell-zlib-enum
+haskell-snap-core/PKGBUILD: 
+haskell-snap-core: haskell-snap-core/haskell-snap-core-0.9.6.4-3-i686.pkg.tar.xz
+haskell-snap-core/haskell-snap-core-0.9.6.4-3-i686.pkg.tar.xz: haskell-snap-core/PKGBUILD
+hackage-snap-core: haskell-snap-core
+pacman-U-snap-core: haskell-snap-core/haskell-snap-core-0.9.6.4-3-i686.pkg.tar.xz

@@ -12,21 +12,22 @@ license=("GPL")
 arch=('i686' 'x86_64')
 makedepends=()
 depends=("ghc=7.8.4-1"
-         "haskell-binary=0.7.2.3-1"
-         "haskell-blaze-builder=0.3.3.4-3"
-         "haskell-data-binary-ieee754=0.4.4-3"
+         "haskell-blaze-builder=0.3.3.4-4"
+         "haskell-data-binary-ieee754=0.4.4-4"
          "haskell-network=2.6.0.2-2")
 options=('strip' 'staticlibs')
-source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
+source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz"
+        "cabal.patch")
 install="${pkgname}.install"
-sha256sums=("8e35a78a5619f57148a07e0b5995c209175a0ae3f1f4e1c5c8c9dc54822de2fa")
+sha256sums=("8e35a78a5619f57148a07e0b5995c209175a0ae3f1f4e1c5c8c9dc54822de2fa"
+            "8886c9ff37c2db71a52749170f78478757beef0bf2e0f504eca330519aaaf065")
 
 # PKGBUILD functions
 
 prepare() {
     cd "${srcdir}/${_hkgname}-${pkgver}"
     
-    # no cabal patch
+    patch hosc.cabal "${srcdir}/cabal.patch" 
     # no source patch
 }
 

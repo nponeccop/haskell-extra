@@ -1,0 +1,7 @@
+.PHONY: haskell-blaze-textual hackage-blaze-textual
+haskell-blaze-textual: upstream/ghc upstream/haskell-blaze-builder upstream/haskell-text upstream/haskell-vector
+haskell-blaze-textual/PKGBUILD: 
+haskell-blaze-textual: haskell-blaze-textual/haskell-blaze-textual-0.2.0.9-4-i686.pkg.tar.xz
+haskell-blaze-textual/haskell-blaze-textual-0.2.0.9-4-i686.pkg.tar.xz: haskell-blaze-textual/PKGBUILD
+hackage-blaze-textual: haskell-blaze-textual
+pacman-U-blaze-textual: haskell-blaze-textual/haskell-blaze-textual-0.2.0.9-4-i686.pkg.tar.xz

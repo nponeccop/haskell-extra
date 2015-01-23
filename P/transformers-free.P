@@ -1,0 +1,7 @@
+.PHONY: haskell-transformers-free hackage-transformers-free
+haskell-transformers-free: upstream/ghc
+haskell-transformers-free/PKGBUILD: 
+haskell-transformers-free: haskell-transformers-free/haskell-transformers-free-1.0.1-1-i686.pkg.tar.xz
+haskell-transformers-free/haskell-transformers-free-1.0.1-1-i686.pkg.tar.xz: haskell-transformers-free/PKGBUILD
+hackage-transformers-free: haskell-transformers-free
+pacman-U-transformers-free: haskell-transformers-free/haskell-transformers-free-1.0.1-1-i686.pkg.tar.xz

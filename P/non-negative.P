@@ -1,0 +1,7 @@
+.PHONY: haskell-non-negative hackage-non-negative
+haskell-non-negative: upstream/ghc upstream/haskell-quickcheck haskell-utility-ht
+haskell-non-negative/PKGBUILD: 
+haskell-non-negative: haskell-non-negative/haskell-non-negative-0.1.1-4-i686.pkg.tar.xz
+haskell-non-negative/haskell-non-negative-0.1.1-4-i686.pkg.tar.xz: haskell-non-negative/PKGBUILD
+hackage-non-negative: haskell-non-negative
+pacman-U-non-negative: haskell-non-negative/haskell-non-negative-0.1.1-4-i686.pkg.tar.xz

@@ -1,0 +1,7 @@
+.PHONY: haskell-ghc-mtl hackage-ghc-mtl
+haskell-ghc-mtl: upstream/ghc upstream/haskell-exceptions upstream/haskell-extensible-exceptions upstream/haskell-mtl
+haskell-ghc-mtl/PKGBUILD: 
+haskell-ghc-mtl: haskell-ghc-mtl/haskell-ghc-mtl-1.2.1.0-3-i686.pkg.tar.xz
+haskell-ghc-mtl/haskell-ghc-mtl-1.2.1.0-3-i686.pkg.tar.xz: haskell-ghc-mtl/PKGBUILD
+hackage-ghc-mtl: haskell-ghc-mtl
+pacman-U-ghc-mtl: haskell-ghc-mtl/haskell-ghc-mtl-1.2.1.0-3-i686.pkg.tar.xz

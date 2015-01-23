@@ -1,0 +1,7 @@
+.PHONY: haskell-webkitgtk3 hackage-webkitgtk3
+haskell-webkitgtk3: upstream/ghc upstream/haskell-cairo upstream/haskell-glib haskell-gtk3 upstream/haskell-mtl upstream/haskell-pango upstream/haskell-text upstream/webkitgtk
+haskell-webkitgtk3/PKGBUILD: 
+haskell-webkitgtk3: haskell-webkitgtk3/haskell-webkitgtk3-0.13.1.1-3-i686.pkg.tar.xz
+haskell-webkitgtk3/haskell-webkitgtk3-0.13.1.1-3-i686.pkg.tar.xz: haskell-webkitgtk3/PKGBUILD
+hackage-webkitgtk3: haskell-webkitgtk3
+pacman-U-webkitgtk3: haskell-webkitgtk3/haskell-webkitgtk3-0.13.1.1-3-i686.pkg.tar.xz

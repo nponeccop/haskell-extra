@@ -1,0 +1,7 @@
+.PHONY: haskell-reducers hackage-reducers
+haskell-reducers: upstream/ghc upstream/haskell-comonad haskell-fingertree upstream/haskell-hashable upstream/haskell-keys upstream/haskell-pointed upstream/haskell-semigroupoids upstream/haskell-semigroups upstream/haskell-text upstream/haskell-unordered-containers
+haskell-reducers/PKGBUILD: 
+haskell-reducers: haskell-reducers/haskell-reducers-3.10.3-3-i686.pkg.tar.xz
+haskell-reducers/haskell-reducers-3.10.3-3-i686.pkg.tar.xz: haskell-reducers/PKGBUILD
+hackage-reducers: haskell-reducers
+pacman-U-reducers: haskell-reducers/haskell-reducers-3.10.3-3-i686.pkg.tar.xz

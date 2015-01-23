@@ -1,0 +1,7 @@
+.PHONY: haskell-attoparsec-enumerator hackage-attoparsec-enumerator
+haskell-attoparsec-enumerator: upstream/ghc upstream/haskell-attoparsec upstream/haskell-enumerator upstream/haskell-text
+haskell-attoparsec-enumerator/PKGBUILD: 
+haskell-attoparsec-enumerator: haskell-attoparsec-enumerator/haskell-attoparsec-enumerator-0.3.3-4-i686.pkg.tar.xz
+haskell-attoparsec-enumerator/haskell-attoparsec-enumerator-0.3.3-4-i686.pkg.tar.xz: haskell-attoparsec-enumerator/PKGBUILD
+hackage-attoparsec-enumerator: haskell-attoparsec-enumerator
+pacman-U-attoparsec-enumerator: haskell-attoparsec-enumerator/haskell-attoparsec-enumerator-0.3.3-4-i686.pkg.tar.xz

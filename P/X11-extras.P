@@ -1,0 +1,7 @@
+.PHONY: haskell-x11-extras hackage-X11-extras
+haskell-x11-extras: upstream/ghc upstream/haskell-x11 upstream/libx11
+haskell-x11-extras/PKGBUILD: 
+haskell-x11-extras: haskell-x11-extras/haskell-x11-extras-0.4-5-i686.pkg.tar.xz
+haskell-x11-extras/haskell-x11-extras-0.4-5-i686.pkg.tar.xz: haskell-x11-extras/PKGBUILD
+hackage-X11-extras: haskell-x11-extras
+pacman-U-X11-extras: haskell-x11-extras/haskell-x11-extras-0.4-5-i686.pkg.tar.xz

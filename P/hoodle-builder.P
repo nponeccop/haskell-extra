@@ -1,0 +1,7 @@
+.PHONY: haskell-hoodle-builder hackage-hoodle-builder
+haskell-hoodle-builder: upstream/ghc upstream/haskell-blaze-builder haskell-double-conversion haskell-hoodle-types upstream/haskell-lens upstream/haskell-strict upstream/haskell-text
+haskell-hoodle-builder/PKGBUILD: 
+haskell-hoodle-builder: haskell-hoodle-builder/haskell-hoodle-builder-0.3-3-i686.pkg.tar.xz
+haskell-hoodle-builder/haskell-hoodle-builder-0.3-3-i686.pkg.tar.xz: haskell-hoodle-builder/PKGBUILD
+hackage-hoodle-builder: haskell-hoodle-builder
+pacman-U-hoodle-builder: haskell-hoodle-builder/haskell-hoodle-builder-0.3-3-i686.pkg.tar.xz

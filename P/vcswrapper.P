@@ -1,0 +1,7 @@
+.PHONY: haskell-vcswrapper hackage-vcswrapper
+haskell-vcswrapper: upstream/ghc upstream/haskell-hxt upstream/haskell-mtl upstream/haskell-parsec upstream/haskell-split upstream/haskell-text
+haskell-vcswrapper/PKGBUILD: 
+haskell-vcswrapper: haskell-vcswrapper/haskell-vcswrapper-0.1.1-4-i686.pkg.tar.xz
+haskell-vcswrapper/haskell-vcswrapper-0.1.1-4-i686.pkg.tar.xz: haskell-vcswrapper/PKGBUILD
+hackage-vcswrapper: haskell-vcswrapper
+pacman-U-vcswrapper: haskell-vcswrapper/haskell-vcswrapper-0.1.1-4-i686.pkg.tar.xz

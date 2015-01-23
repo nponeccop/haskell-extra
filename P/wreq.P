@@ -1,0 +1,7 @@
+.PHONY: haskell-wreq hackage-wreq
+haskell-wreq: upstream/ghc upstream/haskell-aeson upstream/haskell-attoparsec upstream/haskell-base16-bytestring upstream/haskell-byteable upstream/haskell-case-insensitive upstream/haskell-cryptohash upstream/haskell-exceptions upstream/haskell-hashable upstream/haskell-http-client upstream/haskell-http-client-tls upstream/haskell-http-types upstream/haskell-lens haskell-lens-aeson upstream/haskell-mime-types haskell-psqueue upstream/haskell-text upstream/haskell-unordered-containers
+haskell-wreq/PKGBUILD: 
+haskell-wreq: haskell-wreq/haskell-wreq-0.3.0.1-3-i686.pkg.tar.xz
+haskell-wreq/haskell-wreq-0.3.0.1-3-i686.pkg.tar.xz: haskell-wreq/PKGBUILD
+hackage-wreq: haskell-wreq
+pacman-U-wreq: haskell-wreq/haskell-wreq-0.3.0.1-3-i686.pkg.tar.xz

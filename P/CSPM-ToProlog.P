@@ -1,0 +1,7 @@
+.PHONY: haskell-cspm-toprolog hackage-CSPM-ToProlog
+haskell-cspm-toprolog: upstream/ghc haskell-cspm-frontend
+haskell-cspm-toprolog/PKGBUILD: 
+haskell-cspm-toprolog: haskell-cspm-toprolog/haskell-cspm-toprolog-0.5.2.0-4-i686.pkg.tar.xz
+haskell-cspm-toprolog/haskell-cspm-toprolog-0.5.2.0-4-i686.pkg.tar.xz: haskell-cspm-toprolog/PKGBUILD
+hackage-CSPM-ToProlog: haskell-cspm-toprolog
+pacman-U-CSPM-ToProlog: haskell-cspm-toprolog/haskell-cspm-toprolog-0.5.2.0-4-i686.pkg.tar.xz

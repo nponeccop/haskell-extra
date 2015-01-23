@@ -1,0 +1,7 @@
+.PHONY: haskell-hdbc hackage-HDBC
+haskell-hdbc: upstream/ghc haskell-convertible upstream/haskell-mtl upstream/haskell-text upstream/haskell-utf8-string
+haskell-hdbc/PKGBUILD: 
+haskell-hdbc: haskell-hdbc/haskell-hdbc-2.4.0.0-4-i686.pkg.tar.xz
+haskell-hdbc/haskell-hdbc-2.4.0.0-4-i686.pkg.tar.xz: haskell-hdbc/PKGBUILD
+hackage-HDBC: haskell-hdbc
+pacman-U-HDBC: haskell-hdbc/haskell-hdbc-2.4.0.0-4-i686.pkg.tar.xz

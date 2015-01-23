@@ -1,0 +1,7 @@
+.PHONY: haskell-network-transport hackage-network-transport
+haskell-network-transport: upstream/ghc upstream/haskell-hashable
+haskell-network-transport/PKGBUILD: 
+haskell-network-transport: haskell-network-transport/haskell-network-transport-0.4.1.0-4-i686.pkg.tar.xz
+haskell-network-transport/haskell-network-transport-0.4.1.0-4-i686.pkg.tar.xz: haskell-network-transport/PKGBUILD
+hackage-network-transport: haskell-network-transport
+pacman-U-network-transport: haskell-network-transport/haskell-network-transport-0.4.1.0-4-i686.pkg.tar.xz

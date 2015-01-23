@@ -1,0 +1,7 @@
+.PHONY: haskell-distributed-process-client-server hackage-distributed-process-client-server
+haskell-distributed-process-client-server: upstream/ghc haskell-data-accessor haskell-distributed-process haskell-distributed-process-async haskell-distributed-process-extras haskell-fingertree upstream/haskell-hashable upstream/haskell-mtl upstream/haskell-stm upstream/haskell-unordered-containers
+haskell-distributed-process-client-server/PKGBUILD: 
+haskell-distributed-process-client-server: haskell-distributed-process-client-server/haskell-distributed-process-client-server-0.1.2-3-i686.pkg.tar.xz
+haskell-distributed-process-client-server/haskell-distributed-process-client-server-0.1.2-3-i686.pkg.tar.xz: haskell-distributed-process-client-server/PKGBUILD
+hackage-distributed-process-client-server: haskell-distributed-process-client-server
+pacman-U-distributed-process-client-server: haskell-distributed-process-client-server/haskell-distributed-process-client-server-0.1.2-3-i686.pkg.tar.xz

@@ -1,7 +1,7 @@
 .PHONY: haskell-listlike hackage-ListLike
 haskell-listlike: upstream/ghc upstream/haskell-dlist haskell-fmlist upstream/haskell-text upstream/haskell-vector
 haskell-listlike/PKGBUILD: 
-haskell-listlike: haskell-listlike/haskell-listlike-4.1.1-1-i686.pkg.tar.xz
-haskell-listlike/haskell-listlike-4.1.1-1-i686.pkg.tar.xz: haskell-listlike/PKGBUILD
+haskell-listlike: haskell-listlike/haskell-listlike-4.1.1-2-i686.pkg.tar.xz
+haskell-listlike/haskell-listlike-4.1.1-2-i686.pkg.tar.xz: haskell-listlike/PKGBUILD
 hackage-ListLike: haskell-listlike
-pacman-U-ListLike: haskell-listlike/haskell-listlike-4.1.1-1-i686.pkg.tar.xz
+pacman-U-ListLike: haskell-listlike/haskell-listlike-4.1.1-2-i686.pkg.tar.xz

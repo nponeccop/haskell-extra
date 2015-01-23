@@ -1,0 +1,7 @@
+.PHONY: haskell-fsnotify hackage-fsnotify
+haskell-fsnotify: upstream/ghc upstream/haskell-async upstream/haskell-hinotify upstream/haskell-system-fileio upstream/haskell-system-filepath upstream/haskell-text
+haskell-fsnotify/PKGBUILD: 
+haskell-fsnotify: haskell-fsnotify/haskell-fsnotify-0.1.0.3-3-i686.pkg.tar.xz
+haskell-fsnotify/haskell-fsnotify-0.1.0.3-3-i686.pkg.tar.xz: haskell-fsnotify/PKGBUILD
+hackage-fsnotify: haskell-fsnotify
+pacman-U-fsnotify: haskell-fsnotify/haskell-fsnotify-0.1.0.3-3-i686.pkg.tar.xz

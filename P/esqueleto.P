@@ -1,0 +1,7 @@
+.PHONY: haskell-esqueleto hackage-esqueleto
+haskell-esqueleto: upstream/ghc upstream/haskell-conduit upstream/haskell-monad-logger upstream/haskell-persistent upstream/haskell-resourcet upstream/haskell-tagged upstream/haskell-text upstream/haskell-unordered-containers
+haskell-esqueleto/PKGBUILD: 
+haskell-esqueleto: haskell-esqueleto/haskell-esqueleto-2.1.2.1-3-i686.pkg.tar.xz
+haskell-esqueleto/haskell-esqueleto-2.1.2.1-3-i686.pkg.tar.xz: haskell-esqueleto/PKGBUILD
+hackage-esqueleto: haskell-esqueleto
+pacman-U-esqueleto: haskell-esqueleto/haskell-esqueleto-2.1.2.1-3-i686.pkg.tar.xz

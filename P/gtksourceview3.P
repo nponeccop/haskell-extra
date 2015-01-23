@@ -1,0 +1,7 @@
+.PHONY: haskell-gtksourceview3 hackage-gtksourceview3
+haskell-gtksourceview3: upstream/ghc upstream/gtksourceview3 upstream/haskell-glib haskell-gtk3 upstream/haskell-mtl upstream/haskell-text
+haskell-gtksourceview3/PKGBUILD: 
+haskell-gtksourceview3: haskell-gtksourceview3/haskell-gtksourceview3-0.13.1.2-3-i686.pkg.tar.xz
+haskell-gtksourceview3/haskell-gtksourceview3-0.13.1.2-3-i686.pkg.tar.xz: haskell-gtksourceview3/PKGBUILD
+hackage-gtksourceview3: haskell-gtksourceview3
+pacman-U-gtksourceview3: haskell-gtksourceview3/haskell-gtksourceview3-0.13.1.2-3-i686.pkg.tar.xz

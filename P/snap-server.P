@@ -1,7 +1,7 @@
 .PHONY: haskell-snap-server hackage-snap-server
 haskell-snap-server: upstream/ghc upstream/haskell-attoparsec haskell-attoparsec-enumerator upstream/haskell-blaze-builder haskell-blaze-builder-enumerator upstream/haskell-case-insensitive upstream/haskell-enumerator upstream/haskell-monadcatchio-transformers upstream/haskell-mtl upstream/haskell-network haskell-snap-core upstream/haskell-text upstream/haskell-unix-compat
 haskell-snap-server/PKGBUILD: 
-haskell-snap-server: haskell-snap-server/haskell-snap-server-0.9.4.6-2-i686.pkg.tar.xz
-haskell-snap-server/haskell-snap-server-0.9.4.6-2-i686.pkg.tar.xz: haskell-snap-server/PKGBUILD
+haskell-snap-server: haskell-snap-server/haskell-snap-server-0.9.4.6-3-i686.pkg.tar.xz
+haskell-snap-server/haskell-snap-server-0.9.4.6-3-i686.pkg.tar.xz: haskell-snap-server/PKGBUILD
 hackage-snap-server: haskell-snap-server
-pacman-U-snap-server: haskell-snap-server/haskell-snap-server-0.9.4.6-2-i686.pkg.tar.xz
+pacman-U-snap-server: haskell-snap-server/haskell-snap-server-0.9.4.6-3-i686.pkg.tar.xz

@@ -1,0 +1,7 @@
+.PHONY: haskell-lens-aeson hackage-lens-aeson
+haskell-lens-aeson: upstream/ghc upstream/haskell-aeson upstream/haskell-attoparsec upstream/haskell-lens upstream/haskell-scientific upstream/haskell-text upstream/haskell-unordered-containers upstream/haskell-vector
+haskell-lens-aeson/PKGBUILD: 
+haskell-lens-aeson: haskell-lens-aeson/haskell-lens-aeson-1.0.0.3-3-i686.pkg.tar.xz
+haskell-lens-aeson/haskell-lens-aeson-1.0.0.3-3-i686.pkg.tar.xz: haskell-lens-aeson/PKGBUILD
+hackage-lens-aeson: haskell-lens-aeson
+pacman-U-lens-aeson: haskell-lens-aeson/haskell-lens-aeson-1.0.0.3-3-i686.pkg.tar.xz

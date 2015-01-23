@@ -1,0 +1,7 @@
+.PHONY: haskell-blaze-svg hackage-blaze-svg
+haskell-blaze-svg: upstream/ghc upstream/haskell-blaze-markup upstream/haskell-mtl
+haskell-blaze-svg/PKGBUILD: 
+haskell-blaze-svg: haskell-blaze-svg/haskell-blaze-svg-0.3.4-4-i686.pkg.tar.xz
+haskell-blaze-svg/haskell-blaze-svg-0.3.4-4-i686.pkg.tar.xz: haskell-blaze-svg/PKGBUILD
+hackage-blaze-svg: haskell-blaze-svg
+pacman-U-blaze-svg: haskell-blaze-svg/haskell-blaze-svg-0.3.4-4-i686.pkg.tar.xz

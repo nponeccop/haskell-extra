@@ -1,0 +1,7 @@
+.PHONY: haskell-sbv hackage-sbv
+haskell-sbv: upstream/ghc upstream/haskell-async upstream/haskell-hunit upstream/haskell-mtl upstream/haskell-quickcheck upstream/haskell-random upstream/haskell-syb
+haskell-sbv/PKGBUILD: 
+haskell-sbv: haskell-sbv/haskell-sbv-3.5-1-i686.pkg.tar.xz
+haskell-sbv/haskell-sbv-3.5-1-i686.pkg.tar.xz: haskell-sbv/PKGBUILD
+hackage-sbv: haskell-sbv
+pacman-U-sbv: haskell-sbv/haskell-sbv-3.5-1-i686.pkg.tar.xz

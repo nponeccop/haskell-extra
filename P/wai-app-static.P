@@ -1,0 +1,7 @@
+.PHONY: haskell-wai-app-static hackage-wai-app-static
+haskell-wai-app-static: upstream/ghc upstream/haskell-base64-bytestring upstream/haskell-blaze-builder upstream/haskell-blaze-html upstream/haskell-blaze-markup upstream/haskell-byteable upstream/haskell-cryptohash haskell-cryptohash-conduit haskell-file-embed upstream/haskell-http-date upstream/haskell-http-types upstream/haskell-mime-types upstream/haskell-optparse-applicative upstream/haskell-system-fileio upstream/haskell-system-filepath upstream/haskell-text upstream/haskell-unix-compat upstream/haskell-unordered-containers upstream/haskell-wai upstream/haskell-wai-extra upstream/haskell-warp upstream/haskell-zlib
+haskell-wai-app-static/PKGBUILD: 
+haskell-wai-app-static: haskell-wai-app-static/haskell-wai-app-static-3.0.0.6-1-i686.pkg.tar.xz
+haskell-wai-app-static/haskell-wai-app-static-3.0.0.6-1-i686.pkg.tar.xz: haskell-wai-app-static/PKGBUILD
+hackage-wai-app-static: haskell-wai-app-static
+pacman-U-wai-app-static: haskell-wai-app-static/haskell-wai-app-static-3.0.0.6-1-i686.pkg.tar.xz

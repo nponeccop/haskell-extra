@@ -1,0 +1,7 @@
+.PHONY: haskell-cryptohash-conduit hackage-cryptohash-conduit
+haskell-cryptohash-conduit: upstream/ghc upstream/haskell-conduit upstream/haskell-conduit-extra upstream/haskell-cryptohash upstream/haskell-resourcet
+haskell-cryptohash-conduit/PKGBUILD: 
+haskell-cryptohash-conduit: haskell-cryptohash-conduit/haskell-cryptohash-conduit-0.1.1-3-i686.pkg.tar.xz
+haskell-cryptohash-conduit/haskell-cryptohash-conduit-0.1.1-3-i686.pkg.tar.xz: haskell-cryptohash-conduit/PKGBUILD
+hackage-cryptohash-conduit: haskell-cryptohash-conduit
+pacman-U-cryptohash-conduit: haskell-cryptohash-conduit/haskell-cryptohash-conduit-0.1.1-3-i686.pkg.tar.xz

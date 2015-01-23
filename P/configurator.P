@@ -1,0 +1,7 @@
+.PHONY: haskell-configurator hackage-configurator
+haskell-configurator: upstream/ghc upstream/haskell-attoparsec upstream/haskell-hashable upstream/haskell-text upstream/haskell-unix-compat upstream/haskell-unordered-containers
+haskell-configurator/PKGBUILD: 
+haskell-configurator: haskell-configurator/haskell-configurator-0.3.0.0-3-i686.pkg.tar.xz
+haskell-configurator/haskell-configurator-0.3.0.0-3-i686.pkg.tar.xz: haskell-configurator/PKGBUILD
+hackage-configurator: haskell-configurator
+pacman-U-configurator: haskell-configurator/haskell-configurator-0.3.0.0-3-i686.pkg.tar.xz

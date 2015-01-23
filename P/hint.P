@@ -1,0 +1,7 @@
+.PHONY: haskell-hint hackage-hint
+haskell-hint: upstream/ghc upstream/haskell-exceptions upstream/haskell-extensible-exceptions haskell-ghc-mtl upstream/haskell-ghc-paths upstream/haskell-mtl upstream/haskell-random upstream/haskell-utf8-string
+haskell-hint/PKGBUILD: 
+haskell-hint: haskell-hint/haskell-hint-0.4.2.1-4-i686.pkg.tar.xz
+haskell-hint/haskell-hint-0.4.2.1-4-i686.pkg.tar.xz: haskell-hint/PKGBUILD
+hackage-hint: haskell-hint
+pacman-U-hint: haskell-hint/haskell-hint-0.4.2.1-4-i686.pkg.tar.xz

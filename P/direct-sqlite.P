@@ -1,0 +1,7 @@
+.PHONY: haskell-direct-sqlite hackage-direct-sqlite
+haskell-direct-sqlite: upstream/ghc upstream/haskell-text
+haskell-direct-sqlite/PKGBUILD: 
+haskell-direct-sqlite: haskell-direct-sqlite/haskell-direct-sqlite-2.3.14-4-i686.pkg.tar.xz
+haskell-direct-sqlite/haskell-direct-sqlite-2.3.14-4-i686.pkg.tar.xz: haskell-direct-sqlite/PKGBUILD
+hackage-direct-sqlite: haskell-direct-sqlite
+pacman-U-direct-sqlite: haskell-direct-sqlite/haskell-direct-sqlite-2.3.14-4-i686.pkg.tar.xz

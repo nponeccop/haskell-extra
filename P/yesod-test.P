@@ -1,7 +1,7 @@
 .PHONY: haskell-yesod-test hackage-yesod-test
 haskell-yesod-test: upstream/ghc upstream/haskell-attoparsec upstream/haskell-blaze-builder upstream/haskell-blaze-html upstream/haskell-blaze-markup upstream/haskell-case-insensitive upstream/haskell-cookie upstream/haskell-hspec-core haskell-html-conduit upstream/haskell-http-types upstream/haskell-hunit upstream/haskell-monad-control upstream/haskell-network upstream/haskell-persistent upstream/haskell-text upstream/haskell-wai upstream/haskell-wai-extra upstream/haskell-xml-conduit upstream/haskell-xml-types haskell-yesod-core
 haskell-yesod-test/PKGBUILD: 
-haskell-yesod-test: haskell-yesod-test/haskell-yesod-test-1.4.2.2-3-i686.pkg.tar.xz
-haskell-yesod-test/haskell-yesod-test-1.4.2.2-3-i686.pkg.tar.xz: haskell-yesod-test/PKGBUILD
+haskell-yesod-test: haskell-yesod-test/haskell-yesod-test-1.4.2.2-4-i686.pkg.tar.xz
+haskell-yesod-test/haskell-yesod-test-1.4.2.2-4-i686.pkg.tar.xz: haskell-yesod-test/PKGBUILD
 hackage-yesod-test: haskell-yesod-test
-pacman-U-yesod-test: haskell-yesod-test/haskell-yesod-test-1.4.2.2-3-i686.pkg.tar.xz
+pacman-U-yesod-test: haskell-yesod-test/haskell-yesod-test-1.4.2.2-4-i686.pkg.tar.xz

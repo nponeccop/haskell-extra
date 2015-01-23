@@ -9,14 +9,6 @@ Index: cblrepo/haskell-agda/PKGBUILD
 -pkgname=haskell-agda
 +pkgname=agda
  pkgver=2.4.2.2
- pkgrel=2
+ pkgrel=1
  pkgdesc="A dependently typed functional programming language and proof assistant"
-@@ -31,7 +31,7 @@ depends=("ghc=7.8.4-1"
- options=('strip' 'staticlibs')
- source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz"
-         "cabal.patch")
--install="${pkgname}.install"
-+install="haskell-agda.install"
- sha256sums=("2344107654d0cb2a18dcf179ed3ea0f427839e058771ed628da64fbaed55bbc3"
-             "067b0771ed0d0d7c97a0c432e7b832a3c84dfa7e8751db153cdb664c287a5109")
- 
+

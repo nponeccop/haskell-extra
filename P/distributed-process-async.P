@@ -1,0 +1,7 @@
+.PHONY: haskell-distributed-process-async hackage-distributed-process-async
+haskell-distributed-process-async: upstream/ghc haskell-data-accessor haskell-distributed-process haskell-distributed-process-extras haskell-fingertree upstream/haskell-hashable upstream/haskell-mtl upstream/haskell-stm upstream/haskell-unordered-containers
+haskell-distributed-process-async/PKGBUILD: 
+haskell-distributed-process-async: haskell-distributed-process-async/haskell-distributed-process-async-0.2.1-3-i686.pkg.tar.xz
+haskell-distributed-process-async/haskell-distributed-process-async-0.2.1-3-i686.pkg.tar.xz: haskell-distributed-process-async/PKGBUILD
+hackage-distributed-process-async: haskell-distributed-process-async
+pacman-U-distributed-process-async: haskell-distributed-process-async/haskell-distributed-process-async-0.2.1-3-i686.pkg.tar.xz

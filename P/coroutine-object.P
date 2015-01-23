@@ -1,0 +1,7 @@
+.PHONY: haskell-coroutine-object hackage-coroutine-object
+haskell-coroutine-object: upstream/ghc upstream/haskell-cereal upstream/haskell-either upstream/haskell-lens upstream/haskell-mtl upstream/haskell-safecopy haskell-transformers-free upstream/haskell-uuid
+haskell-coroutine-object/PKGBUILD: 
+haskell-coroutine-object: haskell-coroutine-object/haskell-coroutine-object-0.3-3-i686.pkg.tar.xz
+haskell-coroutine-object/haskell-coroutine-object-0.3-3-i686.pkg.tar.xz: haskell-coroutine-object/PKGBUILD
+hackage-coroutine-object: haskell-coroutine-object
+pacman-U-coroutine-object: haskell-coroutine-object/haskell-coroutine-object-0.3-3-i686.pkg.tar.xz

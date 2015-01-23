@@ -27,6 +27,12 @@ function list_hgam_pkgbuild ()
 		hg stat -am | awk 'BEGIN{FS="[ /]";} $3 == "PKGBUILD" { print $2}'
 }
 
+function list_subdirs ()
+{
+	ls -d */ | tr -d '/' | grep -vEx 'oldaur|patches|upstream-repos|upstream|oo'
+
+}
+
 function myaur()
 {
 	cat aurhaskell | awk '$7=="zoidberg_md" {print}' | cut -f 1,3 | parse_rel | sort
@@ -136,11 +142,16 @@ join -v1 <(cblrepo build $(db_changes|xargs) | sort) <(join <(list_hg . -d -g | 
 echo '==> Non-unique versions in patches/*.pkgbuild'
 grep -ho "haskell-[0-9a-z-]*=[0-9.-]*" patches/*.pkgbuild |sort|uniq | cut -d '=' -f 1 | uniq -c | awk '$1 > 1{print $2}'
 echo '==> Non-unique versions in PKGBUILD'
-grep -ho "haskell-[0-9a-z-]*=[0-9.-]*" */PKGBUILD |sort|uniq | cut -d '=' -f 1 | uniq -c | awk '$1 > 1{print $2}'
+join <(grep -ho "haskell-[0-9a-z-]*=[0-9.-]*" */PKGBUILD |sort|uniq | cut -d '=' -f 1 | uniq -c | awk '$1 > 1{print $2}'| sort) <(grep -ho "haskell-[0-9a-z-]*=[0-9.-]*" */PKGBUILD |sort|uniq | tr '=' '\t'| sort)
 echo '==> Newly built packages'
 join <(list_pkgdest | sort) <(list_syncrepo haskell-extra | sort) | awk '$2 == $4 && $3 == $5 { print $1}'
 echo '==> Modified but not built'
 join -v1 <(list_hgam_pkgbuild | sort) <(list_pkgdest) 
 echo '==> Modified, built but not bumped'
 join <(list_hgam_pkgbuild | sort) <(join <(list_pkgdest | sort) <(list_syncrepo haskell-extra | sort) | awk '$2 == $4 && $3 == $5 { print $1}')
+echo '==> Repo packages without directories'
+join -v2 <(list_subdirs | sort) <(list_syncrepo haskell-extra)
+echo '==> Directories in upstream'
+join <(list_subdirs|sort) <(list_syncrepo haskell-core | sort)
+join <(list_subdirs|sort) <(list_syncrepo haskell-happstack | sort)
 

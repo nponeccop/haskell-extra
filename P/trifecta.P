@@ -1,0 +1,7 @@
+.PHONY: haskell-trifecta hackage-trifecta
+haskell-trifecta: upstream/ghc upstream/haskell-ansi-terminal upstream/haskell-ansi-wl-pprint upstream/haskell-blaze-builder upstream/haskell-blaze-html upstream/haskell-blaze-markup haskell-charset upstream/haskell-comonad haskell-fingertree upstream/haskell-hashable upstream/haskell-lens upstream/haskell-mtl haskell-parsers haskell-reducers upstream/haskell-semigroups upstream/haskell-unordered-containers upstream/haskell-utf8-string
+haskell-trifecta/PKGBUILD: 
+haskell-trifecta: haskell-trifecta/haskell-trifecta-1.5.1-3-i686.pkg.tar.xz
+haskell-trifecta/haskell-trifecta-1.5.1-3-i686.pkg.tar.xz: haskell-trifecta/PKGBUILD
+hackage-trifecta: haskell-trifecta
+pacman-U-trifecta: haskell-trifecta/haskell-trifecta-1.5.1-3-i686.pkg.tar.xz

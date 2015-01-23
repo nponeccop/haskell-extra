@@ -1,0 +1,7 @@
+.PHONY: haskell-blaze-builder-enumerator hackage-blaze-builder-enumerator
+haskell-blaze-builder-enumerator: upstream/ghc upstream/haskell-blaze-builder upstream/haskell-enumerator
+haskell-blaze-builder-enumerator/PKGBUILD: 
+haskell-blaze-builder-enumerator: haskell-blaze-builder-enumerator/haskell-blaze-builder-enumerator-0.2.0.6-3-i686.pkg.tar.xz
+haskell-blaze-builder-enumerator/haskell-blaze-builder-enumerator-0.2.0.6-3-i686.pkg.tar.xz: haskell-blaze-builder-enumerator/PKGBUILD
+hackage-blaze-builder-enumerator: haskell-blaze-builder-enumerator
+pacman-U-blaze-builder-enumerator: haskell-blaze-builder-enumerator/haskell-blaze-builder-enumerator-0.2.0.6-3-i686.pkg.tar.xz

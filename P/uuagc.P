@@ -1,0 +1,7 @@
+.PHONY: haskell-uuagc hackage-uuagc
+haskell-uuagc: upstream/ghc upstream/haskell-haskell-src-exts upstream/haskell-mtl haskell-uuagc-cabal haskell-uulib
+haskell-uuagc/PKGBUILD: 
+haskell-uuagc: haskell-uuagc/haskell-uuagc-0.9.52.1-1-i686.pkg.tar.xz
+haskell-uuagc/haskell-uuagc-0.9.52.1-1-i686.pkg.tar.xz: haskell-uuagc/PKGBUILD
+hackage-uuagc: haskell-uuagc
+pacman-U-uuagc: haskell-uuagc/haskell-uuagc-0.9.52.1-1-i686.pkg.tar.xz

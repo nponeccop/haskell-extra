@@ -1,7 +1,7 @@
 .PHONY: haskell-vector-space hackage-vector-space
 haskell-vector-space: upstream/ghc haskell-boolean haskell-memotrie haskell-numinstances
 haskell-vector-space/PKGBUILD: 
-haskell-vector-space: haskell-vector-space/haskell-vector-space-0.9-1-i686.pkg.tar.xz
-haskell-vector-space/haskell-vector-space-0.9-1-i686.pkg.tar.xz: haskell-vector-space/PKGBUILD
+haskell-vector-space: haskell-vector-space/haskell-vector-space-0.9-2-i686.pkg.tar.xz
+haskell-vector-space/haskell-vector-space-0.9-2-i686.pkg.tar.xz: haskell-vector-space/PKGBUILD
 hackage-vector-space: haskell-vector-space
-pacman-U-vector-space: haskell-vector-space/haskell-vector-space-0.9-1-i686.pkg.tar.xz
+pacman-U-vector-space: haskell-vector-space/haskell-vector-space-0.9-2-i686.pkg.tar.xz

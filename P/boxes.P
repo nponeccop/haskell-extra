@@ -1,0 +1,7 @@
+.PHONY: haskell-boxes hackage-boxes
+haskell-boxes: upstream/ghc upstream/haskell-split
+haskell-boxes/PKGBUILD: 
+haskell-boxes: haskell-boxes/haskell-boxes-0.1.4-1-i686.pkg.tar.xz
+haskell-boxes/haskell-boxes-0.1.4-1-i686.pkg.tar.xz: haskell-boxes/PKGBUILD
+hackage-boxes: haskell-boxes
+pacman-U-boxes: haskell-boxes/haskell-boxes-0.1.4-1-i686.pkg.tar.xz

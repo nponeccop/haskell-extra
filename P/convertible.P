@@ -1,0 +1,7 @@
+.PHONY: haskell-convertible hackage-convertible
+haskell-convertible: upstream/ghc upstream/haskell-mtl upstream/haskell-text
+haskell-convertible/PKGBUILD: 
+haskell-convertible: haskell-convertible/haskell-convertible-1.1.0.0-4-i686.pkg.tar.xz
+haskell-convertible/haskell-convertible-1.1.0.0-4-i686.pkg.tar.xz: haskell-convertible/PKGBUILD
+hackage-convertible: haskell-convertible
+pacman-U-convertible: haskell-convertible/haskell-convertible-1.1.0.0-4-i686.pkg.tar.xz

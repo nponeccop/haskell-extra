@@ -1,0 +1,7 @@
+.PHONY: haskell-template hackage-template
+haskell-template: upstream/ghc upstream/haskell-mtl upstream/haskell-text
+haskell-template/PKGBUILD: 
+haskell-template: haskell-template/haskell-template-0.2.0.10-4-i686.pkg.tar.xz
+haskell-template/haskell-template-0.2.0.10-4-i686.pkg.tar.xz: haskell-template/PKGBUILD
+hackage-template: haskell-template
+pacman-U-template: haskell-template/haskell-template-0.2.0.10-4-i686.pkg.tar.xz

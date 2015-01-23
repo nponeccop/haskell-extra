@@ -1,0 +1,7 @@
+.PHONY: haskell-haskell-src hackage-haskell-src
+haskell-haskell-src: upstream/ghc upstream/haskell-syb
+haskell-haskell-src/PKGBUILD: 
+haskell-haskell-src: haskell-haskell-src/haskell-haskell-src-1.0.1.6-3-i686.pkg.tar.xz
+haskell-haskell-src/haskell-haskell-src-1.0.1.6-3-i686.pkg.tar.xz: haskell-haskell-src/PKGBUILD
+hackage-haskell-src: haskell-haskell-src
+pacman-U-haskell-src: haskell-haskell-src/haskell-haskell-src-1.0.1.6-3-i686.pkg.tar.xz

@@ -1,0 +1,7 @@
+.PHONY: haskell-memotrie hackage-MemoTrie
+haskell-memotrie: upstream/ghc upstream/haskell-void
+haskell-memotrie/PKGBUILD: 
+haskell-memotrie: haskell-memotrie/haskell-memotrie-0.6.2-4-i686.pkg.tar.xz
+haskell-memotrie/haskell-memotrie-0.6.2-4-i686.pkg.tar.xz: haskell-memotrie/PKGBUILD
+hackage-MemoTrie: haskell-memotrie
+pacman-U-MemoTrie: haskell-memotrie/haskell-memotrie-0.6.2-4-i686.pkg.tar.xz

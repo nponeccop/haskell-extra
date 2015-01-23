@@ -1,0 +1,13 @@
+Index: cblrepo/hosc-0.15/hosc.cabal
+===================================================================
+--- cblrepo.orig/hosc-0.15/hosc.cabal
++++ cblrepo/hosc-0.15/hosc.cabal
+@@ -28,7 +28,7 @@ Data-Files:        README
+ 
+ Library
+   Build-Depends:   base == 4.*,
+-                   binary >=  0.7.2,
++                   binary,
+                    blaze-builder >= 0.3,
+                    bytestring,
+                    data-binary-ieee754,

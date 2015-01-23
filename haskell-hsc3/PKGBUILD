@@ -4,24 +4,26 @@ _hkgname=hsc3
 
 # PKGBUILD options/directives
 pkgname=haskell-hsc3
-pkgver=0.14
+pkgver=0.15
 pkgrel=1
 pkgdesc="Haskell SuperCollider"
-url="http://rd.slavepianos.org/?t=hsc3"
+url="http://rd.slavepianos.org/t/hsc3"
 license=("GPL")
 arch=('i686' 'x86_64')
 makedepends=()
 depends=("ghc=7.8.4-1"
          "haskell-data-default=0.5.3-59"
-         "haskell-hosc=0.14.1-2"
-         "haskell-murmur-hash=0.1.0.7-1"
+         "haskell-data-ordlist=0.4.7.0-2"
+         "haskell-hashable=1.2.3.1-2"
+         "haskell-hosc=0.15-2"
          "haskell-network=2.6.0.2-2"
-         "haskell-random=1.0.1.3-2"
-         "haskell-split=0.2.2-57")
+         "haskell-random=1.1-1"
+         "haskell-safe=0.3.8-2"
+         "haskell-split=0.2.2-58")
 options=('strip' 'staticlibs')
 source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
 install="${pkgname}.install"
-sha256sums=("e2faf117db1576a727e46a974435ac7eb909c12fb474ca05dc4bc2dfc33c8608")
+sha256sums=("2f3b15655419cf8ebe25ab1c6ec22993b2589b4ffca7c3a75ce478ca78a0bde6")
 
 # PKGBUILD functions
 

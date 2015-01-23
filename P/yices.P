@@ -1,0 +1,7 @@
+.PHONY: haskell-yices hackage-yices
+haskell-yices: upstream/ghc upstream/haskell-parsec
+haskell-yices/PKGBUILD: 
+haskell-yices: haskell-yices/haskell-yices-0.0.0.12-3-i686.pkg.tar.xz
+haskell-yices/haskell-yices-0.0.0.12-3-i686.pkg.tar.xz: haskell-yices/PKGBUILD
+hackage-yices: haskell-yices
+pacman-U-yices: haskell-yices/haskell-yices-0.0.0.12-3-i686.pkg.tar.xz
