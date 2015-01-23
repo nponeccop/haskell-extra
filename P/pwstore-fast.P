@@ -1,0 +1,7 @@
+.PHONY: haskell-pwstore-fast hackage-pwstore-fast
+haskell-pwstore-fast: upstream/ghc upstream/haskell-base64-bytestring upstream/haskell-byteable upstream/haskell-cryptohash upstream/haskell-random
+haskell-pwstore-fast/PKGBUILD: 
+haskell-pwstore-fast: haskell-pwstore-fast/haskell-pwstore-fast-2.4.4-3-i686.pkg.tar.xz
+haskell-pwstore-fast/haskell-pwstore-fast-2.4.4-3-i686.pkg.tar.xz: haskell-pwstore-fast/PKGBUILD
+hackage-pwstore-fast: haskell-pwstore-fast
+pacman-U-pwstore-fast: haskell-pwstore-fast/haskell-pwstore-fast-2.4.4-3-i686.pkg.tar.xz

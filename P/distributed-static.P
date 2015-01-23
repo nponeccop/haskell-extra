@@ -1,0 +1,7 @@
+.PHONY: haskell-distributed-static hackage-distributed-static
+haskell-distributed-static: upstream/ghc haskell-rank1dynamic
+haskell-distributed-static/PKGBUILD: 
+haskell-distributed-static: haskell-distributed-static/haskell-distributed-static-0.3.1.0-4-i686.pkg.tar.xz
+haskell-distributed-static/haskell-distributed-static-0.3.1.0-4-i686.pkg.tar.xz: haskell-distributed-static/PKGBUILD
+hackage-distributed-static: haskell-distributed-static
+pacman-U-distributed-static: haskell-distributed-static/haskell-distributed-static-0.3.1.0-4-i686.pkg.tar.xz

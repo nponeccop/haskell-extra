@@ -1,0 +1,7 @@
+.PHONY: haskell-indents hackage-indents
+haskell-indents: upstream/ghc haskell-concatenative upstream/haskell-mtl upstream/haskell-parsec
+haskell-indents/PKGBUILD: 
+haskell-indents: haskell-indents/haskell-indents-0.3.3-2-i686.pkg.tar.xz
+haskell-indents/haskell-indents-0.3.3-2-i686.pkg.tar.xz: haskell-indents/PKGBUILD
+hackage-indents: haskell-indents
+pacman-U-indents: haskell-indents/haskell-indents-0.3.3-2-i686.pkg.tar.xz

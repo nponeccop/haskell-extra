@@ -1,0 +1,7 @@
+.PHONY: haskell-pbkdf hackage-pbkdf
+haskell-pbkdf: upstream/ghc upstream/haskell-byteable haskell-bytedump upstream/haskell-cryptohash upstream/haskell-utf8-string
+haskell-pbkdf/PKGBUILD: 
+haskell-pbkdf: haskell-pbkdf/haskell-pbkdf-1.1.1.1-3-i686.pkg.tar.xz
+haskell-pbkdf/haskell-pbkdf-1.1.1.1-3-i686.pkg.tar.xz: haskell-pbkdf/PKGBUILD
+hackage-pbkdf: haskell-pbkdf
+pacman-U-pbkdf: haskell-pbkdf/haskell-pbkdf-1.1.1.1-3-i686.pkg.tar.xz

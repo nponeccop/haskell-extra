@@ -1,0 +1,7 @@
+.PHONY: haskell-elm-compiler hackage-elm-compiler
+haskell-elm-compiler: upstream/ghc upstream/haskell-aeson upstream/haskell-aeson-pretty upstream/haskell-blaze-html upstream/haskell-blaze-markup upstream/haskell-cmdargs haskell-indents upstream/haskell-language-ecmascript haskell-language-glsl upstream/haskell-mtl upstream/haskell-parsec upstream/haskell-text haskell-union-find upstream/haskell-unordered-containers
+haskell-elm-compiler/PKGBUILD: 
+haskell-elm-compiler: haskell-elm-compiler/haskell-elm-compiler-0.14.1-1-i686.pkg.tar.xz
+haskell-elm-compiler/haskell-elm-compiler-0.14.1-1-i686.pkg.tar.xz: haskell-elm-compiler/PKGBUILD
+hackage-elm-compiler: haskell-elm-compiler
+pacman-U-elm-compiler: haskell-elm-compiler/haskell-elm-compiler-0.14.1-1-i686.pkg.tar.xz

@@ -1,0 +1,7 @@
+.PHONY: haskell-archlinux hackage-archlinux
+haskell-archlinux: upstream/ghc
+haskell-archlinux/PKGBUILD: 
+haskell-archlinux: haskell-archlinux/haskell-archlinux-1.3-4-i686.pkg.tar.xz
+haskell-archlinux/haskell-archlinux-1.3-4-i686.pkg.tar.xz: haskell-archlinux/PKGBUILD
+hackage-archlinux: haskell-archlinux
+pacman-U-archlinux: haskell-archlinux/haskell-archlinux-1.3-4-i686.pkg.tar.xz

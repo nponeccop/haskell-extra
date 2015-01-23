@@ -1,0 +1,7 @@
+.PHONY: haskell-poppler hackage-poppler
+haskell-poppler: upstream/ghc upstream/haskell-cairo upstream/haskell-glib haskell-gtk3 upstream/haskell-mtl upstream/poppler-glib
+haskell-poppler/PKGBUILD: 
+haskell-poppler: haskell-poppler/haskell-poppler-0.13-3-i686.pkg.tar.xz
+haskell-poppler/haskell-poppler-0.13-3-i686.pkg.tar.xz: haskell-poppler/PKGBUILD
+hackage-poppler: haskell-poppler
+pacman-U-poppler: haskell-poppler/haskell-poppler-0.13-3-i686.pkg.tar.xz

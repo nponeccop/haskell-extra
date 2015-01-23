@@ -1,0 +1,7 @@
+.PHONY: haskell-heap hackage-heap
+haskell-heap: upstream/ghc upstream/haskell-quickcheck
+haskell-heap/PKGBUILD: 
+haskell-heap: haskell-heap/haskell-heap-1.0.1-2-i686.pkg.tar.xz
+haskell-heap/haskell-heap-1.0.1-2-i686.pkg.tar.xz: haskell-heap/PKGBUILD
+hackage-heap: haskell-heap
+pacman-U-heap: haskell-heap/haskell-heap-1.0.1-2-i686.pkg.tar.xz

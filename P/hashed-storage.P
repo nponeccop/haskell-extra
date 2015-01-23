@@ -1,0 +1,7 @@
+.PHONY: haskell-hashed-storage hackage-hashed-storage
+haskell-hashed-storage: upstream/ghc haskell-dataenc upstream/haskell-extensible-exceptions upstream/haskell-mmap upstream/haskell-mtl upstream/haskell-zlib
+haskell-hashed-storage/PKGBUILD: 
+haskell-hashed-storage: haskell-hashed-storage/haskell-hashed-storage-0.5.11-4-i686.pkg.tar.xz
+haskell-hashed-storage/haskell-hashed-storage-0.5.11-4-i686.pkg.tar.xz: haskell-hashed-storage/PKGBUILD
+hackage-hashed-storage: haskell-hashed-storage
+pacman-U-hashed-storage: haskell-hashed-storage/haskell-hashed-storage-0.5.11-4-i686.pkg.tar.xz

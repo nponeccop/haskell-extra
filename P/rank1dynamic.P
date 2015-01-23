@@ -1,0 +1,7 @@
+.PHONY: haskell-rank1dynamic hackage-rank1dynamic
+haskell-rank1dynamic: upstream/ghc
+haskell-rank1dynamic/PKGBUILD: 
+haskell-rank1dynamic: haskell-rank1dynamic/haskell-rank1dynamic-0.2.0.1-4-i686.pkg.tar.xz
+haskell-rank1dynamic/haskell-rank1dynamic-0.2.0.1-4-i686.pkg.tar.xz: haskell-rank1dynamic/PKGBUILD
+hackage-rank1dynamic: haskell-rank1dynamic
+pacman-U-rank1dynamic: haskell-rank1dynamic/haskell-rank1dynamic-0.2.0.1-4-i686.pkg.tar.xz

@@ -1,0 +1,7 @@
+.PHONY: haskell-concatenative hackage-concatenative
+haskell-concatenative: upstream/ghc
+haskell-concatenative/PKGBUILD: 
+haskell-concatenative: haskell-concatenative/haskell-concatenative-1.0.1-1-i686.pkg.tar.xz
+haskell-concatenative/haskell-concatenative-1.0.1-1-i686.pkg.tar.xz: haskell-concatenative/PKGBUILD
+hackage-concatenative: haskell-concatenative
+pacman-U-concatenative: haskell-concatenative/haskell-concatenative-1.0.1-1-i686.pkg.tar.xz

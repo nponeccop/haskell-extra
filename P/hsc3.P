@@ -1,0 +1,7 @@
+.PHONY: haskell-hsc3 hackage-hsc3
+haskell-hsc3: upstream/ghc upstream/haskell-data-default haskell-data-ordlist upstream/haskell-hashable haskell-hosc upstream/haskell-network upstream/haskell-random upstream/haskell-safe upstream/haskell-split
+haskell-hsc3/PKGBUILD: 
+haskell-hsc3: haskell-hsc3/haskell-hsc3-0.15-1-i686.pkg.tar.xz
+haskell-hsc3/haskell-hsc3-0.15-1-i686.pkg.tar.xz: haskell-hsc3/PKGBUILD
+hackage-hsc3: haskell-hsc3
+pacman-U-hsc3: haskell-hsc3/haskell-hsc3-0.15-1-i686.pkg.tar.xz

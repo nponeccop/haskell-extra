@@ -1,0 +1,7 @@
+.PHONY: haskell-data-binary-ieee754 hackage-data-binary-ieee754
+haskell-data-binary-ieee754: upstream/ghc
+haskell-data-binary-ieee754/PKGBUILD: 
+haskell-data-binary-ieee754: haskell-data-binary-ieee754/haskell-data-binary-ieee754-0.4.4-4-i686.pkg.tar.xz
+haskell-data-binary-ieee754/haskell-data-binary-ieee754-0.4.4-4-i686.pkg.tar.xz: haskell-data-binary-ieee754/PKGBUILD
+hackage-data-binary-ieee754: haskell-data-binary-ieee754
+pacman-U-data-binary-ieee754: haskell-data-binary-ieee754/haskell-data-binary-ieee754-0.4.4-4-i686.pkg.tar.xz

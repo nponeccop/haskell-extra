@@ -1,0 +1,7 @@
+.PHONY: haskell-language-glsl hackage-language-glsl
+haskell-language-glsl: upstream/ghc upstream/haskell-parsec haskell-prettyclass
+haskell-language-glsl/PKGBUILD: 
+haskell-language-glsl: haskell-language-glsl/haskell-language-glsl-0.1.1-2-i686.pkg.tar.xz
+haskell-language-glsl/haskell-language-glsl-0.1.1-2-i686.pkg.tar.xz: haskell-language-glsl/PKGBUILD
+hackage-language-glsl: haskell-language-glsl
+pacman-U-language-glsl: haskell-language-glsl/haskell-language-glsl-0.1.1-2-i686.pkg.tar.xz

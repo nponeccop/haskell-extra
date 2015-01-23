@@ -13,7 +13,6 @@ aur/
 oldaur/
 *.swp
 upstream-repos/
-P/
 tobuild
 uu
 dd

@@ -1,0 +1,7 @@
+.PHONY: haskell-agda hackage-Agda
+haskell-agda: upstream/ghc haskell-boxes haskell-data-hash haskell-equivalence haskell-geniplate upstream/haskell-hashable upstream/haskell-hashtables upstream/haskell-haskell-src-exts upstream/haskell-mtl upstream/haskell-parallel upstream/haskell-quickcheck haskell-stmonadtrans upstream/haskell-strict upstream/haskell-text upstream/haskell-unordered-containers upstream/haskell-zlib
+haskell-agda/PKGBUILD: 
+haskell-agda: haskell-agda/haskell-agda-2.4.2.2-3-i686.pkg.tar.xz
+haskell-agda/haskell-agda-2.4.2.2-3-i686.pkg.tar.xz: haskell-agda/PKGBUILD
+hackage-Agda: haskell-agda
+pacman-U-Agda: haskell-agda/haskell-agda-2.4.2.2-3-i686.pkg.tar.xz

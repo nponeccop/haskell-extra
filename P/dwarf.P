@@ -1,0 +1,7 @@
+.PHONY: haskell-dwarf hackage-dwarf
+haskell-dwarf: upstream/ghc
+haskell-dwarf/PKGBUILD: 
+haskell-dwarf: haskell-dwarf/haskell-dwarf-0.23-4-i686.pkg.tar.xz
+haskell-dwarf/haskell-dwarf-0.23-4-i686.pkg.tar.xz: haskell-dwarf/PKGBUILD
+hackage-dwarf: haskell-dwarf
+pacman-U-dwarf: haskell-dwarf/haskell-dwarf-0.23-4-i686.pkg.tar.xz
