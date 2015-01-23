@@ -1,7 +1,7 @@
 .PHONY: haskell-classy-prelude hackage-classy-prelude
 haskell-classy-prelude: upstream/ghc haskell-basic-prelude upstream/haskell-bifunctors upstream/haskell-chunked-data upstream/haskell-enclosed-exceptions upstream/haskell-exceptions upstream/haskell-hashable upstream/haskell-lifted-base upstream/haskell-mono-traversable upstream/haskell-mtl upstream/haskell-primitive upstream/haskell-semigroups upstream/haskell-stm upstream/haskell-system-filepath upstream/haskell-text upstream/haskell-unordered-containers upstream/haskell-vector upstream/haskell-vector-instances
 haskell-classy-prelude/PKGBUILD: 
-haskell-classy-prelude: haskell-classy-prelude/haskell-classy-prelude-0.10.2-4-i686.pkg.tar.xz
-haskell-classy-prelude/haskell-classy-prelude-0.10.2-4-i686.pkg.tar.xz: haskell-classy-prelude/PKGBUILD
+haskell-classy-prelude: haskell-classy-prelude/haskell-classy-prelude-0.10.2-5-i686.pkg.tar.xz
+haskell-classy-prelude/haskell-classy-prelude-0.10.2-5-i686.pkg.tar.xz: haskell-classy-prelude/PKGBUILD
 hackage-classy-prelude: haskell-classy-prelude
-pacman-U-classy-prelude: haskell-classy-prelude/haskell-classy-prelude-0.10.2-4-i686.pkg.tar.xz
+pacman-U-classy-prelude: haskell-classy-prelude/haskell-classy-prelude-0.10.2-5-i686.pkg.tar.xz

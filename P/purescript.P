@@ -1,7 +1,7 @@
 .PHONY: haskell-purescript hackage-purescript
 haskell-purescript: upstream/ghc haskell-file-embed haskell-monad-unify upstream/haskell-mtl upstream/haskell-optparse-applicative upstream/haskell-parsec haskell-pattern-arrows upstream/haskell-unordered-containers upstream/haskell-utf8-string
 haskell-purescript/PKGBUILD: 
-haskell-purescript: haskell-purescript/haskell-purescript-0.6.3-2-i686.pkg.tar.xz
-haskell-purescript/haskell-purescript-0.6.3-2-i686.pkg.tar.xz: haskell-purescript/PKGBUILD
+haskell-purescript: haskell-purescript/haskell-purescript-0.6.3-3-i686.pkg.tar.xz
+haskell-purescript/haskell-purescript-0.6.3-3-i686.pkg.tar.xz: haskell-purescript/PKGBUILD
 hackage-purescript: haskell-purescript
-pacman-U-purescript: haskell-purescript/haskell-purescript-0.6.3-2-i686.pkg.tar.xz
+pacman-U-purescript: haskell-purescript/haskell-purescript-0.6.3-3-i686.pkg.tar.xz

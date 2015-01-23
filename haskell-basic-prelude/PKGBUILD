@@ -4,8 +4,8 @@ _licensefile=LICENSE
 
 # PKGBUILD options/directives
 pkgname=haskell-basic-prelude
-pkgver=0.3.10
-pkgrel=4
+pkgver=0.3.11
+pkgrel=1
 pkgdesc="An enhanced core prelude; a common foundation for alternate preludes."
 url="https://github.com/snoyberg/basic-prelude"
 license=("MIT")
@@ -23,7 +23,7 @@ depends=("ghc=7.8.4-1"
 options=('strip' 'staticlibs')
 source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
 install="${pkgname}.install"
-sha256sums=("a94c0c94ece5b21bc6ca9a939a118185c5c1e9acdbf93cb46114df79a21d0180")
+sha256sums=("86368bff6df4fb89cbc3427b5872a2326d4f520e3db466c4e844704ed452cb16")
 
 # PKGBUILD functions
 

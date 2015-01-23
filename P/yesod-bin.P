@@ -1,7 +1,7 @@
 .PHONY: yesod-bin hackage-yesod-bin
 yesod-bin: upstream/ghc upstream/haskell-attoparsec upstream/haskell-base64-bytestring upstream/haskell-blaze-builder upstream/haskell-conduit upstream/haskell-conduit-extra upstream/haskell-data-default-class haskell-file-embed haskell-fsnotify upstream/haskell-ghc-paths upstream/haskell-http-conduit haskell-http-reverse-proxy upstream/haskell-http-types upstream/haskell-lifted-base upstream/haskell-network upstream/haskell-optparse-applicative upstream/haskell-parsec haskell-project-template upstream/haskell-resourcet upstream/haskell-shakespeare upstream/haskell-split upstream/haskell-streaming-commons upstream/haskell-system-fileio upstream/haskell-system-filepath upstream/haskell-tar upstream/haskell-text upstream/haskell-transformers-compat upstream/haskell-unix-compat upstream/haskell-unordered-containers upstream/haskell-wai upstream/haskell-wai-extra upstream/haskell-warp upstream/haskell-yaml upstream/haskell-zlib
 yesod-bin/PKGBUILD: 
-yesod-bin: yesod-bin/yesod-bin-1.4.3.3-2-i686.pkg.tar.xz
-yesod-bin/yesod-bin-1.4.3.3-2-i686.pkg.tar.xz: yesod-bin/PKGBUILD
+yesod-bin: yesod-bin/yesod-bin-1.4.3.4-1-i686.pkg.tar.xz
+yesod-bin/yesod-bin-1.4.3.4-1-i686.pkg.tar.xz: yesod-bin/PKGBUILD
 hackage-yesod-bin: yesod-bin
-pacman-U-yesod-bin: yesod-bin/yesod-bin-1.4.3.3-2-i686.pkg.tar.xz
+pacman-U-yesod-bin: yesod-bin/yesod-bin-1.4.3.4-1-i686.pkg.tar.xz

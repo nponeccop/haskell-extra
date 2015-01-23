@@ -1,0 +1,7 @@
+.PHONY: haskell-regexpr hackage-regexpr
+haskell-regexpr: upstream/ghc upstream/haskell-hunit upstream/haskell-mtl haskell-mtlparse
+haskell-regexpr/PKGBUILD: 
+haskell-regexpr: haskell-regexpr/haskell-regexpr-0.5.4-3-i686.pkg.tar.xz
+haskell-regexpr/haskell-regexpr-0.5.4-3-i686.pkg.tar.xz: haskell-regexpr/PKGBUILD
+hackage-regexpr: haskell-regexpr
+pacman-U-regexpr: haskell-regexpr/haskell-regexpr-0.5.4-3-i686.pkg.tar.xz

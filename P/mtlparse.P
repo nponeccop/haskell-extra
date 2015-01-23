@@ -1,0 +1,7 @@
+.PHONY: haskell-mtlparse hackage-mtlparse
+haskell-mtlparse: upstream/ghc upstream/haskell-mtl
+haskell-mtlparse/PKGBUILD: 
+haskell-mtlparse: haskell-mtlparse/haskell-mtlparse-0.1.4.0-1-i686.pkg.tar.xz
+haskell-mtlparse/haskell-mtlparse-0.1.4.0-1-i686.pkg.tar.xz: haskell-mtlparse/PKGBUILD
+hackage-mtlparse: haskell-mtlparse
+pacman-U-mtlparse: haskell-mtlparse/haskell-mtlparse-0.1.4.0-1-i686.pkg.tar.xz

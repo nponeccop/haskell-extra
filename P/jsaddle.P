@@ -1,7 +1,7 @@
 .PHONY: haskell-jsaddle hackage-jsaddle
 haskell-jsaddle: upstream/ghc upstream/haskell-lens upstream/haskell-text haskell-webkitgtk3 haskell-webkitgtk3-javascriptcore
 haskell-jsaddle/PKGBUILD: 
-haskell-jsaddle: haskell-jsaddle/haskell-jsaddle-0.2.0.2-4-i686.pkg.tar.xz
-haskell-jsaddle/haskell-jsaddle-0.2.0.2-4-i686.pkg.tar.xz: haskell-jsaddle/PKGBUILD
+haskell-jsaddle: haskell-jsaddle/haskell-jsaddle-0.2.0.3-1-i686.pkg.tar.xz
+haskell-jsaddle/haskell-jsaddle-0.2.0.3-1-i686.pkg.tar.xz: haskell-jsaddle/PKGBUILD
 hackage-jsaddle: haskell-jsaddle
-pacman-U-jsaddle: haskell-jsaddle/haskell-jsaddle-0.2.0.2-4-i686.pkg.tar.xz
+pacman-U-jsaddle: haskell-jsaddle/haskell-jsaddle-0.2.0.3-1-i686.pkg.tar.xz

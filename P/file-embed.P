@@ -1,0 +1,7 @@
+.PHONY: haskell-file-embed hackage-file-embed
+haskell-file-embed: upstream/ghc
+haskell-file-embed/PKGBUILD: 
+haskell-file-embed: haskell-file-embed/haskell-file-embed-0.0.7.1-1-i686.pkg.tar.xz
+haskell-file-embed/haskell-file-embed-0.0.7.1-1-i686.pkg.tar.xz: haskell-file-embed/PKGBUILD
+hackage-file-embed: haskell-file-embed
+pacman-U-file-embed: haskell-file-embed/haskell-file-embed-0.0.7.1-1-i686.pkg.tar.xz

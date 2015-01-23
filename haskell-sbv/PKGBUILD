@@ -4,7 +4,7 @@ _licensefile=LICENSE
 
 # PKGBUILD options/directives
 pkgname=haskell-sbv
-pkgver=3.5
+pkgver=4.0
 pkgrel=1
 pkgdesc="SMT Based Verification: Symbolic Haskell theorem prover using SMT solving."
 url="http://leventerkok.github.com/sbv/"
@@ -21,7 +21,7 @@ depends=("ghc=7.8.4-1"
 options=('strip' 'staticlibs')
 source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
 install="${pkgname}.install"
-sha256sums=("5fdd59a5c6c0263bc132bf2619b7efdf09a16b7c5dd431b5c831707311042803")
+sha256sums=("c48d836593b575000eaff5a76fca722c248c5bd9cc807cf40df9b5ce73318c32")
 
 # PKGBUILD functions
 

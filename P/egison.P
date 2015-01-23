@@ -1,7 +1,7 @@
 .PHONY: haskell-egison hackage-egison
 haskell-egison: upstream/ghc upstream/haskell-ghc-paths upstream/haskell-mtl upstream/haskell-parsec upstream/haskell-random upstream/haskell-regex-posix haskell-strict-io upstream/haskell-text upstream/haskell-unordered-containers
 haskell-egison/PKGBUILD: 
-haskell-egison: haskell-egison/haskell-egison-3.5.3-2-i686.pkg.tar.xz
-haskell-egison/haskell-egison-3.5.3-2-i686.pkg.tar.xz: haskell-egison/PKGBUILD
+haskell-egison: haskell-egison/haskell-egison-3.5.5-1-i686.pkg.tar.xz
+haskell-egison/haskell-egison-3.5.5-1-i686.pkg.tar.xz: haskell-egison/PKGBUILD
 hackage-egison: haskell-egison
-pacman-U-egison: haskell-egison/haskell-egison-3.5.3-2-i686.pkg.tar.xz
+pacman-U-egison: haskell-egison/haskell-egison-3.5.5-1-i686.pkg.tar.xz

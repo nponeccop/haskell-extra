@@ -4,8 +4,8 @@ _licensefile=LICENSE
 
 # PKGBUILD options/directives
 pkgname=haskell-leksah-server
-pkgver=0.14.3.0
-pkgrel=4
+pkgver=0.14.3.2
+pkgrel=1
 pkgdesc="Metadata collection for leksah"
 url="http://leksah.org"
 license=("GPL")
@@ -29,21 +29,17 @@ depends=("ghc=7.8.4-1"
          "haskell-strict=0.3.2-57"
          "haskell-text=1.2.0.4-1")
 options=('strip' 'staticlibs')
-source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz"
-        "cabal.patch"
-        "source.patch")
+source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
 install="${pkgname}.install"
-sha256sums=("1b7c15d02c4fd4a86712b636b7812f070cb3e34755ffe8737e2139a7cb65825b"
-            "4e8253c7c9cdabccb0c4c76be449ab195a1b4a8b596f171b99885208ee1b7910"
-            "49c1b9989a831c2a0795a0f9a84f47e00cdd8f85211a8107bf6ee3c671640135")
+sha256sums=("7cfc0e11a142da71ce391d9793adf12b5da5dd55c30d13a904dc4ba0eaea723d")
 
 # PKGBUILD functions
 
 prepare() {
     cd "${srcdir}/${_hkgname}-${pkgver}"
     
-    patch leksah-server.cabal "${srcdir}/cabal.patch" 
-    patch -p4 < "${srcdir}/source.patch"
+    # no cabal patch
+    # no source patch
 }
 
 build() {

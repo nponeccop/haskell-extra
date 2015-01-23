@@ -1,7 +1,7 @@
 .PHONY: haskell-yesod-auth hackage-yesod-auth
 haskell-yesod-auth: upstream/ghc upstream/haskell-aeson upstream/haskell-authenticate upstream/haskell-base16-bytestring upstream/haskell-base64-bytestring upstream/haskell-blaze-builder upstream/haskell-blaze-html upstream/haskell-blaze-markup upstream/haskell-byteable upstream/haskell-conduit upstream/haskell-conduit-extra upstream/haskell-cryptohash upstream/haskell-data-default upstream/haskell-email-validate haskell-file-embed upstream/haskell-http-client upstream/haskell-http-conduit upstream/haskell-http-types upstream/haskell-lifted-base upstream/haskell-mime-mail upstream/haskell-network-uri upstream/haskell-persistent upstream/haskell-persistent-template upstream/haskell-random upstream/haskell-resourcet upstream/haskell-safe upstream/haskell-shakespeare upstream/haskell-text upstream/haskell-unordered-containers upstream/haskell-wai haskell-yesod-core haskell-yesod-form haskell-yesod-persistent
 haskell-yesod-auth/PKGBUILD: 
-haskell-yesod-auth: haskell-yesod-auth/haskell-yesod-auth-1.4.1.3-2-i686.pkg.tar.xz
-haskell-yesod-auth/haskell-yesod-auth-1.4.1.3-2-i686.pkg.tar.xz: haskell-yesod-auth/PKGBUILD
+haskell-yesod-auth: haskell-yesod-auth/haskell-yesod-auth-1.4.1.3-3-i686.pkg.tar.xz
+haskell-yesod-auth/haskell-yesod-auth-1.4.1.3-3-i686.pkg.tar.xz: haskell-yesod-auth/PKGBUILD
 hackage-yesod-auth: haskell-yesod-auth
-pacman-U-yesod-auth: haskell-yesod-auth/haskell-yesod-auth-1.4.1.3-2-i686.pkg.tar.xz
+pacman-U-yesod-auth: haskell-yesod-auth/haskell-yesod-auth-1.4.1.3-3-i686.pkg.tar.xz

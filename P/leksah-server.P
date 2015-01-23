@@ -1,7 +1,7 @@
 .PHONY: haskell-leksah-server hackage-leksah-server
 haskell-leksah-server: upstream/ghc upstream/haskell-attoparsec haskell-attoparsec-conduit haskell-binary-shared upstream/haskell-conduit upstream/haskell-conduit-extra upstream/haskell-executable-path haskell-haddock-api upstream/haskell-hslogger upstream/haskell-http haskell-ltk upstream/haskell-network upstream/haskell-network-uri upstream/haskell-parsec upstream/haskell-resourcet upstream/haskell-strict upstream/haskell-text
 haskell-leksah-server/PKGBUILD: 
-haskell-leksah-server: haskell-leksah-server/haskell-leksah-server-0.14.3.0-4-i686.pkg.tar.xz
-haskell-leksah-server/haskell-leksah-server-0.14.3.0-4-i686.pkg.tar.xz: haskell-leksah-server/PKGBUILD
+haskell-leksah-server: haskell-leksah-server/haskell-leksah-server-0.14.3.2-1-i686.pkg.tar.xz
+haskell-leksah-server/haskell-leksah-server-0.14.3.2-1-i686.pkg.tar.xz: haskell-leksah-server/PKGBUILD
 hackage-leksah-server: haskell-leksah-server
-pacman-U-leksah-server: haskell-leksah-server/haskell-leksah-server-0.14.3.0-4-i686.pkg.tar.xz
+pacman-U-leksah-server: haskell-leksah-server/haskell-leksah-server-0.14.3.2-1-i686.pkg.tar.xz

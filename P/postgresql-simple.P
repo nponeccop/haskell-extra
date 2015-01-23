@@ -1,7 +1,7 @@
 .PHONY: haskell-postgresql-simple hackage-postgresql-simple
 haskell-postgresql-simple: upstream/ghc upstream/haskell-aeson upstream/haskell-attoparsec upstream/haskell-blaze-builder haskell-blaze-textual upstream/haskell-case-insensitive upstream/haskell-hashable haskell-postgresql-libpq upstream/haskell-scientific upstream/haskell-text upstream/haskell-uuid upstream/haskell-vector
 haskell-postgresql-simple/PKGBUILD: 
-haskell-postgresql-simple: haskell-postgresql-simple/haskell-postgresql-simple-0.4.9.0-3-i686.pkg.tar.xz
-haskell-postgresql-simple/haskell-postgresql-simple-0.4.9.0-3-i686.pkg.tar.xz: haskell-postgresql-simple/PKGBUILD
+haskell-postgresql-simple: haskell-postgresql-simple/haskell-postgresql-simple-0.4.9.0-4-i686.pkg.tar.xz
+haskell-postgresql-simple/haskell-postgresql-simple-0.4.9.0-4-i686.pkg.tar.xz: haskell-postgresql-simple/PKGBUILD
 hackage-postgresql-simple: haskell-postgresql-simple
-pacman-U-postgresql-simple: haskell-postgresql-simple/haskell-postgresql-simple-0.4.9.0-3-i686.pkg.tar.xz
+pacman-U-postgresql-simple: haskell-postgresql-simple/haskell-postgresql-simple-0.4.9.0-4-i686.pkg.tar.xz

@@ -1,7 +1,7 @@
 .PHONY: haskell-persistent-postgresql hackage-persistent-postgresql
 haskell-persistent-postgresql: upstream/ghc upstream/haskell-aeson upstream/haskell-blaze-builder upstream/haskell-conduit upstream/haskell-monad-control upstream/haskell-monad-logger upstream/haskell-persistent haskell-postgresql-libpq haskell-postgresql-simple upstream/haskell-resourcet upstream/haskell-text
 haskell-persistent-postgresql/PKGBUILD: 
-haskell-persistent-postgresql: haskell-persistent-postgresql/haskell-persistent-postgresql-2.1.2.2-2-i686.pkg.tar.xz
-haskell-persistent-postgresql/haskell-persistent-postgresql-2.1.2.2-2-i686.pkg.tar.xz: haskell-persistent-postgresql/PKGBUILD
+haskell-persistent-postgresql: haskell-persistent-postgresql/haskell-persistent-postgresql-2.1.2.2-3-i686.pkg.tar.xz
+haskell-persistent-postgresql/haskell-persistent-postgresql-2.1.2.2-3-i686.pkg.tar.xz: haskell-persistent-postgresql/PKGBUILD
 hackage-persistent-postgresql: haskell-persistent-postgresql
-pacman-U-persistent-postgresql: haskell-persistent-postgresql/haskell-persistent-postgresql-2.1.2.2-2-i686.pkg.tar.xz
+pacman-U-persistent-postgresql: haskell-persistent-postgresql/haskell-persistent-postgresql-2.1.2.2-3-i686.pkg.tar.xz

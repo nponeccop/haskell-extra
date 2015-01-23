@@ -1,7 +1,7 @@
 .PHONY: haskell-leksah hackage-leksah
 haskell-leksah: upstream/ghc haskell-binary-shared upstream/haskell-blaze-html upstream/haskell-conduit upstream/haskell-executable-path haskell-ghcjs-codemirror haskell-ghcjs-dom upstream/haskell-gio upstream/haskell-glib haskell-gtk3 haskell-gtksourceview3 haskell-hamlet upstream/haskell-haskell-src-exts upstream/haskell-hlint upstream/haskell-hslogger haskell-jsaddle haskell-leksah-server upstream/haskell-lens haskell-ltk upstream/haskell-mtl upstream/haskell-network upstream/haskell-network-uri upstream/haskell-parsec upstream/haskell-pretty-show upstream/haskell-quickcheck upstream/haskell-regex-base upstream/haskell-regex-tdfa haskell-regex-tdfa-text upstream/haskell-shakespeare upstream/haskell-strict upstream/haskell-text upstream/haskell-utf8-string haskell-vado haskell-vcsgui haskell-vcswrapper haskell-webkitgtk3 haskell-webkitgtk3-javascriptcore
 haskell-leksah/PKGBUILD: 
-haskell-leksah: haskell-leksah/haskell-leksah-0.14.3.0-5-i686.pkg.tar.xz
-haskell-leksah/haskell-leksah-0.14.3.0-5-i686.pkg.tar.xz: haskell-leksah/PKGBUILD
+haskell-leksah: haskell-leksah/haskell-leksah-0.14.4.0-1-i686.pkg.tar.xz
+haskell-leksah/haskell-leksah-0.14.4.0-1-i686.pkg.tar.xz: haskell-leksah/PKGBUILD
 hackage-leksah: haskell-leksah
-pacman-U-leksah: haskell-leksah/haskell-leksah-0.14.3.0-5-i686.pkg.tar.xz
+pacman-U-leksah: haskell-leksah/haskell-leksah-0.14.4.0-1-i686.pkg.tar.xz

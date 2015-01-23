@@ -1,0 +1,7 @@
+.PHONY: haskell-postgresql-libpq hackage-postgresql-libpq
+haskell-postgresql-libpq: upstream/ghc upstream/postgresql-libs
+haskell-postgresql-libpq/PKGBUILD: 
+haskell-postgresql-libpq: haskell-postgresql-libpq/haskell-postgresql-libpq-0.9.0.2-1-i686.pkg.tar.xz
+haskell-postgresql-libpq/haskell-postgresql-libpq-0.9.0.2-1-i686.pkg.tar.xz: haskell-postgresql-libpq/PKGBUILD
+hackage-postgresql-libpq: haskell-postgresql-libpq
+pacman-U-postgresql-libpq: haskell-postgresql-libpq/haskell-postgresql-libpq-0.9.0.2-1-i686.pkg.tar.xz

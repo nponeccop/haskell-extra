@@ -1,7 +1,7 @@
 .PHONY: haskell-basic-prelude hackage-basic-prelude
 haskell-basic-prelude: upstream/ghc upstream/haskell-hashable upstream/haskell-lifted-base haskell-readargs upstream/haskell-safe upstream/haskell-system-filepath upstream/haskell-text upstream/haskell-unordered-containers upstream/haskell-vector
 haskell-basic-prelude/PKGBUILD: 
-haskell-basic-prelude: haskell-basic-prelude/haskell-basic-prelude-0.3.10-4-i686.pkg.tar.xz
-haskell-basic-prelude/haskell-basic-prelude-0.3.10-4-i686.pkg.tar.xz: haskell-basic-prelude/PKGBUILD
+haskell-basic-prelude: haskell-basic-prelude/haskell-basic-prelude-0.3.11-1-i686.pkg.tar.xz
+haskell-basic-prelude/haskell-basic-prelude-0.3.11-1-i686.pkg.tar.xz: haskell-basic-prelude/PKGBUILD
 hackage-basic-prelude: haskell-basic-prelude
-pacman-U-basic-prelude: haskell-basic-prelude/haskell-basic-prelude-0.3.10-4-i686.pkg.tar.xz
+pacman-U-basic-prelude: haskell-basic-prelude/haskell-basic-prelude-0.3.11-1-i686.pkg.tar.xz

@@ -4,8 +4,8 @@ _licensefile=LICENSE
 
 # PKGBUILD options/directives
 pkgname=haskell-egison
-pkgver=3.5.3
-pkgrel=2
+pkgver=3.5.5
+pkgrel=1
 pkgdesc="Programming language with non-linear pattern-matching against unfree data"
 url="http://www.egison.org"
 license=("MIT")
@@ -24,7 +24,7 @@ options=('strip' 'staticlibs')
 source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz"
         "cabal.patch")
 install="${pkgname}.install"
-sha256sums=("f4ab2bb3f6776ea5fdc4010ba806751d4e692a439f374e0517aa87202df2470a"
+sha256sums=("5b994cdd462ed1e63e0a10fb4eda381e38973834444725e6c02355c6d6cef273"
             "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855")
 
 # PKGBUILD functions

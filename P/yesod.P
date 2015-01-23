@@ -1,7 +1,7 @@
 .PHONY: haskell-yesod hackage-yesod
 haskell-yesod: upstream/ghc upstream/haskell-aeson upstream/haskell-blaze-html upstream/haskell-blaze-markup upstream/haskell-conduit-extra upstream/haskell-data-default upstream/haskell-fast-logger upstream/haskell-monad-control upstream/haskell-monad-logger upstream/haskell-safe upstream/haskell-semigroups upstream/haskell-shakespeare upstream/haskell-streaming-commons upstream/haskell-text upstream/haskell-unordered-containers upstream/haskell-wai upstream/haskell-wai-extra upstream/haskell-wai-logger upstream/haskell-warp upstream/haskell-yaml haskell-yesod-auth haskell-yesod-core haskell-yesod-form haskell-yesod-persistent
 haskell-yesod/PKGBUILD: 
-haskell-yesod: haskell-yesod/haskell-yesod-1.4.1.3-10-i686.pkg.tar.xz
-haskell-yesod/haskell-yesod-1.4.1.3-10-i686.pkg.tar.xz: haskell-yesod/PKGBUILD
+haskell-yesod: haskell-yesod/haskell-yesod-1.4.1.4-1-i686.pkg.tar.xz
+haskell-yesod/haskell-yesod-1.4.1.4-1-i686.pkg.tar.xz: haskell-yesod/PKGBUILD
 hackage-yesod: haskell-yesod
-pacman-U-yesod: haskell-yesod/haskell-yesod-1.4.1.3-10-i686.pkg.tar.xz
+pacman-U-yesod: haskell-yesod/haskell-yesod-1.4.1.4-1-i686.pkg.tar.xz

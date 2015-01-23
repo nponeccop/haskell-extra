@@ -1,7 +1,7 @@
 .PHONY: haskell-biobasexna hackage-BiobaseXNA
 haskell-biobasexna: upstream/ghc upstream/haskell-cmdargs upstream/haskell-csv haskell-file-embed upstream/haskell-mtl upstream/haskell-primitive haskell-primitivearray haskell-repa upstream/haskell-text haskell-tuple upstream/haskell-vector upstream/haskell-vector-th-unbox
 haskell-biobasexna/PKGBUILD: 
-haskell-biobasexna: haskell-biobasexna/haskell-biobasexna-0.8.3.0-5-i686.pkg.tar.xz
-haskell-biobasexna/haskell-biobasexna-0.8.3.0-5-i686.pkg.tar.xz: haskell-biobasexna/PKGBUILD
+haskell-biobasexna: haskell-biobasexna/haskell-biobasexna-0.8.3.0-6-i686.pkg.tar.xz
+haskell-biobasexna/haskell-biobasexna-0.8.3.0-6-i686.pkg.tar.xz: haskell-biobasexna/PKGBUILD
 hackage-BiobaseXNA: haskell-biobasexna
-pacman-U-BiobaseXNA: haskell-biobasexna/haskell-biobasexna-0.8.3.0-5-i686.pkg.tar.xz
+pacman-U-BiobaseXNA: haskell-biobasexna/haskell-biobasexna-0.8.3.0-6-i686.pkg.tar.xz
