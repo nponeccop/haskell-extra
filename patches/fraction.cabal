@@ -1,0 +1,12 @@
+Index: cblrepo/fraction-0.1.0.3/fraction.cabal
+===================================================================
+--- cblrepo.orig/fraction-0.1.0.3/fraction.cabal
++++ cblrepo/fraction-0.1.0.3/fraction.cabal
+@@ -30,6 +30,6 @@ Source-Repository this
+ 
+ Library
+     Build-Depends:   base       >= 3.0 && < 5,
+-                     semigroups >= 0.8 && < 0.16
++                     semigroups >= 0.8
+     Exposed-Modules: Data.Fraction
+     HS-Source-Dirs:  src

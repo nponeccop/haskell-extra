@@ -1,0 +1,7 @@
+.PHONY: haskell-grapefruit-records hackage-grapefruit-records
+haskell-grapefruit-records: upstream/ghc haskell-arrows haskell-grapefruit-frp
+haskell-grapefruit-records/PKGBUILD: 
+haskell-grapefruit-records: haskell-grapefruit-records/haskell-grapefruit-records-0.1.0.5-1-i686.pkg.tar.xz
+haskell-grapefruit-records/haskell-grapefruit-records-0.1.0.5-1-i686.pkg.tar.xz: haskell-grapefruit-records/PKGBUILD
+hackage-grapefruit-records: haskell-grapefruit-records
+pacman-U-grapefruit-records: haskell-grapefruit-records/haskell-grapefruit-records-0.1.0.5-1-i686.pkg.tar.xz

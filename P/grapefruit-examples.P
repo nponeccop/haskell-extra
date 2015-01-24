@@ -1,0 +1,7 @@
+.PHONY: haskell-grapefruit-examples hackage-grapefruit-examples
+haskell-grapefruit-examples: upstream/ghc upstream/haskell-colour haskell-fraction haskell-grapefruit-frp haskell-grapefruit-records haskell-grapefruit-ui
+haskell-grapefruit-examples/PKGBUILD: 
+haskell-grapefruit-examples: haskell-grapefruit-examples/haskell-grapefruit-examples-0.1.0.5-1-i686.pkg.tar.xz
+haskell-grapefruit-examples/haskell-grapefruit-examples-0.1.0.5-1-i686.pkg.tar.xz: haskell-grapefruit-examples/PKGBUILD
+hackage-grapefruit-examples: haskell-grapefruit-examples
+pacman-U-grapefruit-examples: haskell-grapefruit-examples/haskell-grapefruit-examples-0.1.0.5-1-i686.pkg.tar.xz

@@ -1,0 +1,7 @@
+.PHONY: haskell-grapefruit-ui-gtk hackage-grapefruit-ui-gtk
+haskell-grapefruit-ui-gtk: upstream/ghc upstream/haskell-colour haskell-fraction upstream/haskell-glib haskell-grapefruit-frp haskell-grapefruit-records haskell-grapefruit-ui upstream/haskell-gtk
+haskell-grapefruit-ui-gtk/PKGBUILD: 
+haskell-grapefruit-ui-gtk: haskell-grapefruit-ui-gtk/haskell-grapefruit-ui-gtk-0.1.0.5-1-i686.pkg.tar.xz
+haskell-grapefruit-ui-gtk/haskell-grapefruit-ui-gtk-0.1.0.5-1-i686.pkg.tar.xz: haskell-grapefruit-ui-gtk/PKGBUILD
+hackage-grapefruit-ui-gtk: haskell-grapefruit-ui-gtk
+pacman-U-grapefruit-ui-gtk: haskell-grapefruit-ui-gtk/haskell-grapefruit-ui-gtk-0.1.0.5-1-i686.pkg.tar.xz

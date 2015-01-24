@@ -1,0 +1,7 @@
+.PHONY: haskell-fraction hackage-fraction
+haskell-fraction: upstream/ghc upstream/haskell-semigroups
+haskell-fraction/PKGBUILD: 
+haskell-fraction: haskell-fraction/haskell-fraction-0.1.0.3-1-i686.pkg.tar.xz
+haskell-fraction/haskell-fraction-0.1.0.3-1-i686.pkg.tar.xz: haskell-fraction/PKGBUILD
+hackage-fraction: haskell-fraction
+pacman-U-fraction: haskell-fraction/haskell-fraction-0.1.0.3-1-i686.pkg.tar.xz
