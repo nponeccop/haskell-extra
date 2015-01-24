@@ -1,0 +1,7 @@
+.PHONY: haskell-stream hackage-Stream
+haskell-stream: upstream/ghc haskell-lazysmallcheck upstream/haskell-quickcheck
+haskell-stream/PKGBUILD: 
+haskell-stream: haskell-stream/haskell-stream-0.4.7.1-1-i686.pkg.tar.xz
+haskell-stream/haskell-stream-0.4.7.1-1-i686.pkg.tar.xz: haskell-stream/PKGBUILD
+hackage-Stream: haskell-stream
+pacman-U-Stream: haskell-stream/haskell-stream-0.4.7.1-1-i686.pkg.tar.xz
