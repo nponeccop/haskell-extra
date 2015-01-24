@@ -1,0 +1,7 @@
+.PHONY: haskell-arrows hackage-arrows
+haskell-arrows: upstream/ghc haskell-stream
+haskell-arrows/PKGBUILD: 
+haskell-arrows: haskell-arrows/haskell-arrows-0.4.4.1-1-i686.pkg.tar.xz
+haskell-arrows/haskell-arrows-0.4.4.1-1-i686.pkg.tar.xz: haskell-arrows/PKGBUILD
+hackage-arrows: haskell-arrows
+pacman-U-arrows: haskell-arrows/haskell-arrows-0.4.4.1-1-i686.pkg.tar.xz

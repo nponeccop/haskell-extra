@@ -1,0 +1,7 @@
+.PHONY: haskell-grapefruit-frp hackage-grapefruit-frp
+haskell-grapefruit-frp: upstream/ghc haskell-arrows haskell-fingertree upstream/haskell-semigroups haskell-typecompose
+haskell-grapefruit-frp/PKGBUILD: 
+haskell-grapefruit-frp: haskell-grapefruit-frp/haskell-grapefruit-frp-0.1.0.5-1-i686.pkg.tar.xz
+haskell-grapefruit-frp/haskell-grapefruit-frp-0.1.0.5-1-i686.pkg.tar.xz: haskell-grapefruit-frp/PKGBUILD
+hackage-grapefruit-frp: haskell-grapefruit-frp
+pacman-U-grapefruit-frp: haskell-grapefruit-frp/haskell-grapefruit-frp-0.1.0.5-1-i686.pkg.tar.xz
