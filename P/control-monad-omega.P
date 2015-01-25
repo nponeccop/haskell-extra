@@ -1,0 +1,7 @@
+.PHONY: haskell-control-monad-omega hackage-control-monad-omega
+haskell-control-monad-omega: upstream/ghc
+haskell-control-monad-omega/PKGBUILD: 
+haskell-control-monad-omega: haskell-control-monad-omega/haskell-control-monad-omega-0.3.1-1-i686.pkg.tar.xz
+haskell-control-monad-omega/haskell-control-monad-omega-0.3.1-1-i686.pkg.tar.xz: haskell-control-monad-omega/PKGBUILD
+hackage-control-monad-omega: haskell-control-monad-omega
+pacman-U-control-monad-omega: haskell-control-monad-omega/haskell-control-monad-omega-0.3.1-1-i686.pkg.tar.xz
