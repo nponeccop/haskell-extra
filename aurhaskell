@@ -55,8 +55,8 @@ haskell-bitset	1382991571	1.4.7-1	1	0	17537	drevilt	http://hackage.haskell.org/p
 haskell-bitsyntax	1294858385	0.3.2-4	1	0	17827	-	http://hackage.haskell.org/package/BitSyntax
 haskell-bitwise	1419975534	0.1.0.1-1	0	0	138295	zoidberg_md	https://gitorious.org/bitwise
 haskell-bktrees	1420213947	0.3.1-57	0	0	139141	zoidberg_md	http://hackage.haskell.org/package/bktrees
-haskell-blaze-builder	1400333802	0.3.3.2-1	12	30560	73602	drevilt	http://github.com/meiersi/blaze-builder
-haskell-blaze-builder-conduit	1392138649	1.0.0-2	2	34983	60470	zoidberg_md	http://hackage.haskell.org/package/blaze-builder-conduit
+haskell-blaze-builder	1422117679	0.3.3.3-1	12	0	146231	drevilt	http://github.com/meiersi/blaze-builder
+haskell-blaze-builder-conduit	1392138649	1.0.0-2	2	34983	60470	-	http://hackage.haskell.org/package/blaze-builder-conduit
 haskell-blaze-builder-enumerator	1386495696	0.2.0.5-1	0	11663	74796	pdxleif	http://hackage.haskell.org/package/blaze-builder-enumerator
 haskell-blaze-html	1419772341	0.7.0.3-3	4	0	137448	zoidberg_md	http://jaspervdj.be/blaze
 haskell-blaze-markup	1398366992	0.6.1.0-1	8	31799	73603	Apes	http://hackage.haskell.org/package/blaze-markup
@@ -73,6 +73,7 @@ haskell-bson	1422008237	0.3.1-4	0	0	145741	zoidberg_md	http://github.com/mongodb
 haskell-bv	1419975410	0.3.0-1	0	0	138294	zoidberg_md	http://bitbucket.org/iago/bv-haskell
 haskell-byteable	1392068541	0.1.1-2	4	0	73888	drevilt	http://hackage.haskell.org/package/byteable
 haskell-byteorder	1368162988	1.0.4-1	1	0	23077	zoidberg_md	http://hackage.haskell.org/package/byteorder
+haskell-bytestring-builder	1422287420	0.10.4.1.1-1	0	0	146673	atweiden	https://github.com/lpsmith/bytestring-builder
 haskell-bytestring-lexing	1419584097	0.4.3.2-2	0	0	136786	zoidberg_md	http://code.haskell.org/~wren/
 haskell-bytestring-mmap	1397896838	0.2.2-1	5	0	17479	fosskers	http://hackage.haskell.org/package/bytestring-mmap
 haskell-bytestring-trie	1398297461	0.2.3-1	1	0	81221	fosskers	http://hackage.haskell.org/package/bytestring-trie
@@ -81,7 +82,7 @@ haskell-bytestringreadp	1294858468	0.2-4	0	0	17524	-	http://hackage.haskell.org/
 haskell-bzlib	1382993309	0.5.0.4-1	2	0	17520	drevilt	http://hackage.haskell.org/package/bzlib
 haskell-cabal-ghci	1390077184	0.3-1	0	0	77966	pdxleif	http://hackage.haskell.org/package/cabal-ghci
 haskell-carray	1422008283	0.1.5.2-4	3	0	145744	zoidberg_md	http://hackage.haskell.org/package/carray
-haskell-case-insensitive	1400931102	1.2.0.0-1	1	11978	75122	drevilt	http://hackage.haskell.org/package/case-insensitive
+haskell-case-insensitive	1422117830	1.2.0.3-1	1	0	146233	drevilt	http://hackage.haskell.org/package/case-insensitive
 haskell-category-extras	1294858513	0.53.5-3	6	31845	17467	-	http://hackage.haskell.org/package/category-extras
 haskell-cautious-file	1417681653	1.0.2-1	14	0	131639	fosskers	http://hackage.haskell.org/package/cautious-file
 haskell-cc-delcont	1294858521	0.2-4	0	0	17469	-	http://hackage.haskell.org/package/CC-delcont
@@ -91,7 +92,7 @@ haskell-cgi	1389915516	3001.1.8.4-1	0	0	57016	-	http://hackage.haskell.org/packa
 haskell-cgi-undecidable	1294858538	3000.0.0-4	0	0	17593	-	http://hackage.haskell.org/package/cgi-undecidable
 haskell-charset	1422008290	0.3.7-3	0	0	145745	zoidberg_md	http://github.com/ekmett/charset
 haskell-charsetdetect-ae	1417683965	1.0.1-1	1	0	131657	fosskers	http://hackage.haskell.org/package/charsetdetect-ae
-haskell-chart	1386199421	1.1-1	6	32372	17735	drevilt	http://hackage.haskell.org/package/Chart
+haskell-chart	1422117764	1.3.3-1	6	0	146232	drevilt	http://hackage.haskell.org/package/Chart
 haskell-chasingbottoms	1294858561	1.3.0-3	0	43894	17538	-	http://hackage.haskell.org/package/ChasingBottoms
 haskell-checked	1294858563	0.1.0.1-3	0	0	17498	-	http://hackage.haskell.org/package/checked
 haskell-checkers	1420210106	0.4.1-4	0	0	139009	zoidberg_md	http://hackage.haskell.org/package/checkers
@@ -163,6 +164,7 @@ haskell-css-text	1417680239	0.1.2.1-1	1	0	131634	fosskers	http://hackage.haskell
 haskell-csv	1319274086	0.1.2-18	10	0	17544	drevilt	http://hackage.haskell.org/package/csv
 haskell-ctemplate	1294858827	0.1-4	1	0	17726	-	http://hackage.haskell.org/package/ctemplate
 haskell-curl	1391763020	1.3.8-2	79	0	17457	n3hima	http://hackage.haskell.org/package/curl
+haskell-curl-aeson	1422168651	0.0.4-1	0	0	146360	atweiden	https://github.com/zouppen/haskell-curl-aeson
 haskell-data-accessor	1421631888	0.2.2.6-1	28	0	144246	drevilt	http://www.haskell.org/haskellwiki/Record_access
 haskell-data-accessor-template	1419584328	0.2.1.11-2	0	0	136792	zoidberg_md	http://www.haskell.org/haskellwiki/Record_access
 haskell-data-binary-ieee754	1386152461	0.4.4-1	11	0	27809	pippin	http://john-millikin.com/software/data-binary-ieee754/
@@ -185,7 +187,7 @@ haskell-deepseq-generics	1420842652	0.1.1.2-2	0	0	141280	zoidberg_md	https://git
 haskell-denominate	1294858955	0.5.0-4	0	0	17737	-	http://hackage.haskell.org/package/denominate
 haskell-dependent-sum	1419584515	0.2.1.0-2	0	0	136800	zoidberg_md	https://github.com/mokus0/dependent-sum
 haskell-derive-legacy	1325024034	2.4.2-2	1	44819	54248	-	http://community.haskell.org/~ndm/derive/
-haskell-descrilo	1413666827	0.1.0.0-1	0	0	120323	mgmillani	http://hackage.haskell.org/package/descrilo
+haskell-descrilo	1422035981	0.1.0.2-1	0	0	145991	mgmillani	http://hackage.haskell.org/package/descrilo
 haskell-diagrams	1422008517	1.2-7	3	0	145754	zoidberg_md	http://projects.haskell.org/diagrams
 haskell-diagrams-contrib	1422008534	1.1.2.5-1	0	0	145755	zoidberg_md	http://projects.haskell.org/diagrams/
 haskell-diagrams-core	1422008545	1.2.0.5-1	0	0	145756	zoidberg_md	http://projects.haskell.org/diagrams
@@ -235,7 +237,7 @@ haskell-exceptions	1399313892	0.6-1	1	15363	81565	fosskers	http://hackage.haskel
 haskell-exif	1344870104	3000.0.0-19	5	0	17486	dno	http://hackage.haskell.org/package/exif
 haskell-explicit-exception	1419585147	0.1.7.3-2	0	0	136823	zoidberg_md	http://www.haskell.org/haskellwiki/Exception
 haskell-fad	1358377802	1.1.0.1-1	2	0	25401	mkovacs	http://hackage.haskell.org/package/fad
-haskell-failure	1392068628	0.2.0.1-2	7	44562	33928	drevilt	http://hackage.haskell.org/package/failure
+haskell-failure	1422118176	0.2.0.3-1	7	0	146239	drevilt	http://hackage.haskell.org/package/failure
 haskell-fast-logger	1420213962	2.2.3-3	0	0	139143	zoidberg_md	http://hackage.haskell.org/package/fast-logger
 haskell-fast-tags	1378045415	0.0.5-1	1	0	73088	serkho	http://hackage.haskell.org/package/fast-tags
 haskell-fast-tagsoup	1369594940	1.0.4-1	1	0	65279	NickHu	http://community.haskell.org/~ndm/tagsoup/
@@ -252,7 +254,7 @@ haskell-feed	1419967873	0.3.9.2-9	5	0	138195	zoidberg_md	https://github.com/sof/
 haskell-fgl	1419772407	5.5.0.1-3	2	0	137453	zoidberg_md	http://web.engr.oregonstate.edu/~erwig/fgl/haskell
 haskell-file-embed	1422027205	0.0.7.1-1	0	0	145949	zoidberg_md	https://github.com/snoyberg/file-embed
 haskell-filemanip	1416869513	0.3.6.2-1	5	0	129438	bluephoenix47	http://hackage.haskell.org/package/filemanip
-haskell-filestore	1382993240	0.6.0.1-1	6	32334	23420	drevilt	http://hackage.haskell.org/package/filestore
+haskell-filestore	1422118429	0.6.0.4-1	6	0	146245	drevilt	http://hackage.haskell.org/package/filestore
 haskell-filesystem-conduit	1385970192	1.0.0.1-1	0	0	75861	pdxleif	http://hackage.haskell.org/package/filesystem-conduit
 haskell-finance-quote-yahoo	1294859264	0.7.0-4	0	0	17508	-	http://hackage.haskell.org/package/Finance-Quote-Yahoo
 haskell-finance-treasury	1294859268	0.1.2-4	0	0	17872	-	http://hackage.haskell.org/package/Finance-Treasury
@@ -261,7 +263,7 @@ haskell-fingertree	1386486448	0.1.0.0-1	0	0	73800	pdxleif	http://hackage.haskell
 haskell-finitemap	1294859279	0.1-4	0	0	17586	-	http://hackage.haskell.org/package/FiniteMap
 haskell-fmlist	1420224476	0.9-1	0	0	139216	zoidberg_md	https://github.com/sjoerdvisscher/fmlist
 haskell-force-layout	1422008903	0.3.0.9-1	0	0	145779	zoidberg_md	http://hackage.haskell.org/package/force-layout
-haskell-fraction	1386591446	0.1.0.2-1	1	0	24511	brcha	http://hackage.haskell.org/package/fraction
+haskell-fraction	1386591446	0.1.0.2-1	1	20544	24511	brcha	http://hackage.haskell.org/package/fraction
 haskell-free	1386485693	4.2-1	0	61963	73796	pdxleif	http://hackage.haskell.org/package/free
 haskell-fsnotify	1390037999	0.0.11-1	0	34999	74793	pdxleif	http://hackage.haskell.org/package/fsnotify
 haskell-gd	1420214237	3000.7.3-5	1	0	139157	zoidberg_md	http://hackage.haskell.org/package/gd
@@ -270,25 +272,25 @@ haskell-genericpretty	1419585329	1.2.1-2	0	0	136833	zoidberg_md	https://github.c
 haskell-geniplate	1416865138	0.6.0.5-1	0	0	129419	bluephoenix47	http://hackage.haskell.org/package/geniplate-0.6.0.5
 haskell-geoip	1294859418	0.3-4	0	0	17622	drevilt	http://hackage.haskell.org/package/GeoIp
 haskell-ghc-events	1353433602	0.4.2.0-1	1	47747	33612	ISF	http://hackage.haskell.org/package/ghc-events
-haskell-ghc-mod	1422014195	5.2.1.2-1	0	0	145891	zoidberg_md	http://www.mew.org/~kazu/proj/ghc-mod/
+haskell-ghc-mod	1422014195	5.2.1.2-1	4	0	145891	zoidberg_md	http://www.mew.org/~kazu/proj/ghc-mod/
 haskell-ghc-mtl	1422008927	1.2.1.0-3	13	0	145780	zoidberg_md	http://hub.darcs.net/jcpetruzza/ghc-mtl
 haskell-ghcjs-codemirror	1419585354	0.0.0.1-2	0	0	136835	zoidberg_md	https://github.com/ghcjs/CodeMirror
 haskell-ghcjs-dom	1422008940	0.1.1.3-3	0	0	145781	zoidberg_md	http://hackage.haskell.org/package/ghcjs-dom
 haskell-ghcjs-prim	1419394328	0.1.0.0-1	0	10095	136390	-	http://github.com/ghcjs
-haskell-gio	1386293686	0.12.5.0-1	12	30537	37481	drevilt	http://hackage.haskell.org/package/gio
+haskell-gio	1422117980	0.13.0.4-1	12	0	146236	drevilt	http://hackage.haskell.org/package/gio
 haskell-glfw	1421631668	0.5.2.2-1	23	0	144244	drevilt	http://hackage.haskell.org/package/GLFW
 haskell-glfw-b	1392244709	1.4.6-1	0	0	78943	weltensegler	http://hackage.haskell.org/package/GLFW-b
 haskell-gloss	1422008953	1.9.2.1-3	0	0	145782	zoidberg_md	http://gloss.ouroborus.net
 haskell-gloss-rendering	1422008963	1.9.2.1-3	0	0	145783	zoidberg_md	http://hackage.haskell.org/package/gloss-rendering
-haskell-gluraw	1382896188	1.4.0.0-1	0	61981	72857	drevilt	http://hackage.haskell.org/package/GLURaw
+haskell-gluraw	1422118230	1.4.0.2-1	0	0	146240	drevilt	http://hackage.haskell.org/package/GLURaw
 haskell-glut	1421633068	2.6.0.0-1	1	0	144257	drevilt	http://hackage.haskell.org/package/GLUT
 haskell-glutil	1392671534	0.7.4-1	0	0	79098	weltensegler	http://hackage.haskell.org/package/GLUtil
 haskell-googlechart	1294859512	0.2-4	0	0	17587	-	http://hackage.haskell.org/package/GoogleChart
-haskell-grapefruit-examples	1386591368	0.1.0.4-1	5	32716	23911	zoidberg_md	http://hackage.haskell.org/package/grapefruit-examples
-haskell-grapefruit-frp	1386591715	0.1.0.4-2	4	33126	23867	zoidberg_md	http://hackage.haskell.org/package/grapefruit-frp
-haskell-grapefruit-records	1386591595	0.1.0.4-1	5	32700	23868	zoidberg_md	http://hackage.haskell.org/package/grapefruit-records
-haskell-grapefruit-ui	1386591289	0.1.0.4-1	6	32315	23869	zoidberg_md	http://hackage.haskell.org/package/grapefruit-ui
-haskell-grapefruit-ui-gtk	1386591534	0.1.0.4-1	5	32630	23910	zoidberg_md	http://hackage.haskell.org/package/grapefruit-ui-gtk
+haskell-grapefruit-examples	1422086172	0.1.0.5-1	5	0	146133	zoidberg_md	http://grapefruit-project.org/
+haskell-grapefruit-frp	1422085289	0.1.0.5-1	4	0	146132	zoidberg_md	http://grapefruit-project.org/
+haskell-grapefruit-records	1422086180	0.1.0.5-1	5	0	146134	zoidberg_md	http://grapefruit-project.org/
+haskell-grapefruit-ui	1422086189	0.1.0.5-1	6	0	146135	zoidberg_md	http://grapefruit-project.org/
+haskell-grapefruit-ui-gtk	1422086195	0.1.0.5-1	5	0	146136	zoidberg_md	http://grapefruit-project.org/
 haskell-gray-code	1362482751	0.2.2-1	1	0	39824	srg	http://hackage.haskell.org/package/gray-code
 haskell-groom	1420214244	0.1.2-10	0	0	139158	zoidberg_md	http://hackage.haskell.org/package/groom
 haskell-grotetrap	1294859576	0.5-4	0	0	17588	-	http://hackage.haskell.org/package/GroteTrap
@@ -304,7 +306,7 @@ haskell-hakyll	1422014311	4.6.4.0-1	6	0	145900	zoidberg_md	http://jaspervdj.be/h
 haskell-halipeto	1321092126	2.4-8	1	0	39607	-	http://gitorious.org/halipeto
 haskell-hamlet	1422009001	1.2.0-4	3	0	145786	zoidberg_md	http://www.yesodweb.com/book/shakespearean-templates
 haskell-happs-util	1294859756	0.9.3-4	9	0	17834	-	http://hackage.haskell.org/package/HAppS-Util
-haskell-happstack	1354709800	7.0.1-1	3	33866	24426	drevilt	http://hackage.haskell.org/package/happstack
+haskell-happstack	1422118346	7.0.2-1	3	0	146243	drevilt	http://hackage.haskell.org/package/happstack
 haskell-happstack-jmacro	1355746848	7.0.4-1	0	26885	65528	-	http://hackage.haskell.org/package/happstack-jmacro
 haskell-happstack-server	1387491613	7.3.1-1	5	32604	23713	drevilt	http://hackage.haskell.org/package/happstack-server
 haskell-hashed-storage	1422009011	0.5.11-4	16	0	145787	zoidberg_md	http://hackage.haskell.org/package/hashed-storage
@@ -313,7 +315,7 @@ haskell-haskell-src	1417742943	1.0.1.6-1	2	0	131794	haawda	http://hackage.haskel
 haskell-haskell-src-exts	1418443291	1.16.0.1-1	2	0	133554	drevilt	http://hackage.haskell.org/package/haskell-src-exts
 haskell-haskell-src-meta	1420214252	0.6.0.8-7	1	0	139159	zoidberg_md	http://hackage.haskell.org/package/haskell-src-meta
 haskell-haste-compiler	1422009034	0.4.4.1-1	0	0	145788	zoidberg_md	http://haste-lang.org/
-haskell-haxml	1421632451	1.25.2-1	32	16523	144250	drevilt	http://hackage.haskell.org/package/HaXml
+haskell-haxml	1422030889	1.25.3-1	32	0	145966	drevilt	http://hackage.haskell.org/package/HaXml
 haskell-hbro	1338797385	0.9.0.0-1	0	43481	59759	-	http://hackage.haskell.org/package/hbro
 haskell-hcl	1294859888	1.4-4	1	0	17835	-	http://hackage.haskell.org/package/HCL
 haskell-hcodecs	1420210703	0.5-3	2	0	139049	zoidberg_md	http://www-db.informatik.uni-tuebingen.de/team/giorgidze
@@ -349,12 +351,12 @@ haskell-hoodle-render	1422009199	0.4-3	0	0	145797	zoidberg_md	http://hackage.has
 haskell-hoodle-types	1422009210	0.3-3	0	0	145798	zoidberg_md	http://hackage.haskell.org/package/hoodle-types
 haskell-hopencl	1324177089	0.2.0-1	1	47398	55065	-	http://hackage.haskell.org/package/hopencl
 haskell-hopenssl	1319274204	1.6.1-18	1	46260	17743	-	http://gitorious.org/hopenssl
-haskell-hosc	1420212227	0.15-1	3	32441	139129	zoidberg_md	http://rd.slavepianos.org/t/hosc
+haskell-hosc	1420212227	0.15-1	3	32441	139129	-	http://rd.slavepianos.org/t/hosc
 haskell-hpdf	1294860163	1.4.2-4	0	27977	17659	-	http://hackage.haskell.org/package/HPDF
 haskell-hs-bibutils	1420213984	5.5-1	3	0	139146	zoidberg_md	http://istitutocolli.org/repos/hs-bibutils/
 haskell-hs-twitter	1322353516	0.2.8-4	2	0	27453	siasia	http://hackage.haskell.org/package/hs-twitter
-haskell-hsc3	1419644529	0.14-1	2	37343	137109	zoidberg_md	http://rd.slavepianos.org/?t=hsc3
-haskell-hsc3-lang	1321932536	0.11-1	1	46163	54203	zoidberg_md	http://hackage.haskell.org/package/hsc3-lang
+haskell-hsc3	1419644529	0.14-1	2	37343	137109	-	http://rd.slavepianos.org/?t=hsc3
+haskell-hsc3-lang	1321932536	0.11-1	1	46163	54203	-	http://hackage.haskell.org/package/hsc3-lang
 haskell-hscolour	1419772451	1.20.3-57	27	0	137457	zoidberg_md	http://code.haskell.org/~malcolm/hscolour/
 haskell-hscurses	1380483654	1.4.1.2-1	10	0	17624	drevilt	http://hackage.haskell.org/package/hscurses
 haskell-hsdip	1294860214	0.1-4	0	0	17744	-	http://hackage.haskell.org/package/hsdip
@@ -365,7 +367,7 @@ haskell-hsharupdf	1294860246	0.0.0-4	0	0	17660	-	http://hackage.haskell.org/pack
 haskell-hslua	1419772465	0.3.13-2	5	0	137458	zoidberg_md	http://hackage.haskell.org/package/hslua
 haskell-hsmagick	1419590943	0.5-2	2	0	136908	zoidberg_md	https://github.com/vincentg/hsmagick
 haskell-hsntp	1294860279	0.1-4	0	0	17748	-	http://hackage.haskell.org/package/hsntp
-haskell-hsopenssl	1386293576	0.10.3.5-1	0	19979	17661	drevilt	http://hackage.haskell.org/package/HsOpenSSL
+haskell-hsopenssl	1422118306	0.11.1.1-1	0	0	146242	drevilt	http://hackage.haskell.org/package/HsOpenSSL
 haskell-hsoundfile	1294860285	0.2.2-4	0	0	17662	-	http://hackage.haskell.org/package/HSoundFile
 haskell-hsp	1419775735	0.10.0-8	3	0	137482	zoidberg_md	http://hub.darcs.net/nibro/hsp
 haskell-hsparklines	1294860292	0.1.0-4	0	0	17822	-	http://hackage.haskell.org/package/hsparklines
@@ -375,7 +377,7 @@ haskell-hspec-discover	1419810909	2.1.2-1	0	0	137605	zoidberg_md	http://hspec.gi
 haskell-hspec-expectations	1420222182	0.6.1.1-1	0	0	139197	zoidberg_md	https://github.com/sol/hspec-expectations#readme
 haskell-hspr-sh	1294860313	0.3-4	0	0	17840	-	http://hackage.haskell.org/package/hspr-sh
 haskell-hspread	1294860310	0.3.3-4	8	0	17749	-	http://hackage.haskell.org/package/hspread
-haskell-hssyck	1386294507	0.51-1	6	32246	17943	drevilt	http://hackage.haskell.org/package/HsSyck
+haskell-hssyck	1422118383	0.52-1	6	0	146244	drevilt	http://hackage.haskell.org/package/HsSyck
 haskell-hstats	1294860344	0.3-4	1	0	17750	-	http://hackage.haskell.org/package/hstats
 haskell-hstringtemplate	1383689467	0.7.1-1	11	31102	17841	NickHu	http://hackage.haskell.org/package/HStringTemplate
 haskell-hsx	1354710336	0.10.4-1	7	44560	18137	-	http://hackage.haskell.org/package/hsx
@@ -423,7 +425,7 @@ haskell-jsaddle	1422027218	0.2.0.3-1	0	0	145950	zoidberg_md	http://hackage.haske
 haskell-json	1421632607	0.9-1	16	0	144252	drevilt	http://hackage.haskell.org/package/json
 haskell-json2	1362489116	0.8.3-3	1	0	56339	srg	http://hackage.haskell.org/package/json2
 haskell-json2-types	1362489042	0.1-3	2	0	56338	srg	http://hackage.haskell.org/package/json2-types
-haskell-juicypixels	1422014231	3.2.1-1	0	17009	145892	zoidberg_md	https://github.com/Twinside/Juicy.Pixels
+haskell-juicypixels	1422083749	3.2.2-1	0	0	146129	zoidberg_md	https://github.com/Twinside/Juicy.Pixels
 haskell-keys	1386485929	3.10-1	0	62044	73797	pdxleif	http://hackage.haskell.org/package/keys
 haskell-language-c	1419775207	0.4.7-2	35	0	137477	zoidberg_md	http://www.sivity.net/projects/language.c/
 haskell-language-c-03	1337105340	0.3.2.1-4	6	32163	59296	-	http://www.sivity.net/projects/language.c/
@@ -490,7 +492,7 @@ haskell-monadcatchio-transformers	1389915528	0.3.1.0-1	0	0	77699	zoidberg_md	htt
 haskell-monadlib	1382992687	3.7.2-1	2	34445	17518	drevilt	http://wiki.github.com/yav/monadlib
 haskell-monadloc	1422009511	0.7.1-1	0	0	145812	zoidberg_md	http://github.com/pepeiborra/monadloc
 haskell-monadprompt	1382993633	1.0.0.3-1	1	0	17674	drevilt	http://hackage.haskell.org/package/MonadPrompt
-haskell-monadrandom	1382897152	0.1.12-1	7	31828	17675	drevilt	http://hackage.haskell.org/package/MonadRandom
+haskell-monadrandom	1422118103	0.3.0.1-1	7	0	146238	drevilt	http://hackage.haskell.org/package/MonadRandom
 haskell-monads-tf	1420214578	0.1.0.2-3	0	0	139171	zoidberg_md	http://hackage.haskell.org/package/monads-tf
 haskell-monoid-extras	1422009521	0.3.3.5-4	0	0	145813	zoidberg_md	http://hackage.haskell.org/package/monoid-extras
 haskell-monte-carlo	1419586224	0.6.1-2	3	0	136860	zoidberg_md	http://github.com/patperry/hs-monte-carlo
@@ -502,7 +504,7 @@ haskell-mysql	1414511781	0.1.1.7-1	1	0	123109	fosskers	http://hackage.haskell.or
 haskell-nano-hmac	1419982255	0.2.0-5	2	0	138325	zoidberg_md	http://www.jasani.org/search/label/nano-hmac
 haskell-nano-md5	1294861101	0.1.2-3	1	0	17772	-	http://hackage.haskell.org/package/nano-md5
 haskell-nanocurses-git	1344198564	20120805-1	1	0	61499	-	http://hackage.haskell.org/package/nanocurses
-haskell-nats	1383602357	0.1.2-1	2	62082	75117	drevilt	http://hackage.haskell.org/package/nats
+haskell-nats	1422117886	1-1	2	0	146234	drevilt	http://hackage.haskell.org/package/nats
 haskell-nehe-tuts	1392244740	0.2.4-1	0	0	78944	weltensegler	http://hackage.haskell.org/package/nehe-tuts
 haskell-neither	1319274281	0.2.0-18	1	44679	38977	-	http://github.com/snoyberg/neither
 haskell-network-bytestring	1299875351	0.1.3.4-2	9	0	17725	-	http://hackage.haskell.org/package/network-bytestring
@@ -530,7 +532,7 @@ haskell-openafp	1294861243	1.2-4	1	45994	17925	-	http://hackage.haskell.org/pack
 haskell-openal	1409112872	1.6.0.0-1	0	0	105496	ishitatsuyuki	https://github.com/haskell-openal/ALUT
 haskell-openclraw-git	1276859935	20100618-1	0	0	38186	hsyl20	http://hackage.haskell.org/package/OpenCLRaw
 haskell-opengl	1407281664	2.9.1.0-2	1	62118	100359	drevilt	http://hackage.haskell.org/package/OpenGL
-haskell-openglraw	1382896997	1.4.0.0-1	8	31714	27754	drevilt	http://hackage.haskell.org/package/OpenGLRaw
+haskell-openglraw	1422118044	1.5.0.1-1	8	0	146237	drevilt	http://hackage.haskell.org/package/OpenGLRaw
 haskell-optparse-applicative	1420213995	0.11.0.1-3	0	0	139147	zoidberg_md	https://github.com/pcapriotti/optparse-applicative
 haskell-pandoc	1420214001	1.13.2-2	12	0	139148	zoidberg_md	http://johnmacfarlane.net/pandoc
 haskell-pandoc-citeproc	1422014237	0.6-17	2	0	145893	zoidberg_md	http://hackage.haskell.org/package/pandoc-citeproc
@@ -551,7 +553,7 @@ haskell-pattern-arrows	1392347210	0.0.1-1	0	32708	78987	pdxleif	http://hackage.h
 haskell-pbkdf	1422009564	1.1.1.1-3	0	0	145817	zoidberg_md	https://github.com/cdornan/pbkdf
 haskell-pcap	1353670048	0.4.5.2-2	1	0	17604	pippin	http://hackage.haskell.org/package/pcap
 haskell-pcre-light	1379544311	0.4-22	1	0	73605	-	http://code.haskell.org/~dons/code/pcre-light
-haskell-pem	1392068243	0.2.1-2	5	32403	67405	drevilt	http://hackage.haskell.org/package/pem
+haskell-pem	1422118465	0.2.2-1	5	0	146246	drevilt	http://hackage.haskell.org/package/pem
 haskell-penn-treebank	1294861368	0.1.0.1-4	0	0	17605	-	http://hackage.haskell.org/package/penn-treebank
 haskell-persistent	1422014250	2.1.1.4-1	2	0	145894	zoidberg_md	http://www.yesodweb.com/book/persistent
 haskell-persistent-postgresql	1422027256	2.1.2.2-3	0	0	145953	zoidberg_md	http://www.yesodweb.com/book/persistent
@@ -595,7 +597,7 @@ haskell-pugs-drift	1226474887	2.2.3.0-2	1	32950	17942	-	http://hackage.haskell.o
 haskell-pugs-hsregex	1294867417	1.0-4	0	0	17680	-	http://hackage.haskell.org/package/pugs-hsregex
 haskell-pugs-hssyck	1294867420	0.41-4	0	0	17611	-	http://hackage.haskell.org/package/pugs-HsSyck
 haskell-puremd5	1419964142	2.1.2.1-66	43	0	138171	zoidberg_md	http://hackage.haskell.org/package/pureMD5
-haskell-purescript	1422027278	0.6.3-3	2	0	145956	zoidberg_md	http://www.purescript.org/
+haskell-purescript	1422077986	0.6.3-3	2	0	146119	zoidberg_md	http://www.purescript.org/
 haskell-pwstore-fast	1422009675	2.4.4-3	0	0	145826	zoidberg_md	https://github.com/PeterScott/pwstore
 haskell-quantum-arrow	1294867441	0.0.5-4	0	0	17681	-	http://hackage.haskell.org/package/quantum-arrow
 haskell-quickcheck-io	1420222234	0.1.1-9	0	0	139198	zoidberg_md	http://hackage.haskell.org/package/quickcheck-io
@@ -661,7 +663,7 @@ haskell-simple-smt	1422010518	0.5.3-1	0	0	145878	zoidberg_md	http://hackage.hask
 haskell-simpleargs	1294867861	0.2.1-3	1	0	17543	-	http://hackage.haskell.org/package/simpleargs
 haskell-simplegl	1379427298	0.9.2-2	0	46500	73552	-	http://hackage.haskell.org/package/SimpleGL
 haskell-simpleh	1379407576	1.0.1-1	0	46493	73551	periegetes	http://hackage.haskell.org/package/SimpleH
-haskell-simtreelo	1413666855	0.1.0.0-1	0	0	120324	mgmillani	http://hackage.haskell.org/package/simtreelo
+haskell-simtreelo	1422036004	0.1.0.2-1	0	0	145992	mgmillani	http://hackage.haskell.org/package/simtreelo
 haskell-smallcheck	1334423563	0.6.1-1	0	45666	17477	-	http://hackage.haskell.org/package/smallcheck
 haskell-smtlib	1419973294	1.0.7-1	0	0	138227	zoidberg_md	http://hackage.haskell.org/package/smtLib
 haskell-snap	1422009945	0.13.3.2-2	0	0	145838	zoidberg_md	http://snapframework.com/
@@ -678,7 +680,7 @@ haskell-stmonadtrans	1416863689	0.3.2-4	1	0	129383	bluephoenix47	http://hackage.
 haskell-storable-complex	1421044667	0.2.2-1	8	0	141979	zoidberg_md	https://github.com/cartazio/storable-complex
 haskell-storable-endian	1359608812	0.2.5-1	0	0	44806	-	http://hackage.haskell.org/package/storable-endian
 haskell-storablevector	1422009986	0.2.10-2	2	0	145841	zoidberg_md	http://www.haskell.org/haskellwiki/Storable_Vector
-haskell-stream	1386591214	0.4.6.1-1	13	30432	15446	zoidberg_md	http://hackage.haskell.org/package/Stream
+haskell-stream	1422084076	0.4.7.1-1	13	0	146130	zoidberg_md	http://hackage.haskell.org/package/Stream
 haskell-stream-fusion	1419586604	0.1.2.5-2	4	0	136883	zoidberg_md	http://hackage.haskell.org/trac/ghc/ticket/915
 haskell-streaming-commons	1407847602	0.1.0.2-1	0	6557	101627	-	http://hackage.haskell.org/package/streaming-commons
 haskell-streamproc	1319274625	1.4-1	0	45534	17627	-	http://gitorious.org/streamproc
@@ -820,7 +822,7 @@ haskell-yogurt	1294868795	0.4-4	0	45358	17592	-	http://hackage.haskell.org/packa
 haskell-zeromq-haskell	1338797471	0.8.4-1	1	0	37628	kane77	http://hackage.haskell.org/package/zeromq-haskell
 haskell-zeromq4-haskell	1422010407	0.6.2-3	0	0	145876	zoidberg_md	http://github.com/twittner/zeromq-haskell/
 haskell-zfs	1294868810	0.0.1-4	0	0	17865	-	http://hackage.haskell.org/package/ZFS
-haskell-zip-archive	1411088716	0.2.3.2-1	0	62256	113113	drevilt	http://github.com/jgm/zip-archive
+haskell-zip-archive	1422117932	0.2.3.6-1	0	0	146235	drevilt	http://github.com/jgm/zip-archive
 haskell-zipedit	1294868815	0.2.3-4	0	0	17722	-	http://hackage.haskell.org/package/zipedit
 haskell-zlib-bindings	1392149558	0.1.1.3-1	4	32913	41808	pdxleif	http://hackage.haskell.org/package/zlib-bindings
 haskell-zlib-conduit	1386224179	1.0.0-1	3	33394	60734	pdxleif	http://hackage.haskell.org/package/zlib-conduit

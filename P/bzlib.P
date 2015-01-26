@@ -1,7 +1,7 @@
 .PHONY: haskell-bzlib hackage-bzlib
 haskell-bzlib: upstream/bzip2 upstream/ghc
 haskell-bzlib/PKGBUILD: 
-haskell-bzlib: haskell-bzlib/haskell-bzlib-0.5.0.4-1-i686.pkg.tar.xz
-haskell-bzlib/haskell-bzlib-0.5.0.4-1-i686.pkg.tar.xz: haskell-bzlib/PKGBUILD
+haskell-bzlib: haskell-bzlib/haskell-bzlib-0.5.0.5-1-i686.pkg.tar.xz
+haskell-bzlib/haskell-bzlib-0.5.0.5-1-i686.pkg.tar.xz: haskell-bzlib/PKGBUILD
 hackage-bzlib: haskell-bzlib
-pacman-U-bzlib: haskell-bzlib/haskell-bzlib-0.5.0.4-1-i686.pkg.tar.xz
+pacman-U-bzlib: haskell-bzlib/haskell-bzlib-0.5.0.5-1-i686.pkg.tar.xz

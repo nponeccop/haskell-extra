@@ -4,8 +4,8 @@ _licensefile=LICENSE
 
 # PKGBUILD options/directives
 pkgname=haskell-haskell-src
-pkgver=1.0.1.6
-pkgrel=3
+pkgver=1.0.2.0
+pkgrel=1
 pkgdesc="Support for manipulating Haskell source code"
 url="http://hackage.haskell.org/package/${_hkgname}"
 license=("BSD3")
@@ -16,7 +16,7 @@ depends=("ghc=7.8.4-1"
 options=('strip' 'staticlibs')
 source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
 install="${pkgname}.install"
-sha256sums=("c7c556366025d9895d1110ecfa30a29e29d7d0a8cb447716fe601e4ff5da4cef")
+sha256sums=("2a25ee5729230edddb94af8d9881efbc1d8798bd316097f4646749cb2fa491a6")
 
 # PKGBUILD functions
 
