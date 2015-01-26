@@ -1,0 +1,7 @@
+.PHONY: haskell-monadlib hackage-monadLib
+haskell-monadlib: upstream/ghc
+haskell-monadlib/PKGBUILD: 
+haskell-monadlib: haskell-monadlib/haskell-monadlib-3.7.3-1-i686.pkg.tar.xz
+haskell-monadlib/haskell-monadlib-3.7.3-1-i686.pkg.tar.xz: haskell-monadlib/PKGBUILD
+hackage-monadLib: haskell-monadlib
+pacman-U-monadLib: haskell-monadlib/haskell-monadlib-3.7.3-1-i686.pkg.tar.xz
