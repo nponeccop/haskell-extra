@@ -108,6 +108,23 @@ function db_changes()
 		bash dbdiff.sh | tail -n +2 | cut -f 2 -d ' ' | sort | uniq
 }
 
+function ghc_diff ()
+{
+		join <(list . -g --no-repo) <(list upstream-repos/$1 -g --no-repo) | awk 'BEGIN {OFS="\t"}; $2 != $4 {print}'
+}
+
+function ghc_promo ()
+{
+		join <(list . -g --no-repo) <(list upstream-repos/$1 -d | sort) #|sed 's/$/\t-\txx/' # | awk 'BEGIN {OFS="\t"}; $2 != $4 {print}'
+}
+
+function ghc_foo
+{
+		join -v1 <(list . -g --no-repo) <(list upstream-repos/$1 -g --no-repo) #|sed 's/$/\t-\txx/' # | awk 'BEGIN {OFS="\t"}; $2 != $4 {print}'
+#		join -v2 <(list . -g --no-repo) <(list upstream-repos/$1 -g --no-repo) |sed 's/$/\t-\txx/' # | awk 'BEGIN {OFS="\t"}; $2 != $4 {print}'
+}
+
+
 echo "==> Package upgrade only (new release):"
 repos pkgrel | column -t
 
@@ -154,4 +171,10 @@ join -v2 <(list_subdirs | sort) <(list_syncrepo haskell-extra)
 echo '==> Directories in upstream'
 join <(list_subdirs|sort) <(list_syncrepo haskell-core | sort)
 join <(list_subdirs|sort) <(list_syncrepo haskell-happstack | sort)
+echo '==> GHC packages different from upstream'
+repos ghc_diff | column -t
+echo '==> GHC packages promoted in upstream'
+repos ghc_promo | column -t
+echo '==> GHC packages not in upstream' 
+ghc_foo haskell-core | column -t
 
